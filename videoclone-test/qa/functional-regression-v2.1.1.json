@@ -1,0 +1,51 @@
+{
+  "version": "2.1.1",
+  "tested_at": "2026-08-06",
+  "environment": "isolated sandbox Chromium + Playwright",
+  "viewports": [
+    "1440x1050",
+    "390x844"
+  ],
+  "first_run": {
+    "total": 31,
+    "passed": 23,
+    "failed": 8
+  },
+  "final_run": {
+    "total": 35,
+    "passed": 35,
+    "failed": 0
+  },
+  "status": "PASSED",
+  "fixed_defects": [
+    "notification button had no behavior",
+    "person/product switch retained incompatible subject files",
+    "photo/video avatar switch retained incompatible avatar media",
+    "audio/video voice switch retained incompatible voice media",
+    "completed flow could not start a second project",
+    "history had no view, redo, filter, or delete actions",
+    "generation wrote history before Save to project was clicked",
+    "corrupt localStorage history crashed initialization"
+  ],
+  "scope": [
+    "desktop navigation",
+    "mobile bottom navigation",
+    "mobile drawer",
+    "video clone flow",
+    "AI avatar speaking flow",
+    "validation and error states",
+    "generation state",
+    "project history",
+    "localStorage persistence and recovery",
+    "button event binding",
+    "responsive horizontal overflow"
+  ],
+  "out_of_scope": [
+    "real video understanding API",
+    "real digital avatar generation API",
+    "real voice cloning API",
+    "real video rendering API",
+    "cloud uploads",
+    "authentication and cross-device sync"
+  ]
+}
