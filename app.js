@@ -191,6 +191,8 @@ function render() {
   document.querySelector('[data-test-prev]')?.addEventListener('click', () => setTest(testCards[(testIndex - 1 + testCards.length) % testCards.length].dataset.test));
   document.querySelector('[data-test-next]')?.addEventListener('click', () => setTest(testCards[(testIndex + 1) % testCards.length].dataset.test));
   document.querySelector('[data-test-brief-toggle]')?.addEventListener('click', event => { const brief = event.currentTarget.closest('.test-brief'); const open = !brief.classList.contains('details-open'); brief.classList.toggle('details-open', open); event.currentTarget.setAttribute('aria-expanded', String(open)); event.currentTarget.innerHTML = `${open ? '收起测试说明' : '展开测试说明'} <span>${open ? '↑' : '↓'}</span>`; });
+  const detailsDisclosure = document.querySelector('.test-details-disclosure');
+  detailsDisclosure?.querySelector('summary')?.addEventListener('click', event => { event.preventDefault(); detailsDisclosure.open = !detailsDisclosure.open; });
   document.querySelectorAll('.topbar nav button').forEach(element => element.classList.toggle('active', (element.dataset.nav || element.dataset.route) === active));
   root.focus();
 }
