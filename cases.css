@@ -241,16 +241,15 @@ main{max-width:1320px;padding:32px clamp(22px,5vw,72px) 88px}
   .reference-row em{grid-column:2;text-align:left}
 }
 
-/* Test explanation uses native disclosure so the content cannot disappear behind a broken click binding. */
+/* Test explanation uses an explicit button so mouse and touch have identical behavior. */
 .test-details-disclosure{margin-top:16px}
-.test-details-disclosure>summary{display:flex;align-items:center;gap:6px;width:max-content;color:#c4ec61;cursor:pointer;list-style:none;font:500 13px/1.4 'DM Mono',monospace}
-.test-details-disclosure>summary::-webkit-details-marker{display:none}
-.test-details-disclosure>summary span{display:inline-block;font-size:15px;transition:transform .2s ease}
-.test-details-disclosure[open]>summary span{transform:rotate(180deg)}
+.test-details-toggle{display:flex;align-items:center;gap:6px;width:max-content;padding:0;border:0;background:transparent;color:#c4ec61;cursor:pointer;font:500 13px/1.4 'DM Mono',monospace}
+.test-details-toggle span{display:inline-block;font-size:15px;transition:transform .2s ease}
+.test-details-disclosure.is-open .test-details-toggle span{transform:rotate(180deg)}
 .test-details-disclosure .test-details{margin-top:10px}
 @media(max-width:620px){
   .test-details-disclosure{margin-top:13px}
-  .test-details-disclosure>summary{font-size:13px}
+  .test-details-toggle{font-size:13px}
   .test-details-disclosure .test-details{margin-top:10px}
 }
 
