@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#172019"/>
+  <rect x="72" y="96" width="936" height="290" rx="20" fill="#263126" stroke="#b9e44d" stroke-width="3"/>
+  <text x="112" y="152" fill="#c7ed66" font-family="monospace" font-size="30" letter-spacing="4">T01 / TALKING HEAD</text>
+  <text x="112" y="255" fill="#f6f8f1" font-family="sans-serif" font-weight="800" font-size="92">主题标题放在上方</text>
+  <text x="112" y="330" fill="#d2ddd0" font-family="sans-serif" font-size="46">关键词在人物上方，保持阅读顺序</text>
+  <rect x="72" y="430" width="270" height="120" rx="18" fill="#b9e44d"/>
+  <text x="112" y="507" fill="#172019" font-family="sans-serif" font-weight="800" font-size="62">关键词</text>
+  <rect x="230" y="590" width="620" height="720" rx="310" fill="#39463a" stroke="#8c9a8b" stroke-width="4" stroke-dasharray="12 16"/>
+  <text x="540" y="930" text-anchor="middle" fill="#d1dbd0" font-family="monospace" font-size="30" letter-spacing="3">人物 / 脸 / 手势安全区</text>
+  <rect x="72" y="1400" width="936" height="180" rx="18" fill="#f5f7ef"/>
+  <text x="112" y="1510" fill="#172019" font-family="sans-serif" font-size="52">普通口播字幕放在中下方，</text>
+  <text x="112" y="1570" fill="#172019" font-family="sans-serif" font-size="52">不要与关键词抢同一层级。</text>
+  <text x="72" y="1718" fill="#9caf98" font-family="monospace" font-size="28">C4 标题 88–108px · C2 关键词 64–88px · C1 字幕 48–60px</text>
+  <rect x="72" y="1748" width="936" height="110" fill="none" stroke="#e1e9dc" stroke-width="3" stroke-dasharray="14 14"/>
+  <text x="540" y="1818" text-anchor="middle" fill="#9caf98" font-family="monospace" font-size="28">平台 UI 预留区 / 关键文字不上底</text>
+</svg>

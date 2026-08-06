@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#f4f5ef"/>
+  <text x="72" y="132" fill="#526051" font-family="monospace" font-size="30" letter-spacing="4">T02 / SIDE KEYWORD CARD</text>
+  <text x="72" y="250" fill="#172019" font-family="sans-serif" font-weight="800" font-size="92">人物偏侧布局</text>
+  <text x="72" y="330" fill="#647265" font-family="sans-serif" font-size="46">把信息放到空侧，不挡住产品和手势</text>
+  <rect x="72" y="455" width="300" height="390" rx="22" fill="#172019"/>
+  <text x="112" y="535" fill="#b9e44d" font-family="monospace" font-size="26">C2 / KEYWORD</text>
+  <text x="112" y="660" fill="#f5f7ef" font-family="sans-serif" font-weight="800" font-size="66">问题</text>
+  <text x="112" y="744" fill="#f5f7ef" font-family="sans-serif" font-weight="800" font-size="66">→ 证据</text>
+  <rect x="450" y="430" width="520" height="770" rx="260" fill="#dce5d8" stroke="#7b8b7b" stroke-width="4" stroke-dasharray="12 16"/>
+  <text x="710" y="800" text-anchor="middle" fill="#647265" font-family="monospace" font-size="30" letter-spacing="2">人物 / 产品安全区</text>
+  <line x1="372" y1="650" x2="440" y2="650" stroke="#b9e44d" stroke-width="6"/>
+  <rect x="72" y="1390" width="936" height="200" rx="20" fill="#172019"/>
+  <text x="112" y="1510" fill="#f5f7ef" font-family="sans-serif" font-size="52">普通口播字幕：稳定、清晰、</text>
+  <text x="112" y="1570" fill="#f5f7ef" font-family="sans-serif" font-size="52">不要重复侧边关键词。</text>
+  <text x="72" y="1722" fill="#647265" font-family="monospace" font-size="28">侧卡宽 260–340px · C1/C2 分离 · 适合产品与人物同框</text>
+  <rect x="72" y="1750" width="936" height="108" fill="none" stroke="#b6c1b3" stroke-width="3" stroke-dasharray="14 14"/>
+  <text x="540" y="1820" text-anchor="middle" fill="#7a887c" font-family="monospace" font-size="28">平台 UI 预留区</text>
+</svg>
