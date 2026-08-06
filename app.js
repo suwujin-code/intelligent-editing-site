@@ -7,12 +7,13 @@ const categories = {
 };
 
 const projects = {
-  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 8 个案例', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，测试负责验证方法。', items: ['asr', 'audio'], cases: ['waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
+  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 9 个案例', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，测试负责验证方法。', items: ['asr', 'audio'], cases: ['host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
   'photography-workflow': { id: 'photography-workflow', name: '摄影获客工作流', kicker: 'PHOTOGRAPHY / LEAD FLOW', status: '本地应用待公开', description: '把摄影服务、公开线索研究和人工跟进整理在一个可审计的本地工作流中。公开服务入口仍在整理。', items: ['photography-app', 'photography-service'] }
 };
 
 const caseMediaRoot = 'https://preview.oing.xin/preview/ai-video-edit-case/';
 const caseStudies = {
+  host001: { id: 'host001', code: 'HOST-001 / EDITOR AGENT', title: '知澜｜V10 字幕包装样片', source: '9:16 · 9 秒', aspect: 'portrait', status: '已验收', statusClass: 'verified', video: 'assets/cases/HOST-001_知澜_V10_字幕包装样片.mp4', note: 'AI 主播「知澜」的 V10 字幕包装终版：顶部主题、两侧关键词与中下方口播字幕分层工作，人物中部安全区保持干净。', tags: ['AI口播', 'V10字幕包装', '人物安全区'], category: '知识口播', outcome: '主播口播 + 语义动效', role: '字幕导演', proof: ['9 秒', '中文口播', 'V10 字幕包装', '人物安全区', '已验收'] },
   waterproofing: { id: 'waterproofing', code: 'CASE_003 / TALKING HEAD', title: '卫生间防水验收｜晓曼有声终版', source: '9:16 · 33 秒', aspect: 'portrait', status: '已验证', statusClass: 'verified', video: 'assets/cases/CASE_003_卫生间防水验收_Xiaoxi有声网页.mp4', note: '把装修验收知识压缩成适合口播的竖屏成片：信息清晰、人物安全区保留、字幕与声音同步。本版使用 VoxCraft / 声刻「主播_知性口播女声_晓曼」。', tags: ['知识口播', '字幕导演', '晓曼配音'], category: '知识口播', outcome: '口播 + 字幕', role: '字幕导演', proof: ['33 秒', '中文口播', '三层字幕', '人物安全区', '晓曼配音'] },
   sony: { id: 'sony', code: 'TEST_004 / SONY', title: 'Sony · 光影—手艺—技术', source: '168.69 秒 → 32.52 秒', aspect: 'landscape', status: '条件验收', statusClass: 'conditional', video: 'media/sony-recut-subtitled.mp4', note: '保留连续声音骨架，以少量关键镜头完成叙事压缩。', testGoal: '验证高压缩下，声音能否仍承担叙事主线。', testMethod: '以 J/L-cut 保留连续声音，再以关键镜头补足信息节点。', tags: ['品牌叙事', 'J/L-cut', '声音骨架'], category: '品牌叙事', outcome: '品牌片 / 技术', role: '剪辑师', proof: ['32 秒', '声音骨架', '镜头压缩', '条件验收'] },
   ebay: { id: 'ebay', code: 'TEST_001 / EBAY', title: 'eBay · Reality to Proof', source: '60.12 秒 → 22.3 秒', aspect: 'landscape', status: '本地解码通过', statusClass: 'verified', video: 'media/works/EBAY_REALITY_TO_PROOF_v0.1.mp4', note: '高速虚假信息进入运动归零，再落到可信鉴定证明。', testGoal: '测试「混乱信息 → 可信证明」的广告节奏转折。', testMethod: '先高速叠加制造不确定感，再用运动归零与证明镜头完成落点。', tags: ['广告节奏', '运动归零', '证明落点'], category: '广告节奏', outcome: '产品说明 / 教程', role: '剪辑师', proof: ['22 秒', '运动归零', '证明落点', '已验证'] },
@@ -64,6 +65,12 @@ function testCard(study, index) {
     <span class="test-card-copy"><strong>${study.title}</strong><small>${study.tags.slice(0, 2).join(' · ')}</small><em class="case-status ${study.statusClass}">${study.status}</em></span>
   </button>`;
 }
+function relatedCase(study) {
+  return `<article class="related-case" id="related-cases">
+    <div class="related-case-copy"><div class="eyebrow">RELATED VERIFIED WORK</div><span class="featured-code">${study.code}</span><h2>${study.title}</h2><p>${study.note}</p><div class="related-case-meta"><span>${study.source}</span><span>${study.role || '智能剪辑'}</span><span class="case-status ${study.statusClass}">${study.status}</span></div></div>
+    <div class="related-case-video ${study.aspect === 'portrait' ? 'is-portrait' : ''}"><video controls preload="metadata" playsinline><source src="${mediaUrl(study)}" type="video/mp4" /></video></div>
+  </article>`;
+}
 function capabilityRow(index, title, tool, description, output) {
   return `<details class="capability-row" ${index === '01' ? 'open' : ''}><summary><span class="capability-index">${index}</span><span class="capability-title"><strong>${title}</strong><small>${tool}</small></span><span class="capability-description">${description}</span><span class="capability-output">${output}</span><span class="capability-toggle" aria-hidden="true">⌄</span></summary><div class="capability-detail"><span>这一层解决什么</span><p>${description}</p><span>可回查产出</span><p>${output}</p></div></details>`;
 }
@@ -72,6 +79,7 @@ function caseSection(project) {
   const talkStudies = studies.filter(study => study.category === '知识口播');
   const tests = studies.filter(study => study.category !== '知识口播');
   const first = talkStudies[0] || studies[0];
+  const related = talkStudies.filter(study => study.id !== first.id);
   const initialTest = tests[0];
 
   return `<section class="case-section intelligent-showcase" id="case-showcase">
@@ -99,6 +107,8 @@ function caseSection(project) {
     </div>
 
     <div class="proof-strip" id="case-proof">${proofItems(first)}</div>
+
+    ${related.length ? `<section class="related-case-section" aria-label="更多已验证作品"><div class="section-label"><div><div class="eyebrow">VERIFIED CASES</div><h2>正式案例</h2></div><span>不同内容场景，独立保存与回看</span></div>${related.map(relatedCase).join('')}</section>` : ''}
 
     <section class="capability-section" id="capabilities">
       <div class="section-label"><div><div class="eyebrow">PRODUCTION SYSTEM</div><h2>制作能力</h2></div><span>目标明确的自动化生产链</span></div>
