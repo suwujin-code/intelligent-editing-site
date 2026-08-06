@@ -1,0 +1,10 @@
+[0:v]split=4[base][mid_source][card_source][end_source];
+[base]drawbox=x=40:y=1240:w=1000:h=500:color=black@0.84:t=fill:enable='between(t,9.8,17.8)'[mid_cover];
+[mid_source]crop=w=960:h=300:x=60:y=1240,scale=w=1200:h=450:flags=lanczos[mid_zoom];
+[mid_cover][mid_zoom]overlay=x=0:y=1280:format=auto:enable='between(t,9.8,17.8)'[mid_out];
+[mid_out]drawbox=x=40:y=1380:w=1000:h=210:color=black@0.84:t=fill:enable='between(t,19,23)'[card_cover];
+[card_source]crop=w=960:h=120:x=60:y=1370,scale=w=1200:h=180:flags=lanczos[card_zoom];
+[card_cover][card_zoom]overlay=x=0:y=1400:format=auto:enable='between(t,19,23)'[card_out];
+[card_out]drawbox=x=40:y=1120:w=1000:h=300:color=black@0.84:t=fill:enable='between(t,29,33)'[end_cover];
+[end_source]crop=w=960:h=200:x=60:y=1120,scale=w=1200:h=300:flags=lanczos[end_zoom];
+[end_cover][end_zoom]overlay=x=0:y=1280:format=auto:enable='between(t,29,33)'[v]

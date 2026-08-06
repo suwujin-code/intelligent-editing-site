@@ -381,3 +381,77 @@ main{max-width:1320px;padding:32px clamp(22px,5vw,72px) 88px}
   .mobile-bottom-nav{bottom:8px;left:10px;right:10px;padding:5px}
   .mobile-bottom-nav a{padding:9px 4px;font-size:11px}
 }
+
+/* CASE_003 / site typography pass v2.1 — readable at presentation distance. */
+@media(min-width:621px){
+  .intelligent-showcase .eyebrow{font-size:13px}
+  .showcase-intro h1{font-size:clamp(68px,7.2vw,116px)}
+  .showcase-intro p{font-size:clamp(25px,2.45vw,36px)}
+  .showcase-intro>small{font-size:18px}
+  .showcase-method span{font-size:14px}
+  .showcase-method strong{font-size:16px}
+  .featured-work-copy .featured-code{font-size:13px}
+  .featured-work-copy h2{font-size:clamp(36px,3.6vw,56px)}
+  .featured-work-copy p{font-size:16px}
+  .featured-work-copy .featured-role{font-size:13px}
+  .proof-count{font-size:16px}
+  .proof-item strong{font-size:18px}
+  .proof-item small{font-size:13px}
+  .section-label h2{font-size:clamp(38px,4.2vw,64px)}
+  .section-label>span{font-size:13px}
+  .capability-index{font-size:44px}
+  .capability-title strong{font-size:25px}
+  .capability-title small{font-size:13px}
+  .capability-description{font-size:16px}
+  .capability-output{font-size:13px}
+  .capability-detail{font-size:14px}
+  .capability-detail span{font-size:13px}
+  .deliverable-intro{font-size:16px}
+  .case-group-head strong{font-size:18px}
+  .case-group-head small,.case-group-head>span{font-size:13px}
+  .deliverable-main strong{font-size:21px}
+  .deliverable-main small,.deliverable-meta small{font-size:14px}
+  .case-status{font-size:13px}
+  .related-case-copy .eyebrow,.related-case-copy .featured-code{font-size:13px}
+  .related-case-copy h2{font-size:clamp(32px,3vw,45px)}
+  .related-case-copy p{font-size:16px}
+  .related-case-meta{font-size:13px}
+  .test-brief .featured-code{font-size:13px}
+  .test-brief h3{font-size:clamp(38px,3.75vw,56px)}
+  .test-brief>p{font-size:16px}
+  .test-brief dt{font-size:13px}
+  .test-brief dd{font-size:15px}
+  .test-detail-toggle{font-size:13px}
+  .test-details{font-size:14px}
+  .test-details strong{font-size:13px}
+  .test-carousel-bar span{font-size:13px}
+  .test-card-copy strong{font-size:18px}
+  .test-card-copy small{font-size:13px}
+  .test-card-copy .case-status{font-size:12px}
+}
+
+@media(max-width:620px){
+  .intelligent-showcase .eyebrow{font-size:12px}
+  .showcase-intro h1{font-size:50px}
+  .showcase-intro>p{font-size:20px}
+  .showcase-intro>small{font-size:14px}
+  .featured-work-copy .featured-code{font-size:12px}
+  .featured-work-copy h2{font-size:37px}
+  .featured-work-copy p{font-size:17px}
+  .featured-work-copy .featured-role{font-size:12px}
+  .proof-item strong{font-size:18px}
+  .proof-item small{font-size:13px}
+  .capability-section .section-label h2,.test-lab .section-label h2{font-size:32px}
+  .capability-section .section-label>span,.test-lab .section-label>span{font-size:13px}
+  .capability-title strong{font-size:18px}
+  .capability-title small,.capability-description,.capability-output{font-size:13px}
+  .test-brief .featured-code{font-size:13px}
+  .test-brief h3{font-size:34px}
+  .test-brief>p{font-size:17px}
+  .test-brief dt{font-size:13px}
+  .test-brief dd{font-size:15px}
+  .test-details{font-size:15px}
+  .test-card-copy strong{font-size:17px}
+  .test-card-copy small{font-size:13px}
+  .test-card-copy .case-status{font-size:12px}
+}

@@ -1,0 +1,39 @@
+{
+  "entry_id": "AUTO-CASE-003-WATERPROOFING",
+  "title": "卫生间防水验收｜Xiaoxi 字幕放大版",
+  "category": "装修口播/视频案例",
+  "parent_entry": "装修项目 / 02_剪辑师智能体｜EDITOR AGENT",
+  "status": "READY_FOR_REVIEW",
+  "current_media": {
+    "title": "CASE_003_卫生间防水验收_Xiaoxi_字幕放大_v2.1.mp4",
+    "drive_file_id": "1XVfEdttoQsKjuOKkpLOMeAWyXhoQAQ4P",
+    "duration_seconds": 33.0,
+    "voice": "ElevenLabs_Xiaoxi（年轻友好女）",
+    "caption_revision": "原字幕局部放大，垂直 1.5 倍，保持原时间轴"
+  },
+  "preserved_history": [
+    {
+      "title": "CASE_003_卫生间防水验收_晓曼有声终版.mp4",
+      "drive_file_id": "1UScMsgYhrJhTBertIFOibkD_S8rmoGFP",
+      "status": "HISTORICAL_VERSION",
+      "voice": "主播_知性口播女声_晓曼"
+    },
+    {
+      "title": "CASE_003_卫生间防水验收_Xiaoxi有声网页.mp4",
+      "status": "PREVIOUS_WEB_VERSION",
+      "voice": "ElevenLabs_Xiaoxi（年轻友好女）"
+    }
+  ],
+  "engineering": {
+    "subtitle_filter": "CASE_003_Xiaoxi_V21_字幕放大滤镜.txt",
+    "handoff_note": "CASE_003_Xiaoxi_V21_字幕放大工程说明.md",
+    "site_asset": "assets/cases/CASE_003_卫生间防水验收_Xiaoxi_字幕放大_v2.1.mp4"
+  },
+  "qa": [
+    "video 1080x1920 / 9:16",
+    "audio track present / 48kHz stereo",
+    "duration 33.002 seconds",
+    "original Xiaoxi audio and caption timing retained",
+    "legacy Xiaoman and previous Xiaoxi versions preserved"
+  ]
+}
