@@ -136,10 +136,10 @@ function caseSection(project) {
               <div><dt>输入 / 输出</dt><dd id="test-source">${initialTest.source}</dd></div>
               <div><dt>验证状态</dt><dd><em class="case-status ${initialTest.statusClass}" id="test-status">${initialTest.status}</em></dd></div>
             </dl>
-            <details class="test-details-disclosure">
-              <summary>主要解释 <span aria-hidden="true">↓</span></summary>
-              <div class="test-details" id="test-details"><strong>本轮判断</strong><p id="test-detail-copy">${initialTest.note} 这是一条可回放的剪辑验证记录，不作为对外成篇案例陈列。</p></div>
-            </details>
+            <div class="test-details-disclosure">
+              <button type="button" class="test-details-toggle" aria-expanded="false">主要解释 <span aria-hidden="true">↓</span></button>
+              <div class="test-details" id="test-details" hidden><strong>本轮判断</strong><p id="test-detail-copy">${initialTest.note} 这是一条可回放的剪辑验证记录，不作为对外成篇案例陈列。</p></div>
+            </div>
           </div>
         </aside>
       </div>
@@ -192,7 +192,14 @@ function render() {
   document.querySelector('[data-test-next]')?.addEventListener('click', () => setTest(testCards[(testIndex + 1) % testCards.length].dataset.test));
   document.querySelector('[data-test-brief-toggle]')?.addEventListener('click', event => { const brief = event.currentTarget.closest('.test-brief'); const open = !brief.classList.contains('details-open'); brief.classList.toggle('details-open', open); event.currentTarget.setAttribute('aria-expanded', String(open)); event.currentTarget.innerHTML = `${open ? '收起测试说明' : '展开测试说明'} <span>${open ? '↑' : '↓'}</span>`; });
   const detailsDisclosure = document.querySelector('.test-details-disclosure');
-  detailsDisclosure?.querySelector('summary')?.addEventListener('click', event => { event.preventDefault(); detailsDisclosure.open = !detailsDisclosure.open; });
+  const detailsToggle = detailsDisclosure?.querySelector('.test-details-toggle');
+  const detailsPanel = detailsDisclosure?.querySelector('#test-details');
+  detailsToggle?.addEventListener('click', () => {
+    const open = detailsToggle.getAttribute('aria-expanded') !== 'true';
+    detailsToggle.setAttribute('aria-expanded', String(open));
+    detailsPanel.hidden = !open;
+    detailsDisclosure.classList.toggle('is-open', open);
+  });
   document.querySelectorAll('.topbar nav button').forEach(element => element.classList.toggle('active', (element.dataset.nav || element.dataset.route) === active));
   root.focus();
 }
