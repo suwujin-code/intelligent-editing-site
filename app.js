@@ -13,8 +13,8 @@ const projects = {
 
 const caseMediaRoot = 'https://preview.oing.xin/preview/ai-video-edit-case/';
 const caseStudies = {
-  host001: { id: 'host001', code: 'HOST-001 / EDITOR AGENT', title: '知澜｜V10 字幕包装样片', source: '9:16 · 9 秒', aspect: 'portrait', status: '已验收', statusClass: 'verified', video: 'assets/cases/HOST-001_知澜_V10_字幕包装样片.mp4', note: 'AI 主播「知澜」的 V10 字幕包装终版：顶部主题、两侧关键词与中下方口播字幕分层工作，人物中部安全区保持干净。', tags: ['AI口播', 'V10字幕包装', '人物安全区'], category: '知识口播', outcome: '主播口播 + 语义动效', role: '字幕导演', proof: ['9 秒', '中文口播', 'V10 字幕包装', '人物安全区', '已验收'] },
-  waterproofing: { id: 'waterproofing', code: 'CASE_003 / TALKING HEAD', title: '卫生间防水验收｜Xiaoxi 字幕放大版', source: '9:16 · 33 秒 · V2.1', aspect: 'portrait', status: '已验证', statusClass: 'verified', video: 'assets/cases/CASE_003_卫生间防水验收_Xiaoxi_字幕放大_v2.1.mp4', note: '恢复为 ElevenLabs_Xiaoxi（年轻友好女）配音，并在不改变原音轨与字幕时间轴的前提下，把原口播字幕与辅助字幕放大到 1.5 倍以上；晓曼终版保留在装修项目归档中。', tags: ['知识口播', '字幕放大 1.5×', 'Xiaoxi 配音'], category: '知识口播', outcome: '口播 + 字幕', role: '字幕导演', proof: ['33 秒', '中文口播', '字幕放大 1.5×', '人物安全区', 'Xiaoxi 配音'] },
+  host001: { id: 'host001', code: 'HOST-001 / EDITOR AGENT', title: '知澜｜V10 字幕精修横屏开场', source: '16:9 · 9 秒 · V10', aspect: 'landscape', status: '已验收', statusClass: 'verified', video: 'assets/cases/HOST-001_Zhilan_V10_9s_landscape.mp4', note: '主页首屏横屏展示版：使用知澜 V10 字幕精修开场，先展示真实成片，再进入案例与剪辑系统说明。旧竖屏包装样片继续保留在历史资产中。', tags: ['AI口播', 'V10字幕精修', '横屏首屏'], category: '知识口播', outcome: '主播口播 + 语义动效', role: '字幕导演', proof: ['9 秒', '中文口播', 'V10 字幕精修', '横屏展示', '已验收'] },
+  waterproofing: { id: 'waterproofing', code: 'CASE_003 / TALKING HEAD', title: '卫生间防水验收｜晓曼字幕放大版', source: '9:16 · 33 秒 · V2.2', aspect: 'portrait', status: '已验证', statusClass: 'verified', video: 'assets/cases/CASE_003_卫生间防水验收_晓曼_字幕放大_v2.2.mp4', note: '恢复为 VoxCraft / 声刻「主播_知性口播女声_晓曼」配音；沿用字幕放大版画面并替换为已对齐的晓曼音轨，字幕时间轴与 1.5 倍放大处理保持不变。Xiaoxi 版本保留在装修项目归档中。', tags: ['知识口播', '字幕放大 1.5×', '晓曼配音'], category: '知识口播', outcome: '口播 + 字幕', role: '字幕导演', proof: ['33 秒', '中文口播', '字幕放大 1.5×', '人物安全区', '晓曼配音'] },
   sony: { id: 'sony', code: 'TEST_004 / SONY', title: 'Sony · 光影—手艺—技术', source: '168.69 秒 → 32.52 秒', aspect: 'landscape', status: '条件验收', statusClass: 'conditional', video: 'media/sony-recut-subtitled.mp4', note: '保留连续声音骨架，以少量关键镜头完成叙事压缩。', testGoal: '验证高压缩下，声音能否仍承担叙事主线。', testMethod: '以 J/L-cut 保留连续声音，再以关键镜头补足信息节点。', tags: ['品牌叙事', 'J/L-cut', '声音骨架'], category: '品牌叙事', outcome: '品牌片 / 技术', role: '剪辑师', proof: ['32 秒', '声音骨架', '镜头压缩', '条件验收'] },
   ebay: { id: 'ebay', code: 'TEST_001 / EBAY', title: 'eBay · Reality to Proof', source: '60.12 秒 → 22.3 秒', aspect: 'landscape', status: '本地解码通过', statusClass: 'verified', video: 'media/works/EBAY_REALITY_TO_PROOF_v0.1.mp4', note: '高速虚假信息进入运动归零，再落到可信鉴定证明。', testGoal: '测试「混乱信息 → 可信证明」的广告节奏转折。', testMethod: '先高速叠加制造不确定感，再用运动归零与证明镜头完成落点。', tags: ['广告节奏', '运动归零', '证明落点'], category: '广告节奏', outcome: '产品说明 / 教程', role: '剪辑师', proof: ['22 秒', '运动归零', '证明落点', '已验证'] },
   congee: { id: 'congee', code: 'TEST_002 / CONGEE TVC', title: '粥 TVC · 三速呼吸', source: '159.04 秒 → 43 秒', aspect: 'landscape', status: '本地解码通过', statusClass: 'verified', video: 'media/works/CONGEE_THREE_SPEED_v0.1.mp4', note: '把田野呼吸、食材爆发与情感锚点交替编排。', testGoal: '验证食品广告能否同时保留呼吸感、食欲与情绪锚点。', testMethod: '慢速氛围、中速叙事、快速食材动作三段交替，动作优先切换。', tags: ['广告节奏', '三速节奏', '动作优先'], category: '广告节奏', outcome: '广告 / 食品', role: '剪辑师', proof: ['43 秒', '三速节奏', '动作优先', '已验证'] },
@@ -136,11 +136,13 @@ function caseSection(project) {
               <div><dt>输入 / 输出</dt><dd id="test-source">${initialTest.source}</dd></div>
               <div><dt>验证状态</dt><dd><em class="case-status ${initialTest.statusClass}" id="test-status">${initialTest.status}</em></dd></div>
             </dl>
-            <button class="test-detail-toggle" type="button" data-test-detail aria-expanded="false">展开测试详情 <span>↓</span></button>
+            <details class="test-details-disclosure">
+              <summary>主要解释 <span aria-hidden="true">↓</span></summary>
+              <div class="test-details" id="test-details"><strong>本轮判断</strong><p id="test-detail-copy">${initialTest.note} 这是一条可回放的剪辑验证记录，不作为对外成篇案例陈列。</p></div>
+            </details>
           </div>
         </aside>
       </div>
-      <div class="test-details" id="test-details" hidden><strong>本轮判断</strong><p id="test-detail-copy">${initialTest.note} 这是一条可回放的剪辑验证记录，不作为对外成篇案例陈列。</p></div>
       <div class="test-carousel-bar"><button type="button" data-test-prev aria-label="上一个测试">←</button><span id="test-counter">01 / ${String(tests.length).padStart(2, '0')}</span><button type="button" data-test-next aria-label="下一个测试">→</button></div>
       <div class="test-track" aria-label="剪辑测试列表">${tests.map(testCard).join('')}</div>
     </section>
@@ -189,7 +191,6 @@ function render() {
   document.querySelector('[data-test-prev]')?.addEventListener('click', () => setTest(testCards[(testIndex - 1 + testCards.length) % testCards.length].dataset.test));
   document.querySelector('[data-test-next]')?.addEventListener('click', () => setTest(testCards[(testIndex + 1) % testCards.length].dataset.test));
   document.querySelector('[data-test-brief-toggle]')?.addEventListener('click', event => { const brief = event.currentTarget.closest('.test-brief'); const open = !brief.classList.contains('details-open'); brief.classList.toggle('details-open', open); event.currentTarget.setAttribute('aria-expanded', String(open)); event.currentTarget.innerHTML = `${open ? '收起测试说明' : '展开测试说明'} <span>${open ? '↑' : '↓'}</span>`; });
-  document.querySelector('[data-test-detail]')?.addEventListener('click', event => { const details = document.querySelector('#test-details'); const open = details.hasAttribute('hidden'); details.toggleAttribute('hidden', !open); event.currentTarget.setAttribute('aria-expanded', String(open)); event.currentTarget.innerHTML = `${open ? '收起测试详情' : '展开测试详情'} <span>${open ? '↑' : '↓'}</span>`; });
   document.querySelectorAll('.topbar nav button').forEach(element => element.classList.toggle('active', (element.dataset.nav || element.dataset.route) === active));
   root.focus();
 }

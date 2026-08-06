@@ -1,0 +1,20 @@
+{
+  "entry_id": "AUTO-CASE-003-WATERPROOFING",
+  "title": "卫生间防水验收｜晓曼字幕放大版",
+  "version": "v2.2",
+  "category": "装修口播/视频案例",
+  "status": "READY_FOR_REVIEW",
+  "current_media": {
+    "title": "CASE_003_卫生间防水验收_晓曼_字幕放大_v2.2.mp4",
+    "drive_file_id": "10sRcTP0vDK7mZtBp_lHvaDOsZZAjuD8f",
+    "duration_seconds": 32.995,
+    "voice": "主播_知性口播女声_晓曼",
+    "caption_revision": "沿用字幕放大 v2.1，替换为对齐晓曼音轨"
+  },
+  "preserved_history": [
+    {"title": "CASE_003_卫生间防水验收_Xiaoxi_字幕放大_v2.1.mp4", "drive_file_id": "1XVfEdttoQsKjuOKkpLOMeAWyXhoQAQ4P", "voice": "ElevenLabs_Xiaoxi（年轻友好女）"},
+    {"title": "CASE_003_卫生间防水验收_晓曼有声终版.mp4", "drive_file_id": "1UScMsgYhrJhTBertIFOibkD_S8rmoGFP", "voice": "主播_知性口播女声_晓曼"}
+  ],
+  "site_asset": "assets/cases/CASE_003_卫生间防水验收_晓曼_字幕放大_v2.2.mp4",
+  "qa": ["video 1080x1920 / 9:16", "audio track present / AAC 48kHz stereo", "duration 32.995 seconds", "subtitle enlargement retained"]
+}
