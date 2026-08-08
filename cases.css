@@ -467,3 +467,15 @@ main{max-width:1320px;padding:32px clamp(22px,5vw,72px) 88px}
   .test-card-copy small{font-size:13px}
   .test-card-copy .case-status{font-size:12px}
 }
+
+
+/* VID-AE-CAP-001 — reusable capability proof index */
+.reuse-section{border-top:1px solid var(--line);padding-top:30px;margin:0 0 82px}
+.reuse-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.reuse-card{background:#eaf4c9;border:1px solid #d3dfaa;border-radius:12px;padding:18px;min-height:118px}
+.reuse-card small,.reuse-card span{display:block;color:var(--muted);font:500 10px 'DM Mono';line-height:1.55}
+.reuse-card strong{display:block;font:500 15px 'DM Mono';margin:9px 0 12px;word-break:break-word}
+.reuse-note{max-width:820px;color:var(--muted);font-size:14px;line-height:1.9;margin:20px 0}
+.reuse-actions{display:flex;flex-wrap:wrap;gap:10px}
+.reuse-privacy{max-width:820px;color:var(--muted);font:500 11px 'DM Mono';line-height:1.7;margin-top:16px}
+@media(max-width:700px){.reuse-grid{grid-template-columns:1fr}.reuse-card{min-height:0}.reuse-note{font-size:13px}}
