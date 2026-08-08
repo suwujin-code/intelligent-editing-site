@@ -7,12 +7,13 @@ const categories = {
 };
 
 const projects = {
-  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 9 个案例', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，测试负责验证方法。', items: ['asr', 'audio'], cases: ['host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
+  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 10 个案例', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，测试负责验证方法。', items: ['asr', 'audio'], cases: ['host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling', 'capabilityProof'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
   'photography-workflow': { id: 'photography-workflow', name: '摄影获客工作流', kicker: 'PHOTOGRAPHY / LEAD FLOW', status: '本地应用待公开', description: '把摄影服务、公开线索研究和人工跟进整理在一个可审计的本地工作流中。公开服务入口仍在整理。', items: ['photography-app', 'photography-service'] }
 };
 
 const caseMediaRoot = 'https://preview.oing.xin/preview/ai-video-edit-case/';
 const caseStudies = {
+  capabilityProof: { id: 'capabilityProof', code: 'VID-AE-CAP-001 / CAPABILITY PROOF', internalCode: 'VID-AE-CAP-001', skillCode: 'SKILL-EDIT-RHYTHM-CASE-WALL-001', workflowCode: 'WF-AUTOEDIT-CASE-WALL-001', cloudName: 'VID-AE-CAP-001｜导演系统能力证明片｜案例墙·节奏分轨｜v1', title: '导演系统能力证明片｜案例墙·节奏分轨', source: '9:16 · 177 秒 · 三音轨', aspect: 'portrait', status: '已验证', statusClass: 'verified', video: 'https://drive.google.com/uc?export=download&id=1PUbP86auDjw-TQff4-suxOU1lG6W4rzp', previewUrl: 'https://drive.google.com/file/d/1PUbP86auDjw-TQff4-suxOU1lG6W4rzp/view?usp=drivesdk', masterUrl: 'https://drive.google.com/file/d/1PUbP86auDjw-TQff4-suxOU1lG6W4rzp/view?usp=drivesdk', driveFolderUrl: 'https://drive.google.com/drive/folders/1z8YB3G3pphph6L_rkQrqZXbHxabeBqoU', note: '完整的导演能力证明：真实案例墙、口播主线、信息层级与音乐节奏分轨都可以回查。', testGoal: '验证主时间线、B-roll、字幕时间码和独立音轨能否组成一条可复用的完整生产链。', testMethod: '先定一条主张，再生成配音并用真实时间码生成字幕；B-roll 按句意进入，VO、Music、Mix 保持独立。', tags: ['能力证明', '案例墙', '节奏控制'], category: '能力证明', outcome: '主时间线 + B-roll', role: '导演 + 编辑', proof: ['177 秒', '3 类案例', 'VO / Music 分轨', '16 条对齐字幕', 'HyperFrames QA'], reuse: '换内容时只替换口播、B-roll 和配乐；先配音，再由时间码生成字幕。固定保留标题 / 旁白 / 信息动画三层，音乐不能混入说话声。', reuseReady: true },
   host001: { id: 'host001', code: 'HOST-001 / EDITOR AGENT', title: '知澜｜V10 字幕精修横屏开场', source: '16:9 · 9 秒 · V10', aspect: 'landscape', status: '已验收', statusClass: 'verified', video: 'assets/cases/HOST-001_Zhilan_V10_9s_landscape.mp4', note: '主页首屏横屏展示版：使用知澜 V10 字幕精修开场，先展示真实成片，再进入案例与剪辑系统说明。旧竖屏包装样片继续保留在历史资产中。', tags: ['AI口播', 'V10字幕精修', '横屏首屏'], category: '知识口播', outcome: '主播口播 + 语义动效', role: '字幕导演', proof: ['9 秒', '中文口播', 'V10 字幕精修', '横屏展示', '已验收'] },
   waterproofing: { id: 'waterproofing', code: 'CASE_003 / TALKING HEAD', title: '卫生间防水验收｜知性晓曼·字幕真实 1.5×', source: '9:16 · 33 秒 · V3.0', aspect: 'portrait', status: '已验收', statusClass: 'verified', video: 'assets/cases/CASE_003_卫生间防水验收_知性晓曼_真实字幕1.5x_v3.0.mp4', note: 'V3 使用知性晓曼归档主音轨；正文字幕以 Source Han Sans SC VF 重新烧录，基准字号 56 px → 84 px（真实 1.5×）。上方与中部留作后续人物口播安全区；旧 Xiaoxi 与 V2.2 均保留归档。', tags: ['知识口播', '正文字幕 1.5×', '知性晓曼'], category: '知识口播', outcome: '口播 + 字幕', role: '字幕导演', proof: ['33 秒', '中文口播', '84 px / 1.5×', '人物安全区', '知性晓曼'] },
   sony: { id: 'sony', code: 'TEST_004 / SONY', title: 'Sony · 光影—手艺—技术', source: '168.69 秒 → 32.52 秒', aspect: 'landscape', status: '条件验收', statusClass: 'conditional', video: 'media/sony-recut-subtitled.mp4', note: '保留连续声音骨架，以少量关键镜头完成叙事压缩。', testGoal: '验证高压缩下，声音能否仍承担叙事主线。', testMethod: '以 J/L-cut 保留连续声音，再以关键镜头补足信息节点。', tags: ['品牌叙事', 'J/L-cut', '声音骨架'], category: '品牌叙事', outcome: '品牌片 / 技术', role: '剪辑师', proof: ['32 秒', '声音骨架', '镜头压缩', '条件验收'] },
@@ -74,6 +75,9 @@ function relatedCase(study) {
 function capabilityRow(index, title, tool, description, output) {
   return `<details class="capability-row" ${index === '01' ? 'open' : ''}><summary><span class="capability-index">${index}</span><span class="capability-title"><strong>${title}</strong><small>${tool}</small></span><span class="capability-description">${description}</span><span class="capability-output">${output}</span><span class="capability-toggle" aria-hidden="true">⌄</span></summary><div class="capability-detail"><span>这一层解决什么</span><p>${description}</p><span>可回查产出</span><p>${output}</p></div></details>`;
 }
+function reuseSection(study) {
+  return `<section class="reuse-section" id="reuse-contract"><div class="section-label"><div><div class="eyebrow">REUSE CONTRACT</div><h2>如何复用这条样片</h2></div><span>案例、技能、工程三者绑定</span></div><div class="reuse-grid"><div class="reuse-card"><small>案例编码</small><strong>${study.internalCode}</strong><span>${study.cloudName}</span></div><div class="reuse-card"><small>技能编码</small><strong>${study.skillCode}</strong><span>字幕时间码 + 三音轨</span></div><div class="reuse-card"><small>工程编码</small><strong>${study.workflowCode}</strong><span>主线 / B-roll / 验收</span></div></div><p class="reuse-note">${study.reuse}</p><div class="reuse-actions"><a class="cta" href="${study.masterUrl}" target="_blank" rel="noopener">打开样片 ↗</a><a class="cta secondary" href="${study.driveFolderUrl}" target="_blank" rel="noopener">打开云盘工程 ↗</a></div><div class="reuse-privacy">页面展示方法与索引；原始工程、分轨音频和内部技能文件保存在云盘，不作为公开源码资产。</div></section>`;
+}
 function caseSection(project) {
   const studies = project.cases.map(id => caseStudies[id]).filter(Boolean);
   const talkStudies = studies.filter(study => study.category === '知识口播');
@@ -81,6 +85,7 @@ function caseSection(project) {
   const first = talkStudies[0] || studies[0];
   const related = talkStudies.filter(study => study.id !== first.id);
   const initialTest = tests[0];
+  const capabilityProof = studies.find(study => study.id === 'capabilityProof');
 
   return `<section class="case-section intelligent-showcase" id="case-showcase">
     <div class="showcase-hero" id="overview">
@@ -146,6 +151,7 @@ function caseSection(project) {
       <div class="test-carousel-bar"><button type="button" data-test-prev aria-label="上一个测试">←</button><span id="test-counter">01 / ${String(tests.length).padStart(2, '0')}</span><button type="button" data-test-next aria-label="下一个测试">→</button></div>
       <div class="test-track" aria-label="剪辑测试列表">${tests.map(testCard).join('')}</div>
     </section>
+    ${capabilityProof ? reuseSection(capabilityProof) : ''}
   </section>`;
 }
 function home() { const publicSoftware = Object.values(items).filter(item => item.type === 'software'); return `<section class="hero-grid"><div><div class="eyebrow">APPLICATION CENTER / 01</div><h1>按分类找，<em>按项目用。</em></h1><p class="intro">这里是我们的产品入口：可以下载的软件、可以直接使用的应用，以及面向客户的服务。分类从主页开始，进入具体项目后，还能看到属于这个项目的全部产品。</p><div class="hero-actions"><button class="cta" data-route="category/software">浏览软件 ↗</button><button class="cta secondary" data-route="project/intelligent-editing">查看智能剪辑项目</button></div></div><div class="hero-art"><span class="art-label">SOFTWARE / APPS / SERVICES</span><div class="signal">${Array.from({length: 34}, (_, i) => `<span style="height:${25 + ((i * 31) % 75)}%"></span>`).join('')}</div></div></section><section class="axis-section"><div class="section-head"><div><div class="eyebrow">按分类</div><h2>先找到你要的形态</h2></div><span>三种入口</span></div><div class="axis-grid">${Object.keys(categories).map(categoryCard).join('')}</div></section><section><div class="section-head"><div><div class="eyebrow">按项目</div><h2>从项目进入产品</h2></div><span>${Object.keys(projects).length} 个项目</span></div><div class="project-grid">${Object.values(projects).map(projectCard).join('')}</div></section><section><div class="section-head"><div><div class="eyebrow">软件 / 已公开</div><h2>智能剪辑的两款软件</h2></div><button class="text-link" data-route="project/intelligent-editing">进入项目页 ↗</button></div><section class="cards">${publicSoftware.map(itemCard).join('')}</section></section>`; }
