@@ -7,7 +7,7 @@ const categories = {
 };
 
 const projects = {
-  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 10 个案例', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，测试负责验证方法。', items: ['asr', 'audio'], cases: ['host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling', 'capabilityProof'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
+  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 10 个案例', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，测试负责验证方法。', items: ['asr', 'audio'], cases: ['capabilityProof', 'host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
   'photography-workflow': { id: 'photography-workflow', name: '摄影获客工作流', kicker: 'PHOTOGRAPHY / LEAD FLOW', status: '本地应用待公开', description: '把摄影服务、公开线索研究和人工跟进整理在一个可审计的本地工作流中。公开服务入口仍在整理。', items: ['photography-app', 'photography-service'] }
 };
 
@@ -80,12 +80,12 @@ function reuseSection(study) {
 }
 function caseSection(project) {
   const studies = project.cases.map(id => caseStudies[id]).filter(Boolean);
+  const capabilityProof = studies.find(study => study.id === 'capabilityProof');
   const talkStudies = studies.filter(study => study.category === '知识口播');
-  const tests = studies.filter(study => study.category !== '知识口播');
-  const first = talkStudies[0] || studies[0];
+  const tests = studies.filter(study => study.category !== '知识口播' && study.id !== 'capabilityProof');
+  const first = capabilityProof || talkStudies[0] || studies[0];
   const related = talkStudies.filter(study => study.id !== first.id);
   const initialTest = tests[0];
-  const capabilityProof = studies.find(study => study.id === 'capabilityProof');
 
   return `<section class="case-section intelligent-showcase" id="case-showcase">
     <div class="showcase-hero" id="overview">
