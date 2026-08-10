@@ -1,0 +1,39 @@
+{
+  "ingest_version": "SOURCE-INGEST-1.0.0",
+  "case_id": "AHA-CREATOR-3",
+  "expected_source": {
+    "title": "AhaCreator 3.0 发布！AI 海外达人营销员工 [6a1dd804000000003502aee9].mp4",
+    "drive_folder_id": "1bgFcMHFvFJHtuA4TrFLZS0lmL1CJY6cI",
+    "drive_file_id": null,
+    "sha256": null,
+    "probe": null
+  },
+  "status": "WAITING_DRIVE_CONNECTOR_SYNC",
+  "do_not_infer": [
+    "fps",
+    "resolution",
+    "exact_duration",
+    "shot_boundaries",
+    "motion_curves",
+    "font measurements",
+    "audio transient positions"
+  ],
+  "on_source_ready": [
+    "read source metadata",
+    "fetch raw MP4",
+    "compute SHA-256",
+    "ffprobe media facts",
+    "establish CFR analysis timebase if needed",
+    "extract audio tracks",
+    "detect candidate shot boundaries",
+    "generate high-frequency keyframes",
+    "perform human/director boundary QA",
+    "measure typography and motion events",
+    "perform music/SFX semantic listening QA",
+    "emit case.machine.json",
+    "emit timeline.events.ndjson",
+    "emit shots.csv",
+    "emit public.breakdown.json",
+    "render public storyboard page"
+  ]
+}
