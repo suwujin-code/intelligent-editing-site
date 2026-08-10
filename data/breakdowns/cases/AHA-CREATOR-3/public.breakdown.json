@@ -4,58 +4,74 @@
   "slug": "aha-creator-3",
   "title": "AhaCreator 3.0｜AI 海外达人营销员工",
   "kicker": "DIRECTOR BREAKDOWN / MOTION DESIGN",
-  "status": "ANALYSIS_IN_PROGRESS",
-  "status_label": "母版同步中 · 深度拉片已立项",
+  "status": "SOURCE_CONFIRMED_ANALYSIS_V0_2",
+  "status_label": "源片已确认 · 深度拉片 v0.2",
   "metadata": {
-    "duration": "待母版 ffprobe",
-    "fps": "待母版 ffprobe",
-    "resolution": "待母版 ffprobe",
+    "duration": "92.01s",
+    "fps": "30/1",
+    "resolution": "720×1280",
     "format": "产品发布片 / SaaS Launch Film",
     "priority": "动画 > 排版 > 创意转译 > 审美 > 剪辑节奏 > 声音 > 叙事"
   },
-  "one_line_judgement": "这支片最值得学习的不是一套渐变视觉，而是如何把抽象的软件能力变成可观看、可记忆、可证明的动态图形语言。",
-  "intro": "本案例以 1:1 技术复刻为目标。分析不会停在“像什么风格”，而会把 UI 卡片、标题、证明数字、页面空间、转场、声音与语义全部放进同一帧时间线：先逐帧重建，再通过 A/B 差分确认时码、构图、运动和声音，最后才把验证后的规律沉淀为 Cinema DNA。",
+  "one_line_judgement": "它真正高级的地方不是“特效多”，而是把抽象的软件能力变成可观看的工作关系：人做判断，AI跑执行；数字、UI、卡片和运动共同组成证据链。",
+  "intro": "本页来自 Google Drive 原始 MP4 的真实取证：92.01 秒、720×1280、30fps。内部已完成 20 个视觉运动单元的分镜表；公开页先展示 6 个最具教学价值的关键分镜，并同步整片结构、Motion Anatomy、声音地图与可迁移 DNA。",
   "why_learn": [
-    {
-      "index": "01",
-      "title": "Motion Design",
-      "body": "重点测量 Position / Scale / Opacity / Blur / Mask / 2.5D / Easing / Overshoot / Stagger。动画必须能被重建，而不是用“高级、丝滑”描述。"
-    },
-    {
-      "index": "02",
-      "title": "Typography & Layout",
-      "body": "区分叙事标题、证明数字、UI 证据、字幕与标签，研究它们在信息密度很高时为什么仍然有清晰层级。"
-    },
-    {
-      "index": "03",
-      "title": "Motion-to-Meaning",
-      "body": "研究每个动作在解释什么：规模、自动化、速度、可信度、流程推进都应有对应的视觉动作，而不是为了炫技。"
-    },
-    {
-      "index": "04",
-      "title": "Sound & Rhythm",
-      "body": "把 VO、Music、Beat、Onset、Whoosh、Hit、Click、Riser 与 Cut / 动画事件放在同一时间线上，理解速度感到底由什么驱动。"
-    }
+    {"index":"01","title":"Motion-to-Meaning","body":"每种运动都在解释概念：规模=扩张/连续流，判断=运动归零，自动化=状态推进，保障=计数到100%。"},
+    {"index":"02","title":"UI as Actor","body":"UI卡片、表格、进度、审核框不是录屏背景，而是直接承担镜头动作与证据。"},
+    {"index":"03","title":"Density Reset","body":"密集UI后立即白场和短句，主动清空认知缓存，解决高信息密度疲劳。"},
+    {"index":"04","title":"Proof Ladder","body":"500+合作→300+品牌→500万/8万网络→专家判断→1000稿2分钟→100%保障，证据逐级升级。"}
   ],
   "tracks": [
-    {"id": "V0_SHOT", "label": "镜头边界"},
-    {"id": "V1_SUBJECT_UI", "label": "人物 / 产品 / UI"},
-    {"id": "V2_TYPOGRAPHY", "label": "标题 / 数字 / 字幕"},
-    {"id": "V3_MOTION_GRAPHICS", "label": "图形 / 2.5D / 遮罩"},
-    {"id": "S0_SEMANTIC", "label": "语义 / 证明"},
-    {"id": "A0_VO", "label": "旁白"},
-    {"id": "A1_MUSIC", "label": "音乐"},
-    {"id": "A2_SFX", "label": "设计音效"},
-    {"id": "D0_DECISION", "label": "导演判断"}
+    {"id":"V0_SHOT","label":"视觉运动单元"},{"id":"V1_SUBJECT_UI","label":"UI / UGC / Logo"},{"id":"V2_TYPOGRAPHY","label":"标题 / 数字 / 标签"},{"id":"V3_MOTION_GRAPHICS","label":"渐变 / 卡片 / 形变 / 透视"},{"id":"S0_SEMANTIC","label":"语义 / 证明"},{"id":"A0_VO","label":"旁白"},{"id":"A1_MUSIC","label":"音乐 ≈119.7 BPM"},{"id":"A2_SFX","label":"瞬态 / Whoosh / Hit"},{"id":"D0_DECISION","label":"导演判断"}
   ],
-  "sections": [],
-  "storyboard": [],
-  "patterns": [],
-  "gates": {
-    "source_master": "WAITING_DRIVE_CONNECTOR_SYNC",
-    "frame_analysis": "BLOCKED_BY_SOURCE_MASTER",
-    "audio_semantic_qa": "PENDING",
-    "public_display_gate": "PENDING_RIGHTS_REVIEW"
-  },
-  "notice": "当前页面只发布已验证的研究框架与预分析，不伪造母版镜头时码、关键帧或 Motion 参数。母版取得后将自动补齐完整分镜表、Motion Anatomy、Sound Map 与可复用 DNA。"
+  "sections": [
+    {"section_id":"SEC-A","title":"旧方法：手动达人营销","start_frame":0,"end_frame":235,"start_s":0.0,"end_s":7.833,"in_tc":"00:00:00:00","out_tc":"00:00:07:25","director_function":"让观众先承认旧流程仍然依赖人手工，建立痛点。","content":"复古实物+静态问题→UI杂乱累积。","sound_energy":"中"},
+    {"section_id":"SEC-B","title":"范式切换：1个人+AI","start_frame":235,"end_frame":468,"start_s":7.833,"end_s":15.6,"in_tc":"00:00:07:25","out_tc":"00:00:15:18","director_function":"把‘AI工具’升级为‘AI员工’，用500+合作证明效率。","content":"品牌几何扩张→极简人+AI→渐变网格和数字。","sound_energy":"高"},
+    {"section_id":"SEC-C","title":"身份与信任","start_frame":468,"end_frame":845,"start_s":15.6,"end_s":28.167,"in_tc":"00:00:15:18","out_tc":"00:00:28:05","director_function":"给AI员工命名，并用300+品牌、口碑卡建立可信度。","content":"白底呼吸→品牌卡计数→口碑卡墙→问题重置。","sound_energy":"中高"},
+    {"section_id":"SEC-D","title":"达人规模证明","start_frame":845,"end_frame":1086,"start_s":28.167,"end_s":36.2,"in_tc":"00:00:28:05","out_tc":"00:00:36:06","director_function":"证明供给侧规模：达人很多，而且可持续流动。","content":"3D/弧形UGC卡片长队+大数字。","sound_energy":"高"},
+    {"section_id":"SEC-E","title":"人做判断，AI做执行","start_frame":1086,"end_frame":1263,"start_s":36.2,"end_s":42.1,"in_tc":"00:00:36:06","out_tc":"00:00:42:03","director_function":"明确人机分工：人保留判断权，AI跑完后续。","content":"运动归零→你/判断→执行UI逐层出现。","sound_energy":"中"},
+    {"section_id":"SEC-F","title":"判断力证明","start_frame":1263,"end_frame":1523,"start_s":42.1,"end_s":50.767,"in_tc":"00:00:42:03","out_tc":"00:00:50:23","director_function":"用真人专家信用和多模态分析UI证明AI判断不是标签筛选。","content":"社媒截图→真实分析页面→重点框。","sound_energy":"高"},
+    {"section_id":"SEC-G","title":"供给与覆盖","start_frame":1523,"end_frame":1760,"start_s":50.767,"end_s":58.667,"in_tc":"00:00:50:23","out_tc":"00:00:58:20","director_function":"8万活跃+500万网络，把‘可用库存’和‘覆盖规模’区分开。","content":"卡片栈→UGC马赛克→Logo收缩。","sound_energy":"高"},
+    {"section_id":"SEC-H","title":"流程自动化","start_frame":1760,"end_frame":2018,"start_s":58.667,"end_s":67.267,"in_tc":"00:00:58:20","out_tc":"00:01:07:08","director_function":"展示进度追踪、自动提醒、状态变化。","content":"圆形Logo→胶囊Morph→双UI时间线。","sound_energy":"中"},
+    {"section_id":"SEC-I","title":"效率与保障","start_frame":2018,"end_frame":2349,"start_s":67.267,"end_s":78.3,"in_tc":"00:01:07:08","out_tc":"00:01:18:09","director_function":"用1000稿件2分钟审核、合作保障补齐执行和风险证明。","content":"规模拼贴→审核细节→保障卡计数。","sound_energy":"高"},
+    {"section_id":"SEC-J","title":"价值观与CTA","start_frame":2349,"end_frame":2760,"start_s":78.3,"end_s":92.0,"in_tc":"00:01:18:09","out_tc":"00:01:32:00","director_function":"从功能证明升到品牌观点：真正好的营销不是做更多，而是更有效。","content":"纯文字减速→Logo组装→CTA长Hold。","sound_energy":"低"}
+  ],
+  "storyboard": [
+    {"shot_id":"SH-001","title":"CRT问题钩子","start_frame":0,"end_frame":84,"start_s":0.0,"end_s":2.8,"timecode":"00:00:00:00","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-001.svg","visual":"复古CRT显示器，先出现‘你还在手动做达人营销？’；真实设备提供触感，文字极简。","camera":"固定机位；物理CRT框中框；中心留白。","layout":"单一标题，黑字+橙色关键词，先黑后橙；不使用传统字幕条。","motion":"文字逐词/逐行出现；几乎静止，用‘静’制造反差。","sound":"低频底乐+旁白；开场约0.93s有强瞬态。","director":"先让观众承认旧方法，再引出范式切换。","tags":["retro-tech","problem-hook","minimal-type"]},
+    {"shot_id":"SH-004","title":"1个人 + AI → 500+合作","start_frame":323,"end_frame":468,"start_s":10.766667,"end_s":15.6,"timecode":"00:00:10:23","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-004.svg","visual":"先极简显示‘1个人 + AI’，随后渐变圆/网格扩满，数字快速增长到‘500+ 达人合作’，头像点环绕。","camera":"中心Logo/数字为锚；头像与白点分布外围；网格增强规模感。","layout":"黑/白大数字；AI圆形渐变图标；文字很少。","motion":"AI圆形图标出现→渐变场放大→数字计数→头像点出现/漂移。","sound":"约12.59s、14.09s有明显音频瞬态；节奏约120 BPM。","director":"第一次硬证据：把‘AI员工’从概念变成可量化产能。","tags":["proof-number","scale-visualization","avatar-orbit"]},
+    {"shot_id":"SH-008","title":"500万+ / 8万+达人网络","start_frame":845,"end_frame":1066,"start_s":28.166667,"end_s":35.533333,"timecode":"00:00:28:05","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-008.svg","visual":"一列列UGC竖屏卡片沿弧形/3D队列持续横向运动；顶部数字从500万+扩展到8万+入驻/活跃达人。","camera":"横向弧形carousel；不同卡片有轻微Y旋转/尺度差，形成空间深度。","layout":"数字始终在上方，视频卡是‘证据带’。","motion":"连续横移 + 透视尺度 + 卡片接力；数字在运动过程中逐项增加。","sound":"28.17s结构切点贴近拍点；中段是持续运动而非频繁硬切。","director":"规模不是用‘很多卡片’静态摆，而是用‘看不完的连续流’表达无限供给。","tags":["3d-carousel","creator-network","continuous-flow"]},
+    {"shot_id":"SH-009","title":"‘你’做判断","start_frame":1066,"end_frame":1153,"start_s":35.533333,"end_s":38.433333,"timecode":"00:00:35:16","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-009.svg","visual":"达人卡片流突然收掉，只剩巨大‘你。’，随后进入橙紫渐变场和一张AI对话/输入卡，‘你做 判断。’","camera":"极端留白→满屏渐变；中心单卡。","layout":"‘你’‘判断’是主词，短句占据视觉中心。","motion":"连续运动突然归零；再用单卡轻入场。","sound":"35–38s音频能量下降，给语义转折留空间。","director":"核心价值分工：Human = judgement。通过运动归零把‘人’从自动化洪流中抽出来。","tags":["motion-stop","human-judgement","semantic-pivot"]},
+    {"shot_id":"SH-015","title":"进度自动把控：胶囊条","start_frame":1760,"end_frame":1853,"start_s":58.666667,"end_s":61.766667,"timecode":"00:00:58:20","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-015.svg","visual":"Aha圆形Logo横向拉伸成蓝紫橙渐变胶囊，文字逐步出现‘Aha全程把控进度，自动提醒’。","camera":"极简白底，单一水平胶囊居中。","layout":"胶囊内白字；黑色Aha圆形端点固定。","motion":"圆→长条Morph，宽度扩张；文字随长度揭示。","sound":"59.66s附近有明显瞬态。","director":"用‘进度条本体’变成文案容器，动作与功能同义。","tags":["pill-morph","progress-semantic","minimal-transition"]},
+    {"shot_id":"SH-019","title":"价值观：不是更多，是更有效","start_frame":2349,"end_frame":2498,"start_s":78.3,"end_s":83.266667,"timecode":"00:01:18:09","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-019.svg","visual":"全白背景，黑色句子逐段出现：‘真正好的营销 从来不是做更多 而是 更有效’，最后‘更有效’橙色。","camera":"纯文字居中/中部；彻底清空前面的UI噪声。","layout":"黑色粗体+橙色最后关键词；一屏一短语。","motion":"逐词/逐句进入，几乎无其他运动；强调词稍放大/变橙。","sound":"78–83s主动减速，音乐仍约120 BPM但画面不追拍。","director":"高潮后用极简价值观收束，把‘功能片’升级成品牌观点。","tags":["kinetic-thesis","minimal-outro","orange-emphasis"]}
+  ],
+  "motion_anatomy": [
+    {"motion_id":"MOT-001","target":"CRT_UI_LAYERS","start_frame":84,"end_frame":235,"properties":{"translate":"multi-directional in","layer_count":"progressively increases"},"easing":"ease-out candidate","stagger_frames":"~6–15f","semantic_function":"让手工流程视觉上越来越杂乱","learning":"固定问题标题不动，背景证据越来越乱。"},
+    {"motion_id":"MOT-002","target":"GRADIENT_WORLD_SWITCH","start_frame":235,"end_frame":323,"properties":{"shape":"brand gradient wedge expands","scale":"small→full field"},"easing":"fast ease-out","semantic_function":"从旧工具世界进入AI新阶段","learning":"大章节转场用品牌几何，而非普通wipe。"},
+    {"motion_id":"MOT-003","target":"CREATOR_CAROUSEL","start_frame":845,"end_frame":1066,"properties":{"translateX":"continuous","perspective":"curved queue","scale":"depth dependent","rotationY":"alternating small yaw"},"easing":"near-linear continuous flow","semantic_function":"把500万+网络表现成看不完的连续供给","learning":"速度感主要来自持续流，不是硬切。"},
+    {"motion_id":"MOT-004","target":"HUMAN_JUDGEMENT_STOP","start_frame":1066,"end_frame":1153,"properties":{"motion_energy":"high→zero→single card"},"easing":"abrupt settle","semantic_function":"把人从自动化洪流中抽出来，保留判断权","learning":"运动归零本身就是意义。"},
+    {"motion_id":"MOT-005","target":"UGC_NETWORK_MOSAIC","start_frame":1665,"end_frame":1760,"properties":{"tiles":"multi-direction fill","density":"low→high→collapse to logo"},"easing":"staggered ease-out","semantic_function":"达人网络从数量变成真实内容纹理","learning":"人脸/UGC比抽象节点网络更有说服力。"},
+    {"motion_id":"MOT-006","target":"AHA_PROGRESS_PILL","start_frame":1760,"end_frame":1853,"properties":{"morph":"circle→pill","width":"expands","text":"reveals with width"},"easing":"smooth ease-out","semantic_function":"用进度条形状直接表达全程把控","learning":"容器形状与功能同义。"},
+    {"motion_id":"MOT-007","target":"GUARANTEE_COUNTERS","start_frame":2234,"end_frame":2349,"properties":{"cards":"3-way stagger enter","percentage":"count-up→100"},"easing":"ease-out + count","semantic_function":"风险保障从抽象承诺变成可达成状态","learning":"最后一轮证明用数字收口。"}
+  ],
+  "sound_map": [
+    {"shot_id":"AUD-01","title":"旧方法 / 开场","timecode":"00:00:00:00–00:00:07:25","visual":"混合轨中等能量；静画配稳定节拍。","sound":"约119.7 BPM；0.93s附近强瞬态。","director":"声音不抢CRT和问题文字。","tags":["setup","steady"]},
+    {"shot_id":"AUD-02","title":"范式切换 / 规模证明","timecode":"00:00:07:25–00:00:35:16","visual":"视觉密度快速上升。","sound":"主要结构切点15.60/20.00/28.17s与最近拍点约±0.09s；12.59/14.09/24.09s有明显瞬态。","director":"大切换贴拍，内部Motion不机械追每一拍。","tags":["beat-aligned","proof"]},
+    {"shot_id":"AUD-03","title":"判断力与多模态","timecode":"00:00:35:16–00:00:55:15","visual":"运动先归零，再进入真人/真实UI。","sound":"41–45s与53–56s瞬态非常密集，是证据切换的声音标点区。","director":"让真实证明的进入更有‘点击/确认’感。","tags":["transients","evidence"]},
+    {"shot_id":"AUD-04","title":"流程自动化 / 审稿保障","timecode":"00:00:55:15–00:01:18:09","visual":"网络马赛克→进度UI→审核→保障。","sound":"总体中高能量但流程UI段更稳定；59.66/61.59/62.09s等瞬态对应关键状态变化。","director":"先爆规模，再稳定展示流程，再用保障数字抬升。","tags":["scale-process-proof"]},
+    {"shot_id":"AUD-05","title":"品牌观点 / CTA","timecode":"00:01:18:09–00:01:32:00","visual":"纯文字与Logo长Hold。","sound":"视觉主动降速；83s后混合轨能量最低，尾段淡出。","director":"音乐仍有脉冲，但画面不追拍，给观点和品牌记忆时间。","tags":["slowdown","brand-hold"]}
+  ],
+  "patterns": [
+    {"index":"01","title":"UI-as-Actor","body":"软件UI不是背景录屏，而是演员：卡片、表格、进度、状态本身承担动作与证明。"},
+    {"index":"02","title":"Motion-to-Meaning","body":"规模用扩张/连续流，自动化用状态推进，判断用运动归零，保障用计数到100%；动作与语义同义。"},
+    {"index":"03","title":"Proof Ladder","body":"证据逐级升级：500+合作 → 300+品牌 → 500万网络/8万活跃 → 十年判断力 → 1000稿/2分钟 → 100%保障。"},
+    {"index":"04","title":"Density Reset","body":"高密度卡片墙后立刻白场/短句，把认知缓存清空；密—空—密比持续堆信息更容易理解。"},
+    {"index":"05","title":"One Dominant Anchor","body":"即便满屏UI，每一阶段仍只有一个主锚：问题、数字、标题、Logo、进度条或单个结论。"},
+    {"index":"06","title":"Channel Separation","body":"旁白讲逻辑，标题给结论，UI给证据，数字做记忆锚，Motion解释关系，SFX做标点，避免同义重复。"},
+    {"index":"07","title":"Brand Gradient as Glue","body":"橙—紫—蓝渐变不是装饰，而是跨场景连接器：几何、卡片、底光、胶囊都复用同一品牌材质。"},
+    {"index":"08","title":"Continuous Flow > Hard Cut","body":"中段大量速度感来自卡片连续横移/堆叠/替换，而不是疯狂硬切。硬切只负责大章节换世界。"},
+    {"index":"09","title":"Human / AI Duality","body":"整片价值核心不是‘AI万能’，而是 Human=Judgment、AI=Execution；这让自动化叙事更可信。"},
+    {"index":"10","title":"Thesis Slowdown","body":"功能证据完成后主动把画面降到纯文字，最后用‘更有效’重写全部功能的意义。"}
+  ],
+  "gates": {"source_master":"PASS","frame_analysis":"PASS_V0_2_KEY_UNITS","audio_semantic_qa":"TECHNICAL_MIXED_TRACK_ONLY","motion_curve_1to1":"PENDING","public_display_gate":"PASS_BY_USER_REQUEST"},
+  "notice": "源片已确认。公开页展示 6 个教学关键镜头；内部 Cinema DNA 保留完整 20 个视觉运动单元。硬切/大章节切点已取证；逐元素 Position/Scale/Blur/Mask/Easing 的高频测量仍在继续，尚不能宣称 1:1 Motion 曲线全部完成。"
 }
