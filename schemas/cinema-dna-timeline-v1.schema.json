@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://oing.xin/schemas/cinema-dna-timeline-v1.schema.json",
+  "title": "CINEMA DNA Timeline Protocol v1",
+  "type": "object",
+  "required": ["schema_version", "case", "timebase", "sections", "shots", "beats", "sounds", "assets", "patterns", "qa", "public_projection"],
+  "properties": {
+    "schema_version": {"const": "CINEMA-DNA-TL-1.0.0"},
+    "case": {
+      "type": "object",
+      "required": ["case_id", "title", "status", "duration_frames", "duration_s", "resolution", "rights_status", "audio_status", "version"],
+      "properties": {
+        "case_id": {"type": "string"},
+        "title": {"type": "string"},
+        "source_file_id": {"type": ["string", "null"]},
+        "source_hash": {"type": ["string", "null"]},
+        "status": {"enum": ["DRAFT", "FACTS_REQUIRED", "FACTS_READY", "ANALYSIS_COMPLETE", "QA_REVISION_REQUIRED", "QA_APPROVED", "GOLD_STANDARD", "BLOCKED"]},
+        "duration_frames": {"type": "integer", "minimum": 0},
+        "duration_s": {"type": "number", "minimum": 0},
+        "resolution": {"type": "string"},
+        "primary_brain": {"type": ["string", "null"]},
+        "subtype": {"type": ["string", "null"]},
+        "rights_status": {"type": "string"},
+        "audio_status": {"type": "string"},
+        "version": {"type": "string"},
+        "notes": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "timebase": {
+      "type": "object",
+      "required": ["fps_num", "fps_den", "drop_frame", "source_start_tc", "canonical_unit"],
+      "properties": {
+        "fps_num": {"type": "integer", "minimum": 1},
+        "fps_den": {"type": "integer", "minimum": 1},
+        "drop_frame": {"type": "boolean"},
+        "source_start_tc": {"type": "string"},
+        "canonical_unit": {"const": "frame"},
+        "analysis_proxy_id": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "sections": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/rangedEntity"}
+    },
+    "shots": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/shot"}
+    },
+    "beats": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/rangedEntity"}
+    },
+    "sounds": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/rangedEntity"}
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["asset_id", "type", "rights_status"],
+        "properties": {
+          "asset_id": {"type": "string"},
+          "type": {"type": "string"},
+          "uri": {"type": ["string", "null"]},
+          "drive_file_id": {"type": ["string", "null"]},
+          "sha256": {"type": ["string", "null"]},
+          "rights_status": {"type": "string"},
+          "public_display_gate": {"enum": ["PASS", "BLOCKED", "PENDING"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pattern_id", "type", "title", "status"],
+        "properties": {
+          "pattern_id": {"type": "string"},
+          "type": {"type": "string"},
+          "title": {"type": "string"},
+          "status": {"type": "string"},
+          "applicable_scenarios": {"type": "array", "items": {"type": "string"}},
+          "boundary_conditions": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "qa": {"type": "object"},
+    "public_projection": {
+      "type": "object",
+      "required": ["public_display_gate"],
+      "properties": {
+        "public_display_gate": {"enum": ["PASS", "BLOCKED", "PENDING"]},
+        "published_case_id": {"type": ["string", "null"]},
+        "notes": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "range": {
+      "type": "object",
+      "required": ["start_frame", "end_frame", "start_s", "end_s"],
+      "properties": {
+        "start_frame": {"type": "integer", "minimum": 0},
+        "end_frame": {"type": "integer", "minimum": 0},
+        "start_s": {"type": "number", "minimum": 0},
+        "end_s": {"type": "number", "minimum": 0},
+        "in_tc": {"type": ["string", "null"]},
+        "out_tc": {"type": ["string", "null"]}
+      }
+    },
+    "rangedEntity": {
+      "type": "object",
+      "required": ["start_frame", "end_frame", "start_s", "end_s"],
+      "properties": {
+        "start_frame": {"type": "integer", "minimum": 0},
+        "end_frame": {"type": "integer", "minimum": 0},
+        "start_s": {"type": "number", "minimum": 0},
+        "end_s": {"type": "number", "minimum": 0}
+      },
+      "additionalProperties": true
+    },
+    "motion": {
+      "type": "object",
+      "required": ["motion_id", "track", "target", "start_frame", "end_frame", "semantic_function", "confidence"],
+      "properties": {
+        "motion_id": {"type": "string"},
+        "track": {"enum": ["V1_SUBJECT_UI", "V2_TYPOGRAPHY", "V3_MOTION_GRAPHICS"]},
+        "target": {"type": "string"},
+        "start_frame": {"type": "integer", "minimum": 0},
+        "end_frame": {"type": "integer", "minimum": 0},
+        "properties": {"type": "object"},
+        "easing": {"type": ["string", "null"]},
+        "overshoot": {"type": ["number", "null"]},
+        "stagger_frames": {"type": ["integer", "null"]},
+        "semantic_function": {"type": "string"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+      },
+      "additionalProperties": true
+    },
+    "typography": {
+      "type": "object",
+      "required": ["text_id", "role", "content", "start_frame", "end_frame"],
+      "properties": {
+        "text_id": {"type": "string"},
+        "role": {"enum": ["NARRATIVE_TITLE", "PROOF_NUMBER", "UI_EVIDENCE", "SUBTITLE", "LABEL", "CTA", "END_CARD"]},
+        "content": {"type": "string"},
+        "start_frame": {"type": "integer", "minimum": 0},
+        "end_frame": {"type": "integer", "minimum": 0},
+        "bbox_normalized": {"type": ["array", "null"], "items": {"type": "number"}, "minItems": 4, "maxItems": 4},
+        "font_family": {"type": ["string", "null"]},
+        "weight": {"type": ["integer", "string", "null"]},
+        "size_ratio": {"type": ["number", "null"]},
+        "enter_motion_id": {"type": ["string", "null"]},
+        "exit_motion_id": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "shot": {
+      "type": "object",
+      "required": ["shot_id", "section_id", "start_frame", "end_frame", "start_s", "end_s", "visual", "semantics", "typography", "motion", "edit", "audio_links", "director_decision", "confidence", "rights_status"],
+      "properties": {
+        "shot_id": {"type": "string"},
+        "section_id": {"type": "string"},
+        "start_frame": {"type": "integer", "minimum": 0},
+        "end_frame": {"type": "integer", "minimum": 0},
+        "start_s": {"type": "number", "minimum": 0},
+        "end_s": {"type": "number", "minimum": 0},
+        "keyframe_asset_id": {"type": ["string", "null"]},
+        "visual": {"type": "object"},
+        "semantics": {"type": "object"},
+        "typography": {"type": "array", "items": {"$ref": "#/$defs/typography"}},
+        "motion": {"type": "array", "items": {"$ref": "#/$defs/motion"}},
+        "edit": {"type": "object"},
+        "audio_links": {"type": "array", "items": {"type": "string"}},
+        "director_decision": {"type": "object"},
+        "reuse_tags": {"type": "array", "items": {"type": "string"}},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "rights_status": {"type": "string"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
