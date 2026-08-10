@@ -1,0 +1,16 @@
+{
+  "schema_version": "BREAKDOWN-PUBLIC-INDEX-1.0.0",
+  "generated_from": "Cinema DNA public projections",
+  "cases": [
+    {
+      "case_id": "AHA-CREATOR-3",
+      "slug": "aha-creator-3",
+      "title": "AhaCreator 3.0｜AI 海外达人营销员工",
+      "subtitle": "Motion Design / UI 动画 / 排版 / 产品发布片",
+      "status": "ANALYSIS_IN_PROGRESS",
+      "status_label": "母版同步中 · 已进入深度拉片",
+      "public_json": "data/breakdowns/cases/AHA-CREATOR-3/public.breakdown.json",
+      "tags": ["Motion Design", "UI Animation", "Typography", "SaaS Launch Film", "Motion-to-Meaning"]
+    }
+  ]
+}
