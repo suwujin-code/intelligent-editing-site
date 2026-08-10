@@ -1,0 +1,61 @@
+{
+  "schema_version": "BREAKDOWN-PUBLIC-1.0.0",
+  "case_id": "AHA-CREATOR-3",
+  "slug": "aha-creator-3",
+  "title": "AhaCreator 3.0｜AI 海外达人营销员工",
+  "kicker": "DIRECTOR BREAKDOWN / MOTION DESIGN",
+  "status": "ANALYSIS_IN_PROGRESS",
+  "status_label": "母版同步中 · 深度拉片已立项",
+  "metadata": {
+    "duration": "待母版 ffprobe",
+    "fps": "待母版 ffprobe",
+    "resolution": "待母版 ffprobe",
+    "format": "产品发布片 / SaaS Launch Film",
+    "priority": "动画 > 排版 > 创意转译 > 审美 > 剪辑节奏 > 声音 > 叙事"
+  },
+  "one_line_judgement": "这支片最值得学习的不是一套渐变视觉，而是如何把抽象的软件能力变成可观看、可记忆、可证明的动态图形语言。",
+  "intro": "本案例以 1:1 技术复刻为目标。分析不会停在“像什么风格”，而会把 UI 卡片、标题、证明数字、页面空间、转场、声音与语义全部放进同一帧时间线：先逐帧重建，再通过 A/B 差分确认时码、构图、运动和声音，最后才把验证后的规律沉淀为 Cinema DNA。",
+  "why_learn": [
+    {
+      "index": "01",
+      "title": "Motion Design",
+      "body": "重点测量 Position / Scale / Opacity / Blur / Mask / 2.5D / Easing / Overshoot / Stagger。动画必须能被重建，而不是用“高级、丝滑”描述。"
+    },
+    {
+      "index": "02",
+      "title": "Typography & Layout",
+      "body": "区分叙事标题、证明数字、UI 证据、字幕与标签，研究它们在信息密度很高时为什么仍然有清晰层级。"
+    },
+    {
+      "index": "03",
+      "title": "Motion-to-Meaning",
+      "body": "研究每个动作在解释什么：规模、自动化、速度、可信度、流程推进都应有对应的视觉动作，而不是为了炫技。"
+    },
+    {
+      "index": "04",
+      "title": "Sound & Rhythm",
+      "body": "把 VO、Music、Beat、Onset、Whoosh、Hit、Click、Riser 与 Cut / 动画事件放在同一时间线上，理解速度感到底由什么驱动。"
+    }
+  ],
+  "tracks": [
+    {"id": "V0_SHOT", "label": "镜头边界"},
+    {"id": "V1_SUBJECT_UI", "label": "人物 / 产品 / UI"},
+    {"id": "V2_TYPOGRAPHY", "label": "标题 / 数字 / 字幕"},
+    {"id": "V3_MOTION_GRAPHICS", "label": "图形 / 2.5D / 遮罩"},
+    {"id": "S0_SEMANTIC", "label": "语义 / 证明"},
+    {"id": "A0_VO", "label": "旁白"},
+    {"id": "A1_MUSIC", "label": "音乐"},
+    {"id": "A2_SFX", "label": "设计音效"},
+    {"id": "D0_DECISION", "label": "导演判断"}
+  ],
+  "sections": [],
+  "storyboard": [],
+  "patterns": [],
+  "gates": {
+    "source_master": "WAITING_DRIVE_CONNECTOR_SYNC",
+    "frame_analysis": "BLOCKED_BY_SOURCE_MASTER",
+    "audio_semantic_qa": "PENDING",
+    "public_display_gate": "PENDING_RIGHTS_REVIEW"
+  },
+  "notice": "当前页面只发布已验证的研究框架与预分析，不伪造母版镜头时码、关键帧或 Motion 参数。母版取得后将自动补齐完整分镜表、Motion Anatomy、Sound Map 与可复用 DNA。"
+}
