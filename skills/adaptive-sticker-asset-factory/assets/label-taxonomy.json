@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "notes": "Starter vocabulary for reusable sticker systems. Keep tags stable; add Chinese and English meanings in the project manifest.",
+  "labels": {
+    "workflow": ["IDEA", "INPUT", "PROCESS", "OUTPUT", "CHECK", "PASS", "FAIL", "FIX", "REVIEW", "READY", "DONE", "BLOCKED"],
+    "editing": ["CUT", "TRIM", "SPLIT", "MERGE", "SYNC", "PLAY", "PAUSE", "EXPORT", "VOICE", "MUSIC", "SFX", "CLEAN"],
+    "ai": ["PROMPT", "CONTEXT", "MODEL", "AGENT", "TOOLS", "MEMORY", "THINK", "ASK", "TEST", "LOOP", "RETRY", "OUTPUT"],
+    "emotion": ["WOW", "LOVE", "LOL", "WAIT", "SORRY", "THANKS", "NICE", "URGENT", "HOLD", "GO", "NO", "YES"]
+  }
+}

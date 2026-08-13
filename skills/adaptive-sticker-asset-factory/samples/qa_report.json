@@ -1,0 +1,1928 @@
+{
+  "directory": "generated",
+  "files": 120,
+  "passed": 120,
+  "failed": 0,
+  "results": [
+    {
+      "file": "generated/S01/S01-01_PROMPT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        162,
+        187
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        162,
+        185
+      ]
+    },
+    {
+      "file": "generated/S01/S01-02_CONTEXT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        177,
+        176
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        173,
+        174
+      ]
+    },
+    {
+      "file": "generated/S01/S01-03_INPUT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        185,
+        175
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        175,
+        173
+      ]
+    },
+    {
+      "file": "generated/S01/S01-04_OUTPUT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        178,
+        171
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        168,
+        169
+      ]
+    },
+    {
+      "file": "generated/S01/S01-05_THINK.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        174,
+        182
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        174,
+        182
+      ]
+    },
+    {
+      "file": "generated/S01/S01-06_ASK.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        179,
+        187
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        169,
+        187
+      ]
+    },
+    {
+      "file": "generated/S01/S01-07_MODEL.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        171,
+        190
+      ],
+      "alpha_bbox": [
+        10,
+        2,
+        161,
+        190
+      ]
+    },
+    {
+      "file": "generated/S01/S01-08_AGENT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        171,
+        190
+      ],
+      "alpha_bbox": [
+        2,
+        4,
+        161,
+        190
+      ]
+    },
+    {
+      "file": "generated/S01/S01-09_MEMORY.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        165,
+        171
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        155,
+        161
+      ]
+    },
+    {
+      "file": "generated/S01/S01-10_TOOLS.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        184,
+        171
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        174,
+        161
+      ]
+    },
+    {
+      "file": "generated/S01/S01-11_TEST.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        167,
+        171
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        157,
+        161
+      ]
+    },
+    {
+      "file": "generated/S01/S01-12_LOOP.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        160,
+        172
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        150,
+        162
+      ]
+    },
+    {
+      "file": "generated/S02/S02-01_CUT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        192
+      ],
+      "alpha_bbox": [
+        8,
+        10,
+        189,
+        192
+      ]
+    },
+    {
+      "file": "generated/S02/S02-02_TRIM.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        167,
+        202
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        157,
+        202
+      ]
+    },
+    {
+      "file": "generated/S02/S02-03_SPLIT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        181
+      ],
+      "alpha_bbox": [
+        6,
+        10,
+        190,
+        181
+      ]
+    },
+    {
+      "file": "generated/S02/S02-04_MERGE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        184,
+        168
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        174,
+        165
+      ]
+    },
+    {
+      "file": "generated/S02/S02-05_TIMELINE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        198
+      ],
+      "alpha_bbox": [
+        8,
+        0,
+        190,
+        188
+      ]
+    },
+    {
+      "file": "generated/S02/S02-06_BROLL.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        202
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        190,
+        192
+      ]
+    },
+    {
+      "file": "generated/S02/S02-07_LAYER.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        162,
+        202
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        152,
+        194
+      ]
+    },
+    {
+      "file": "generated/S02/S02-08_SYNC.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        181,
+        199
+      ],
+      "alpha_bbox": [
+        9,
+        10,
+        171,
+        191
+      ]
+    },
+    {
+      "file": "generated/S02/S02-09_FRAME.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        177,
+        189
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        167,
+        179
+      ]
+    },
+    {
+      "file": "generated/S02/S02-10_PLAY.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        176,
+        189
+      ],
+      "alpha_bbox": [
+        10,
+        9,
+        169,
+        179
+      ]
+    },
+    {
+      "file": "generated/S02/S02-11_PAUSE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        184,
+        183
+      ],
+      "alpha_bbox": [
+        4,
+        10,
+        174,
+        173
+      ]
+    },
+    {
+      "file": "generated/S02/S02-12_EXPORT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        189,
+        180
+      ],
+      "alpha_bbox": [
+        2,
+        10,
+        179,
+        170
+      ]
+    },
+    {
+      "file": "generated/S03/S03-01_VOICE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        173,
+        178
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        173,
+        174
+      ]
+    },
+    {
+      "file": "generated/S03/S03-02_RECORD.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        190
+      ],
+      "alpha_bbox": [
+        0,
+        8,
+        190,
+        186
+      ]
+    },
+    {
+      "file": "generated/S03/S03-03_DUB.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        177,
+        175
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        167,
+        171
+      ]
+    },
+    {
+      "file": "generated/S03/S03-04_MUSIC.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        179,
+        190
+      ],
+      "alpha_bbox": [
+        0,
+        9,
+        169,
+        186
+      ]
+    },
+    {
+      "file": "generated/S03/S03-05_SFX.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        177,
+        190
+      ],
+      "alpha_bbox": [
+        10,
+        1,
+        177,
+        190
+      ]
+    },
+    {
+      "file": "generated/S03/S03-06_WAVEFORM.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        189,
+        190
+      ],
+      "alpha_bbox": [
+        0,
+        7,
+        179,
+        190
+      ]
+    },
+    {
+      "file": "generated/S03/S03-07_MIX.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        184,
+        190
+      ],
+      "alpha_bbox": [
+        10,
+        4,
+        184,
+        190
+      ]
+    },
+    {
+      "file": "generated/S03/S03-08_DUCK.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        179,
+        190
+      ],
+      "alpha_bbox": [
+        0,
+        2,
+        169,
+        190
+      ]
+    },
+    {
+      "file": "generated/S03/S03-09_SYNC.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        184,
+        175
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        178,
+        165
+      ]
+    },
+    {
+      "file": "generated/S03/S03-10_CLEAN.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        175
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        190,
+        165
+      ]
+    },
+    {
+      "file": "generated/S03/S03-11_LOUDNESS.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 3,
+      "size": [
+        190,
+        175
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        190,
+        165
+      ]
+    },
+    {
+      "file": "generated/S03/S03-12_MASTER.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 3,
+      "size": [
+        182,
+        175
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        172,
+        165
+      ]
+    },
+    {
+      "file": "generated/S04/S04-01_IDEA.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        182,
+        179
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        172,
+        179
+      ]
+    },
+    {
+      "file": "generated/S04/S04-02_HOOK.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        181
+      ],
+      "alpha_bbox": [
+        4,
+        10,
+        190,
+        181
+      ]
+    },
+    {
+      "file": "generated/S04/S04-03_STORY.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        173
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        185,
+        173
+      ]
+    },
+    {
+      "file": "generated/S04/S04-04_SHOT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        187,
+        169
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        177,
+        169
+      ]
+    },
+    {
+      "file": "generated/S04/S04-05_SCENE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        185,
+        190
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        179,
+        183
+      ]
+    },
+    {
+      "file": "generated/S04/S04-06_BEAT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        190
+      ],
+      "alpha_bbox": [
+        8,
+        0,
+        190,
+        183
+      ]
+    },
+    {
+      "file": "generated/S04/S04-07_PACE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        181,
+        190
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        171,
+        183
+      ]
+    },
+    {
+      "file": "generated/S04/S04-08_MOOD.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        183,
+        190
+      ],
+      "alpha_bbox": [
+        5,
+        0,
+        173,
+        185
+      ]
+    },
+    {
+      "file": "generated/S04/S04-09_REVEAL.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        185,
+        178
+      ],
+      "alpha_bbox": [
+        10,
+        1,
+        181,
+        168
+      ]
+    },
+    {
+      "file": "generated/S04/S04-10_CTA.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        182,
+        177
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        182,
+        167
+      ]
+    },
+    {
+      "file": "generated/S04/S04-11_TITLE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        181
+      ],
+      "alpha_bbox": [
+        0,
+        4,
+        184,
+        171
+      ]
+    },
+    {
+      "file": "generated/S04/S04-12_SCRIPT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        186,
+        178
+      ],
+      "alpha_bbox": [
+        4,
+        0,
+        176,
+        168
+      ]
+    },
+    {
+      "file": "generated/S05/S05-01_LAYOUT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        169,
+        187
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        165,
+        187
+      ]
+    },
+    {
+      "file": "generated/S05/S05-02_TYPE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        181
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        180,
+        181
+      ]
+    },
+    {
+      "file": "generated/S05/S05-03_COLOR.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        185,
+        186
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        175,
+        186
+      ]
+    },
+    {
+      "file": "generated/S05/S05-04_GRID.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        166,
+        186
+      ],
+      "alpha_bbox": [
+        8,
+        10,
+        156,
+        186
+      ]
+    },
+    {
+      "file": "generated/S05/S05-05_FOCUS.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        163,
+        190
+      ],
+      "alpha_bbox": [
+        10,
+        7,
+        153,
+        182
+      ]
+    },
+    {
+      "file": "generated/S05/S05-06_BALANCE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        190
+      ],
+      "alpha_bbox": [
+        8,
+        0,
+        184,
+        190
+      ]
+    },
+    {
+      "file": "generated/S05/S05-07_CONTRAST.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        190
+      ],
+      "alpha_bbox": [
+        6,
+        0,
+        190,
+        190
+      ]
+    },
+    {
+      "file": "generated/S05/S05-08_HIERARCHY.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        174,
+        190
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        164,
+        181
+      ]
+    },
+    {
+      "file": "generated/S05/S05-09_BRAND.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        164,
+        179
+      ],
+      "alpha_bbox": [
+        10,
+        5,
+        154,
+        169
+      ]
+    },
+    {
+      "file": "generated/S05/S05-10_COVER.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        155,
+        181
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        145,
+        171
+      ]
+    },
+    {
+      "file": "generated/S05/S05-11_POSTER.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        179
+      ],
+      "alpha_bbox": [
+        7,
+        0,
+        190,
+        169
+      ]
+    },
+    {
+      "file": "generated/S05/S05-12_POLISH.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        172,
+        180
+      ],
+      "alpha_bbox": [
+        0,
+        2,
+        162,
+        170
+      ]
+    },
+    {
+      "file": "generated/S06/S06-01_MOTION.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        173,
+        157
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        173,
+        157
+      ]
+    },
+    {
+      "file": "generated/S06/S06-02_SPRING.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        182,
+        187
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        172,
+        187
+      ]
+    },
+    {
+      "file": "generated/S06/S06-03_FLOAT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        187
+      ],
+      "alpha_bbox": [
+        7,
+        10,
+        190,
+        187
+      ]
+    },
+    {
+      "file": "generated/S06/S06-04_SWIPE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        175,
+        161
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        165,
+        161
+      ]
+    },
+    {
+      "file": "generated/S06/S06-05_SCALE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        176,
+        190
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        176,
+        189
+      ]
+    },
+    {
+      "file": "generated/S06/S06-06_ROTATE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        178,
+        190
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        178,
+        189
+      ]
+    },
+    {
+      "file": "generated/S06/S06-07_BLUR.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        190
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        190,
+        189
+      ]
+    },
+    {
+      "file": "generated/S06/S06-08_GLOW.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        169,
+        190
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        159,
+        190
+      ]
+    },
+    {
+      "file": "generated/S06/S06-09_BURST.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        176,
+        188
+      ],
+      "alpha_bbox": [
+        10,
+        5,
+        176,
+        178
+      ]
+    },
+    {
+      "file": "generated/S06/S06-10_REACT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        165,
+        188
+      ],
+      "alpha_bbox": [
+        10,
+        4,
+        155,
+        178
+      ]
+    },
+    {
+      "file": "generated/S06/S06-11_EASE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        189
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        190,
+        179
+      ]
+    },
+    {
+      "file": "generated/S06/S06-12_LOOP.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        166,
+        188
+      ],
+      "alpha_bbox": [
+        0,
+        2,
+        156,
+        178
+      ]
+    },
+    {
+      "file": "generated/S07/S07-01_INBOX.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        173,
+        166
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        163,
+        163
+      ]
+    },
+    {
+      "file": "generated/S07/S07-02_PLAN.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        176,
+        156
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        166,
+        151
+      ]
+    },
+    {
+      "file": "generated/S07/S07-03_RUN.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        172,
+        154
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        162,
+        151
+      ]
+    },
+    {
+      "file": "generated/S07/S07-04_QUEUE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        161,
+        151
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        151,
+        146
+      ]
+    },
+    {
+      "file": "generated/S07/S07-05_ROUTE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        159,
+        163
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        149,
+        153
+      ]
+    },
+    {
+      "file": "generated/S07/S07-06_TRIGGER.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        162,
+        183
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        152,
+        183
+      ]
+    },
+    {
+      "file": "generated/S07/S07-07_BATCH.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        169,
+        177
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        159,
+        167
+      ]
+    },
+    {
+      "file": "generated/S07/S07-08_APPROVE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        160,
+        180
+      ],
+      "alpha_bbox": [
+        6,
+        10,
+        150,
+        180
+      ]
+    },
+    {
+      "file": "generated/S07/S07-09_DONE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        161,
+        152
+      ],
+      "alpha_bbox": [
+        10,
+        2,
+        151,
+        142
+      ]
+    },
+    {
+      "file": "generated/S07/S07-10_REUSE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        159,
+        152
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        149,
+        142
+      ]
+    },
+    {
+      "file": "generated/S07/S07-11_SYNC.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        170,
+        142
+      ],
+      "alpha_bbox": [
+        5,
+        10,
+        160,
+        132
+      ]
+    },
+    {
+      "file": "generated/S07/S07-12_AUTOMATE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        170,
+        152
+      ],
+      "alpha_bbox": [
+        4,
+        0,
+        160,
+        142
+      ]
+    },
+    {
+      "file": "generated/S08/S08-01_CHECK.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        167,
+        171
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        167,
+        161
+      ]
+    },
+    {
+      "file": "generated/S08/S08-02_REVIEW.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        189,
+        165
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        179,
+        165
+      ]
+    },
+    {
+      "file": "generated/S08/S08-03_FIX.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        175,
+        174
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        165,
+        164
+      ]
+    },
+    {
+      "file": "generated/S08/S08-04_PASS.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        176,
+        168
+      ],
+      "alpha_bbox": [
+        3,
+        10,
+        166,
+        158
+      ]
+    },
+    {
+      "file": "generated/S08/S08-05_FAIL.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        162,
+        186
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        152,
+        186
+      ]
+    },
+    {
+      "file": "generated/S08/S08-06_QA.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        139,
+        190
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        129,
+        190
+      ]
+    },
+    {
+      "file": "generated/S08/S08-07_READABLE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        180,
+        176
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        170,
+        176
+      ]
+    },
+    {
+      "file": "generated/S08/S08-08_SAFE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        142,
+        189
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        132,
+        189
+      ]
+    },
+    {
+      "file": "generated/S08/S08-09_CLEAN.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        157,
+        168
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        154,
+        158
+      ]
+    },
+    {
+      "file": "generated/S08/S08-10_ALIGN.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        171,
+        168
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        161,
+        158
+      ]
+    },
+    {
+      "file": "generated/S08/S08-11_FINAL.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        175,
+        168
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        165,
+        158
+      ]
+    },
+    {
+      "file": "generated/S08/S08-12_PROOF.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        155,
+        168
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        145,
+        158
+      ]
+    },
+    {
+      "file": "generated/S09/S09-01_BUILD.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        154,
+        190
+      ],
+      "alpha_bbox": [
+        10,
+        5,
+        144,
+        190
+      ]
+    },
+    {
+      "file": "generated/S09/S09-02_CODE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        175,
+        170
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        165,
+        167
+      ]
+    },
+    {
+      "file": "generated/S09/S09-03_APP.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        183,
+        185
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        183,
+        185
+      ]
+    },
+    {
+      "file": "generated/S09/S09-04_API.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        190,
+        128
+      ],
+      "alpha_bbox": [
+        0,
+        10,
+        180,
+        128
+      ]
+    },
+    {
+      "file": "generated/S09/S09-05_UI.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        163,
+        168
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        153,
+        168
+      ]
+    },
+    {
+      "file": "generated/S09/S09-06_DATA.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        171,
+        167
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        161,
+        157
+      ]
+    },
+    {
+      "file": "generated/S09/S09-07_STACK.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        149,
+        180
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        139,
+        180
+      ]
+    },
+    {
+      "file": "generated/S09/S09-08_DEPLOY.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        161,
+        189
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        151,
+        189
+      ]
+    },
+    {
+      "file": "generated/S09/S09-09_DEBUG.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        160,
+        167
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        150,
+        157
+      ]
+    },
+    {
+      "file": "generated/S09/S09-10_VERSION.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        158,
+        167
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        148,
+        157
+      ]
+    },
+    {
+      "file": "generated/S09/S09-11_SHIP.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        141,
+        167
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        131,
+        157
+      ]
+    },
+    {
+      "file": "generated/S09/S09-12_UPDATE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        164,
+        168
+      ],
+      "alpha_bbox": [
+        6,
+        0,
+        154,
+        158
+      ]
+    },
+    {
+      "file": "generated/S10/S10-01_PUBLISH.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        171,
+        167
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        168,
+        157
+      ]
+    },
+    {
+      "file": "generated/S10/S10-02_POST.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        162,
+        175
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        152,
+        165
+      ]
+    },
+    {
+      "file": "generated/S10/S10-03_SHARE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        168,
+        187
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        158,
+        185
+      ]
+    },
+    {
+      "file": "generated/S10/S10-04_SAVE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        134,
+        167
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        124,
+        159
+      ]
+    },
+    {
+      "file": "generated/S10/S10-05_FOLLOW.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        159,
+        183
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        149,
+        179
+      ]
+    },
+    {
+      "file": "generated/S10/S10-06_TEST.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        170,
+        176
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        160,
+        166
+      ]
+    },
+    {
+      "file": "generated/S10/S10-07_METRIC.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        156,
+        190
+      ],
+      "alpha_bbox": [
+        10,
+        8,
+        146,
+        190
+      ]
+    },
+    {
+      "file": "generated/S10/S10-08_REACH.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        149,
+        187
+      ],
+      "alpha_bbox": [
+        10,
+        10,
+        139,
+        187
+      ]
+    },
+    {
+      "file": "generated/S10/S10-09_LEAD.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        130,
+        165
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        120,
+        155
+      ]
+    },
+    {
+      "file": "generated/S10/S10-10_OFFER.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        164,
+        166
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        154,
+        156
+      ]
+    },
+    {
+      "file": "generated/S10/S10-11_CONVERT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        145,
+        166
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        135,
+        156
+      ]
+    },
+    {
+      "file": "generated/S10/S10-12_GROW.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        146,
+        166
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        136,
+        156
+      ]
+    }
+  ]
+}

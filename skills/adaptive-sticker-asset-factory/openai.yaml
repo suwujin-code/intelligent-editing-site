@@ -1,0 +1,4 @@
+interface:
+  display_name: "智能贴纸资产工厂 / Adaptive Sticker Asset Factory"
+  short_description: "把自然语言需求批量生成可用贴纸资产，并自动处理透明 PNG 与质量检查。"
+  default_prompt: "把“{主题或表达}”做成一套可用于 AI 剪辑的贴纸，批量导出透明 PNG，并生成标签索引和质检报告。"
