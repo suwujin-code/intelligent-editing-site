@@ -26,8 +26,8 @@ const caseStudies = {
     aspect: 'portrait',
     status: '技术QA通过 · 对外待审批',
     statusClass: 'conditional',
-    video: 'https://drive.google.com/uc?export=download&id=1rA4v1Kwv5dPrC7BVj4xl-2_4kPiQkLVi',
-    poster: 'https://drive.google.com/uc?export=download&id=1WQy5nrx_9XOGnu_gM3Nzv81_rfduRkbv',
+    video: 'https://suwujin-code.github.io/intelligent-editing-site/assets/cases/GZ10_V03_Rough_Electric_SPBD_Animation_v1.1.mp4',
+    poster: 'https://suwujin-code.github.io/intelligent-editing-site/assets/cases/GZ10_V03_Rough_Electric_ContactSheet_v1.1.png',
     previewUrl: 'https://drive.google.com/file/d/1rA4v1Kwv5dPrC7BVj4xl-2_4kPiQkLVi/view?usp=drivesdk',
     skillIndexUrl: 'https://docs.google.com/document/d/1euu4Gn4HirNpmwaUHIvPs1dAT-T2V4x75WnnlhwaIU4/edit?usp=drivesdk',
     driveFolderUrl: 'https://drive.google.com/drive/folders/1jyBt3ZRcga-zI5_rDHEc7zbrHuWnYEDu',
@@ -125,6 +125,7 @@ function directorSampleCard(study, index) {
       <div class="director-sample-actions">
         <a class="cta" href="${mediaUrl(study)}" target="_blank" rel="noopener">打开独立播放 ↗</a>
         <a class="cta secondary" href="${study.skillIndexUrl}" target="_blank" rel="noopener">查看技能索引 ↗</a>
+        ${study.packageUrl ? `<a class="text-link" href="${study.packageUrl}" target="_blank" rel="noopener">打开交付包 ↗</a>` : ""}
         <a class="text-link" href="${study.driveFolderUrl}" target="_blank" rel="noopener">内部工程 ↗</a>
       </div>
       <small class="director-sample-boundary">内部工程链接仅供已授权团队回查；公开页面展示的是成片与可复用方法。</small>
