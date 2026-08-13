@@ -1,0 +1,20 @@
+{
+  "name": "oing-ai-sticker-system-v1",
+  "version": "1.0.0",
+  "output_dir": "generated",
+  "source_index": "preview-asset-index.csv",
+  "outline": 3,
+  "padding": 10,
+  "sheets": [
+    {"module_id": "S01", "module_name": "AI_PROMPT", "source": "preview-sheets/01-ai-prompt-preview.jpg", "rows": 3, "cols": 4, "prefix": "S01", "labels": ["PROMPT", "CONTEXT", "INPUT", "OUTPUT", "THINK", "ASK", "MODEL", "AGENT", "MEMORY", "TOOLS", "TEST", "LOOP"]},
+    {"module_id": "S02", "module_name": "VIDEO_EDITING", "source": "preview-sheets/02-video-editing-preview.jpg", "rows": 3, "cols": 4, "prefix": "S02", "labels": ["CUT", "TRIM", "SPLIT", "MERGE", "TIMELINE", "BROLL", "LAYER", "SYNC", "FRAME", "PLAY", "PAUSE", "EXPORT"]},
+    {"module_id": "S03", "module_name": "AUDIO_VOICE", "source": "preview-sheets/03-audio-voice-preview.jpg", "rows": 3, "cols": 4, "prefix": "S03", "labels": ["VOICE", "RECORD", "DUB", "MUSIC", "SFX", "WAVEFORM", "MIX", "DUCK", "SYNC", "CLEAN", "LOUDNESS", "MASTER"]},
+    {"module_id": "S04", "module_name": "DIRECTOR_STORY", "source": "preview-sheets/04-director-story-preview.jpg", "rows": 3, "cols": 4, "prefix": "S04", "labels": ["IDEA", "HOOK", "STORY", "SHOT", "SCENE", "BEAT", "PACE", "MOOD", "REVEAL", "CTA", "TITLE", "SCRIPT"]},
+    {"module_id": "S05", "module_name": "DESIGN_LAYOUT", "source": "preview-sheets/05-design-layout-preview.jpg", "rows": 3, "cols": 4, "prefix": "S05", "labels": ["LAYOUT", "TYPE", "COLOR", "GRID", "FOCUS", "BALANCE", "CONTRAST", "HIERARCHY", "BRAND", "COVER", "POSTER", "POLISH"]},
+    {"module_id": "S06", "module_name": "ANIMATION_MOTION", "source": "preview-sheets/06-animation-motion-preview.jpg", "rows": 3, "cols": 4, "prefix": "S06", "labels": ["MOTION", "SPRING", "FLOAT", "SWIPE", "SCALE", "ROTATE", "BLUR", "GLOW", "BURST", "REACT", "EASE", "LOOP"]},
+    {"module_id": "S07", "module_name": "WORKFLOW_AUTOMATION", "source": "preview-sheets/07-workflow-automation-preview.jpg", "rows": 3, "cols": 4, "prefix": "S07", "labels": ["INBOX", "PLAN", "RUN", "QUEUE", "ROUTE", "TRIGGER", "BATCH", "APPROVE", "DONE", "REUSE", "SYNC", "AUTOMATE"]},
+    {"module_id": "S08", "module_name": "REVIEW_QUALITY", "source": "preview-sheets/08-review-quality-preview.jpg", "rows": 3, "cols": 4, "prefix": "S08", "labels": ["CHECK", "REVIEW", "FIX", "PASS", "FAIL", "QA", "READABLE", "SAFE", "CLEAN", "ALIGN", "FINAL", "PROOF"]},
+    {"module_id": "S09", "module_name": "PRODUCT_TECH", "source": "preview-sheets/09-product-tech-preview.jpg", "rows": 3, "cols": 4, "prefix": "S09", "labels": ["BUILD", "CODE", "APP", "API", "UI", "DATA", "STACK", "DEPLOY", "DEBUG", "VERSION", "SHIP", "UPDATE"]},
+    {"module_id": "S10", "module_name": "PUBLISH_GROWTH", "source": "preview-sheets/10-publish-growth-preview.jpg", "rows": 3, "cols": 4, "prefix": "S10", "labels": ["PUBLISH", "POST", "SHARE", "SAVE", "FOLLOW", "TEST", "METRIC", "REACH", "LEAD", "OFFER", "CONVERT", "GROW"]}
+  ]
+}
