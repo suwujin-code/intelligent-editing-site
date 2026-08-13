@@ -22,7 +22,7 @@ const caseStudies = {
     workflowCode: 'WF::RENOVATION_INFO_FILM::V03::v1.1',
     cloudName: '03_水电毛坯施工动画｜V03',
     title: 'GZ10｜水电毛坯施工清单动画｜完整版',
-    source: '9:16 · 18 秒 · 1080×1920 · H.264 · AAC',
+    source: '9:16 · 18 秒 · 网页预览 540×960 / 母版 1080×1920 · H.264 · AAC',
     aspect: 'portrait',
     status: '技术QA通过 · 完整版 v2.0 · 对外待审批',
     statusClass: 'conditional',
