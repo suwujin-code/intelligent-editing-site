@@ -13,6 +13,16 @@
     "format": "产品发布片 / SaaS Launch Film",
     "priority": "动画 > 排版 > 创意转译 > 审美 > 剪辑节奏 > 声音 > 叙事"
   },
+  "public_view": {
+    "format": "keyframe_breakdown",
+    "label": "关键分镜教学版",
+    "published_keyframes": 6,
+    "total_visual_units": 20,
+    "note": "内部已完成 20 个视觉运动单元；公开页选出 6 个最具教学价值、并已通过展示门禁的关键帧，不把未发布单元误显示成缺失。",
+    "mobile_layout": "keyframe-stepper",
+    "mobile_label": "6 帧学习路径",
+    "mobile_default_shot": "SH-015"
+  },
   "one_line_judgement": "它真正高级的地方不是“特效多”，而是把抽象的软件能力变成可观看的工作关系：人做判断，AI跑执行；数字、UI、卡片和运动共同组成证据链。",
   "intro": "本页来自 Google Drive 原始 MP4 的真实取证：92.01 秒、720×1280、30fps。内部已完成 20 个视觉运动单元的分镜表；公开页先展示 6 个最具教学价值的关键分镜，并同步整片结构、Motion Anatomy、声音地图与可迁移 DNA。",
   "why_learn": [
@@ -36,12 +46,14 @@
     {"section_id":"SEC-I","title":"效率与保障","start_frame":2018,"end_frame":2349,"start_s":67.267,"end_s":78.3,"in_tc":"00:01:07:08","out_tc":"00:01:18:09","director_function":"用1000稿件2分钟审核、合作保障补齐执行和风险证明。","content":"规模拼贴→审核细节→保障卡计数。","sound_energy":"高"},
     {"section_id":"SEC-J","title":"价值观与CTA","start_frame":2349,"end_frame":2760,"start_s":78.3,"end_s":92.0,"in_tc":"00:01:18:09","out_tc":"00:01:32:00","director_function":"从功能证明升到品牌观点：真正好的营销不是做更多，而是更有效。","content":"纯文字减速→Logo组装→CTA长Hold。","sound_energy":"低"}
   ],
+  "storyboard_label": "关键分镜教学版 · 6 / 20 个视觉运动单元",
+  "storyboard_note": "公开页保留 6 个有真实关键帧的教学单元，按十段结构组织；其余已分析单元仍留在内部 Cinema DNA，不以占位图替代。",
   "storyboard": [
     {"shot_id":"SH-001","title":"CRT问题钩子","start_frame":0,"end_frame":84,"start_s":0.0,"end_s":2.8,"timecode":"00:00:00:00","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-001.svg","visual":"复古CRT显示器，先出现‘你还在手动做达人营销？’；真实设备提供触感，文字极简。","camera":"固定机位；物理CRT框中框；中心留白。","layout":"单一标题，黑字+橙色关键词，先黑后橙；不使用传统字幕条。","motion":"文字逐词/逐行出现；几乎静止，用‘静’制造反差。","sound":"低频底乐+旁白；开场约0.93s有强瞬态。","director":"先让观众承认旧方法，再引出范式切换。","tags":["retro-tech","problem-hook","minimal-type"]},
     {"shot_id":"SH-004","title":"1个人 + AI → 500+合作","start_frame":323,"end_frame":468,"start_s":10.766667,"end_s":15.6,"timecode":"00:00:10:23","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-004.svg","visual":"先极简显示‘1个人 + AI’，随后渐变圆/网格扩满，数字快速增长到‘500+ 达人合作’，头像点环绕。","camera":"中心Logo/数字为锚；头像与白点分布外围；网格增强规模感。","layout":"黑/白大数字；AI圆形渐变图标；文字很少。","motion":"AI圆形图标出现→渐变场放大→数字计数→头像点出现/漂移。","sound":"约12.59s、14.09s有明显音频瞬态；节奏约120 BPM。","director":"第一次硬证据：把‘AI员工’从概念变成可量化产能。","tags":["proof-number","scale-visualization","avatar-orbit"]},
     {"shot_id":"SH-008","title":"500万+ / 8万+达人网络","start_frame":845,"end_frame":1066,"start_s":28.166667,"end_s":35.533333,"timecode":"00:00:28:05","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-008.svg","visual":"一列列UGC竖屏卡片沿弧形/3D队列持续横向运动；顶部数字从500万+扩展到8万+入驻/活跃达人。","camera":"横向弧形carousel；不同卡片有轻微Y旋转/尺度差，形成空间深度。","layout":"数字始终在上方，视频卡是‘证据带’。","motion":"连续横移 + 透视尺度 + 卡片接力；数字在运动过程中逐项增加。","sound":"28.17s结构切点贴近拍点；中段是持续运动而非频繁硬切。","director":"规模不是用‘很多卡片’静态摆，而是用‘看不完的连续流’表达无限供给。","tags":["3d-carousel","creator-network","continuous-flow"]},
     {"shot_id":"SH-009","title":"‘你’做判断","start_frame":1066,"end_frame":1153,"start_s":35.533333,"end_s":38.433333,"timecode":"00:00:35:16","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-009.svg","visual":"达人卡片流突然收掉，只剩巨大‘你。’，随后进入橙紫渐变场和一张AI对话/输入卡，‘你做 判断。’","camera":"极端留白→满屏渐变；中心单卡。","layout":"‘你’‘判断’是主词，短句占据视觉中心。","motion":"连续运动突然归零；再用单卡轻入场。","sound":"35–38s音频能量下降，给语义转折留空间。","director":"核心价值分工：Human = judgement。通过运动归零把‘人’从自动化洪流中抽出来。","tags":["motion-stop","human-judgement","semantic-pivot"]},
-    {"shot_id":"SH-015","title":"进度自动把控：胶囊条","start_frame":1760,"end_frame":1853,"start_s":58.666667,"end_s":61.766667,"timecode":"00:00:58:20","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-015.svg","visual":"Aha圆形Logo横向拉伸成蓝紫橙渐变胶囊，文字逐步出现‘Aha全程把控进度，自动提醒’。","camera":"极简白底，单一水平胶囊居中。","layout":"胶囊内白字；黑色Aha圆形端点固定。","motion":"圆→长条Morph，宽度扩张；文字随长度揭示。","sound":"59.66s附近有明显瞬态。","director":"用‘进度条本体’变成文案容器，动作与功能同义。","tags":["pill-morph","progress-semantic","minimal-transition"]},
+    {"shot_id":"SH-015","title":"进度自动把控：胶囊条","start_frame":1760,"end_frame":1853,"start_s":58.666667,"end_s":61.766667,"timecode":"00:00:58:20","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-015-corrected.png","visual":"Aha圆形Logo横向拉伸成蓝紫橙渐变胶囊，文字逐步出现‘Aha全程把控进度，自动提醒’。","camera":"极简白底，单一水平胶囊居中。","layout":"胶囊内白字；黑色Aha圆形端点固定。","motion":"圆→长条Morph，宽度扩张；文字随长度揭示。","sound":"59.66s附近有明显瞬态。","director":"用‘进度条本体’变成文案容器，动作与功能同义。","tags":["pill-morph","progress-semantic","minimal-transition"]},
     {"shot_id":"SH-019","title":"价值观：不是更多，是更有效","start_frame":2349,"end_frame":2498,"start_s":78.3,"end_s":83.266667,"timecode":"00:01:18:09","frame_url":"assets/breakdowns/AHA-CREATOR-3/SH-019.svg","visual":"全白背景，黑色句子逐段出现：‘真正好的营销 从来不是做更多 而是 更有效’，最后‘更有效’橙色。","camera":"纯文字居中/中部；彻底清空前面的UI噪声。","layout":"黑色粗体+橙色最后关键词；一屏一短语。","motion":"逐词/逐句进入，几乎无其他运动；强调词稍放大/变橙。","sound":"78–83s主动减速，音乐仍约120 BPM但画面不追拍。","director":"高潮后用极简价值观收束，把‘功能片’升级成品牌观点。","tags":["kinetic-thesis","minimal-outro","orange-emphasis"]}
   ],
   "motion_anatomy": [
