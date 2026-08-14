@@ -1,0 +1,126 @@
+{
+  "module_id": "S05",
+  "count": 12,
+  "assets": [
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "CAT_RELAX",
+      "meaning_zh": "先躺会儿",
+      "meaning_en": "Cat Relax",
+      "file": "S05-01_CAT_RELAX.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    },
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "RACCOON_BLAME",
+      "meaning_zh": "这也怪我？",
+      "meaning_en": "Raccoon Blame",
+      "file": "S05-02_RACCOON_BLAME.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    },
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "DOG_MONEY",
+      "meaning_zh": "先赚到再说",
+      "meaning_en": "Dog Money",
+      "file": "S05-03_DOG_MONEY.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    },
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "DUCK_FISH",
+      "meaning_zh": "我没摸鱼",
+      "meaning_en": "Duck Fish",
+      "file": "S05-04_DUCK_FISH.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    },
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "RABBIT_REPEAT",
+      "meaning_zh": "你说啥？",
+      "meaning_en": "Rabbit Repeat",
+      "file": "S05-05_RABBIT_REPEAT.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    },
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "HAMSTER_EAT",
+      "meaning_zh": "先吃饱再说",
+      "meaning_en": "Hamster Eat",
+      "file": "S05-06_HAMSTER_EAT.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    },
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "COW_THANKS",
+      "meaning_zh": "我会谢",
+      "meaning_en": "Cow Thanks",
+      "file": "S05-07_COW_THANKS.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    },
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "PENGUIN_CALM",
+      "meaning_zh": "问题不大",
+      "meaning_en": "Penguin Calm",
+      "file": "S05-08_PENGUIN_CALM.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    },
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "SHEEP_OFF",
+      "meaning_zh": "今天收工",
+      "meaning_en": "Sheep Off",
+      "file": "S05-09_SHEEP_OFF.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    },
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "CAPYBARA_SOAK",
+      "meaning_zh": "泡一会儿",
+      "meaning_en": "Capybara Soak",
+      "file": "S05-10_CAPYBARA_SOAK.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    },
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "FOX_STABLE",
+      "meaning_zh": "这波稳了",
+      "meaning_en": "Fox Stable",
+      "file": "S05-11_FOX_STABLE.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    },
+    {
+      "module_id": "S05",
+      "module_name": "中文动物表情包 / Chinese Animal Memes",
+      "tag": "BEAR_NOODLES",
+      "meaning_zh": "边吃边想",
+      "meaning_en": "Bear Noodles",
+      "file": "S05-12_BEAR_NOODLES.png",
+      "status": "PASS",
+      "usage": "智能剪辑反应、短视频转折、客户定制表情包"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "directory": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split",
+  "files": 12,
+  "passed": 12,
+  "failed": 0,
+  "results": [
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-01_CAT_RELAX.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        341,
+        384
+      ],
+      "alpha_bbox": [
+        0,
+        4,
+        336,
+        377
+      ]
+    },
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-02_RACCOON_BLAME.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        342,
+        384
+      ],
+      "alpha_bbox": [
+        8,
+        7,
+        342,
+        384
+      ]
+    },
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-03_DOG_MONEY.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        341,
+        384
+      ],
+      "alpha_bbox": [
+        0,
+        9,
+        336,
+        378
+      ]
+    },
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-04_DUCK_FISH.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        341,
+        384
+      ],
+      "alpha_bbox": [
+        2,
+        2,
+        332,
+        384
+      ]
+    },
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-05_RABBIT_REPEAT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        340,
+        384
+      ],
+      "alpha_bbox": [
+        12,
+        0,
+        332,
+        384
+      ]
+    },
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-06_HAMSTER_EAT.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        341,
+        384
+      ],
+      "alpha_bbox": [
+        7,
+        1,
+        338,
+        384
+      ]
+    },
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-07_COW_THANKS.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        341,
+        384
+      ],
+      "alpha_bbox": [
+        5,
+        0,
+        331,
+        384
+      ]
+    },
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-08_PENGUIN_CALM.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        337,
+        384
+      ],
+      "alpha_bbox": [
+        12,
+        0,
+        325,
+        384
+      ]
+    },
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-09_SHEEP_OFF.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        341,
+        384
+      ],
+      "alpha_bbox": [
+        10,
+        0,
+        332,
+        384
+      ]
+    },
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-10_CAPYBARA_SOAK.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        341,
+        355
+      ],
+      "alpha_bbox": [
+        5,
+        0,
+        329,
+        343
+      ]
+    },
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-11_FOX_STABLE.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        342,
+        361
+      ],
+      "alpha_bbox": [
+        2,
+        0,
+        337,
+        349
+      ]
+    },
+    {
+      "file": "/workspace/scratch/f7f69d016f9a/meme_factory_s05/output_v4_split/S05-12_BEAR_NOODLES.png",
+      "status": "PASS",
+      "issues": [],
+      "transparent_corners": 4,
+      "size": [
+        341,
+        355
+      ],
+      "alpha_bbox": [
+        3,
+        0,
+        332,
+        343
+      ]
+    }
+  ]
+}

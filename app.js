@@ -156,7 +156,53 @@ function caseSection(project) {
 }
 function home() { const publicSoftware = Object.values(items).filter(item => item.type === 'software'); return `<section class="hero-grid"><div><div class="eyebrow">APPLICATION CENTER / 01</div><h1>按分类找，<em>按项目用。</em></h1><p class="intro">这里是我们的产品入口：可以下载的软件、可以直接使用的应用，以及面向客户的服务。分类从主页开始，进入具体项目后，还能看到属于这个项目的全部产品。</p><div class="hero-actions"><button class="cta" data-route="category/software">浏览软件 ↗</button><button class="cta secondary" data-route="project/intelligent-editing">查看智能剪辑项目</button></div></div><div class="hero-art"><span class="art-label">SOFTWARE / APPS / SERVICES</span><div class="signal">${Array.from({length: 34}, (_, i) => `<span style="height:${25 + ((i * 31) % 75)}%"></span>`).join('')}</div></div></section><section class="axis-section"><div class="section-head"><div><div class="eyebrow">按分类</div><h2>先找到你要的形态</h2></div><span>三种入口</span></div><div class="axis-grid">${Object.keys(categories).map(categoryCard).join('')}</div></section><section><div class="section-head"><div><div class="eyebrow">按项目</div><h2>从项目进入产品</h2></div><span>${Object.keys(projects).length} 个项目</span></div><div class="project-grid">${Object.values(projects).map(projectCard).join('')}</div></section><section><div class="section-head"><div><div class="eyebrow">软件 / 已公开</div><h2>智能剪辑的两款软件</h2></div><button class="text-link" data-route="project/intelligent-editing">进入项目页 ↗</button></div><section class="cards">${publicSoftware.map(itemCard).join('')}</section></section>`; }
 function categoryPage(type) { const category = categories[type]; const entries = Object.values(items).filter(item => item.type === type); return `<section><div class="eyebrow">${category.eyebrow}</div><h1>${category.label}</h1><p class="intro">${category.description}</p><div class="section-head"><div><div class="eyebrow">目录状态</div><h2>${entries.length ? `当前 ${category.label}` : '公开入口待整理'}</h2></div><span>${entries.length ? `${entries.length} 项` : '暂无公开项目'}</span></div>${entries.length ? `<section class="cards">${entries.map(itemCard).join('')}</section>` : '<div class="empty">目前没有已经验证的公开入口。后续会在确认部署、版权、隐私和服务边界后补充。</div>'}</section>`; }
-function projectPage(project) { const entries = project.items.map(id => items[id]).filter(Boolean); if (project.id === 'intelligent-editing') { return `<section class="editing-project-page"><button class="detail-back" data-route="home">← 返回 OING 主页</button>${caseSection(project)}<section class="tool-appendix" id="tools"><div class="section-label"><div><div class="eyebrow">TOOLS / DOWNLOADS</div><h2>支持模块</h2></div><span>独立详情与下载</span></div><section class="cards">${entries.map(itemCard).join('')}</section><div class="project-note">工具负责具体能力，案例负责展示结果；同一个软件只维护一个独立详情与下载入口。</div></section><nav class="mobile-bottom-nav" aria-label="智能剪辑页面导航"><a href="#overview">概览</a><a href="#featured-work">作品</a><a href="#tests">测试</a><a href="#tools">工具</a></nav></section>`; } const showcase = project.cases ? caseSection(project) : ''; return `<section><button class="detail-back" data-route="home">← 返回应用主页</button><div class="project-hero"><div><div class="eyebrow">${project.kicker}</div><h1>${project.name}</h1><p class="intro">${project.description}</p></div><div class="project-stamp"><span>${project.status}</span><strong>${entries.length}</strong><small>工具目录项</small></div></div><div class="section-head"><div><div class="eyebrow">项目内工具</div><h2>这个项目包含</h2></div><span>分类仍然保留</span></div><section class="cards">${entries.map(itemCard).join('')}</section><div class="project-note">项目页负责聚合工具与案例，分类页负责横向浏览；同一个软件只维护一个详情和一个独立下载入口。</div>${showcase}</section>`; }
+function memeFactorySection() {
+  const assets = [
+    ['01', 'CAT_RELAX', '先躺会儿', '拖延 / 低电量', 'S05-01_CAT_RELAX.png'],
+    ['02', 'RACCOON_BLAME', '这也怪我？', '甩锅 / 无辜', 'S05-02_RACCOON_BLAME.png'],
+    ['03', 'DOG_MONEY', '先赚到再说', '搞钱 / 结果导向', 'S05-03_DOG_MONEY.png'],
+    ['04', 'DUCK_FISH', '我没摸鱼', '摸鱼 / 被抓包', 'S05-04_DUCK_FISH.png'],
+    ['05', 'RABBIT_REPEAT', '你说啥？', '没听清 / 复读', 'S05-05_RABBIT_REPEAT.png'],
+    ['06', 'HAMSTER_EAT', '先吃饱再说', '干饭 / 拖延', 'S05-06_HAMSTER_EAT.png'],
+    ['07', 'COW_THANKS', '我会谢', '无语 / 反应', 'S05-07_COW_THANKS.png'],
+    ['08', 'PENGUIN_CALM', '问题不大', '稳住 / 安抚', 'S05-08_PENGUIN_CALM.png'],
+    ['09', 'SHEEP_OFF', '今天收工', '下班 / 结束', 'S05-09_SHEEP_OFF.png'],
+    ['10', 'CAPYBARA_SOAK', '泡一会儿', '回血 / 放空', 'S05-10_CAPYBARA_SOAK.png'],
+    ['11', 'FOX_STABLE', '这波稳了', '判断 / 胜券在握', 'S05-11_FOX_STABLE.png'],
+    ['12', 'BEAR_NOODLES', '边吃边想', '思考 / 边吃边做', 'S05-12_BEAR_NOODLES.png']
+  ];
+  return `<section class="meme-factory-showcase" id="meme-factory">
+    <div class="meme-factory-hero">
+      <div class="meme-factory-copy">
+        <div class="eyebrow">MEME FACTORY / S05</div>
+        <h2>中文动物表情包资产工厂</h2>
+        <p>把一张 3×4 母图变成可直接发布、可复用、可验收的透明 PNG 资产。每张图保留角色、空白气泡和一句中文反应，适合社交内容、短视频评论区和客户提案。</p>
+        <div class="meme-factory-stats"><span><strong>12</strong><small>张可用资产</small></span><span><strong>3×4</strong><small>母图网格</small></span><span><strong>12/12</strong><small>透明 QA</small></span></div>
+      </div>
+      <figure class="meme-master-preview"><img src="assets/meme-factory/S05/S05_animal_meme_preview.jpg" alt="S05 中文动物表情包 3×4 母图预览"><figcaption>S05 / source sheet + reserved caption bubbles</figcaption></figure>
+    </div>
+    <div class="meme-factory-section-head"><div><div class="eyebrow">READY-TO-USE ASSETS</div><h3>可直接使用的 12 张资产</h3></div><span>透明 PNG · 中文文案 · 固定裁切</span></div>
+    <div class="meme-asset-grid">${assets.map(([index, tag, caption, usage, file]) => `<article class="meme-asset-card"><div class="meme-asset-media"><img src="assets/meme-factory/S05/${file}" alt="${caption} · ${usage}"><span>${index}</span></div><div class="meme-asset-meta"><strong>${caption}</strong><small>${tag}</small><em>${usage}</em></div></article>`).join('')}</div>
+    <details class="meme-order" open>
+      <summary><span>客户生产单</span><small>先生成可审计需求，再进入生产队列</small></summary>
+      <div class="meme-order-body">
+        <div class="meme-order-grid" data-meme-form>
+          <label>客户 / 品牌<input name="customer" placeholder="例如：OING / 某品牌"></label>
+          <label>使用场景<select name="use_case"><option>社交媒体</option><option>短视频评论区</option><option>品牌提案</option><option>社群运营</option></select></label>
+          <label>视觉方向<input name="direction" value="中文动物 + 夸张反应 + 留白气泡"></label>
+          <label>预计张数<input name="count" type="number" min="1" max="48" value="12"></label>
+          <label class="meme-order-wide">中文文案（每行一句）<textarea name="captions" rows="4" placeholder="先躺会儿\n问题不大\n今天收工"></textarea></label>
+        </div>
+        <div class="meme-order-actions"><button class="cta" type="button" data-meme-build>生成生产单 JSON ↗</button><span>当前输出的是结构化需求单；自动生图、重试和人工验收需要接入后端队列。</span></div>
+        <pre class="meme-order-output" data-meme-output hidden></pre>
+      </div>
+    </details>
+    <p class="meme-factory-boundary">生产边界：图片生成前确认品牌与素材权利；输出后执行透明背景、文字可读性、裁切安全区和临时文件清理 QA。当前页面展示能力与需求单，不伪装成已经在线运行的自动生成 API。</p>
+  </section>`;
+}
+
+
+function projectPage(project) { const entries = project.items.map(id => items[id]).filter(Boolean); if (project.id === 'intelligent-editing') { return `<section class="editing-project-page"><button class="detail-back" data-route="home">← 返回 OING 主页</button>${caseSection(project)}${memeFactorySection()}<section class="tool-appendix" id="tools"><div class="section-label"><div><div class="eyebrow">TOOLS / DOWNLOADS</div><h2>支持模块</h2></div><span>独立详情与下载</span></div><section class="cards">${entries.map(itemCard).join('')}</section><div class="project-note">工具负责具体能力，案例负责展示结果；同一个软件只维护一个独立详情与下载入口。</div></section><nav class="mobile-bottom-nav" aria-label="智能剪辑页面导航"><a href="#overview">概览</a><a href="#featured-work">作品</a><a href="#tests">测试</a><a href="#tools">工具</a></nav></section>`; } const showcase = project.cases ? caseSection(project) : ''; return `<section><button class="detail-back" data-route="home">← 返回应用主页</button><div class="project-hero"><div><div class="eyebrow">${project.kicker}</div><h1>${project.name}</h1><p class="intro">${project.description}</p></div><div class="project-stamp"><span>${project.status}</span><strong>${entries.length}</strong><small>工具目录项</small></div></div><div class="section-head"><div><div class="eyebrow">项目内工具</div><h2>这个项目包含</h2></div><span>分类仍然保留</span></div><section class="cards">${entries.map(itemCard).join('')}</section><div class="project-note">项目页负责聚合工具与案例，分类页负责横向浏览；同一个软件只维护一个详情和一个独立下载入口。</div>${showcase}</section>`; }
 function oss() { return `<section><div class="eyebrow">OPEN SOURCE / NOTICE</div><h1>开源与许可</h1><p class="intro">需要声明。我们使用了开源框架与模型；自有代码、第三方代码、模型权重和可下载发布包不是同一件事。</p><div class="detail-grid"><div class="panel"><h2>本站与软件代码</h2><p>本站页面代码以 MIT License 发布。两个软件当前公开的是下载入口；源码会在完成脱敏、第三方许可证清单和 NOTICE 后拆分发布。</p><p>不会把模型缓存、用户音频、Eagle 素材、日志、发布证据、签名记录或运行数据库提交到公开仓库。</p></div><div class="panel"><h2>核心上游组件</h2>${list(['声听：FastAPI、FunASR、ModelScope、PyTorch、FFmpeg、MCP', '音频工作台：React、Tauri、Rust、FastAPI、librosa、soundfile、PyTorch、FFmpeg、SQLite', '模型权重遵循其模型卡或权利声明；不因软件源码开源而自动改变模型许可'])}<p class="note">完整依赖清单与 NOTICE 会随对应源码仓库发布；当前页面不把“使用开源组件”误写成“所有模型可自由再分发”。</p></div></div></section>`; }
 function detail(item) { const download = item.downloadUrl ? `<a class="cta" href="${item.downloadUrl}" target="_blank" rel="noopener">下载 ${item.name} ↗</a><div class="note">本软件独立提取码：${item.downloadCode} · 下载即表示你理解当前公开测试状态。</div>` : `<div class="empty inline-empty">当前没有公网下载或访问链接。状态：${item.status}。</div>`; return `<section class="detail"><button class="detail-back" data-route="category/${item.type}">← 返回${categories[item.type].label}</button><div class="detail-head">${icon(item, 'detail-icon')}<div><div class="eyebrow">${item.kicker}</div><h1>${item.name}</h1><p class="detail-sub">${item.intro}</p></div></div><div class="detail-grid"><div class="panel"><h2>它能做什么</h2>${list(item.features)}<h2>技术与开源组件</h2>${list(item.technology)}<h2>声明</h2>${list(item.notices)}</div><div class="panel"><h2>${item.type === 'software' ? '安装与使用' : '当前状态'}</h2><div class="facts">${item.facts.map(([key, value]) => `<div class="fact"><small>${key}</small><strong>${value}</strong></div>`).join('')}</div><p>${item.install}</p>${download}<button class="cta secondary" data-route="oss">查看开源与许可</button></div></div></section>`; }
 function render() {
@@ -205,6 +251,26 @@ function render() {
     detailsToggle.setAttribute('aria-expanded', String(open));
     detailsPanel.hidden = !open;
     detailsDisclosure.classList.toggle('is-open', open);
+  });
+  const memeForm = document.querySelector('[data-meme-form]');
+  const memeOutput = document.querySelector('[data-meme-output]');
+  memeForm?.querySelector('[data-meme-build]')?.addEventListener('click', () => {
+    const value = name => memeForm.querySelector(`[name="${name}"]`)?.value.trim() || '';
+    const captions = value('captions').split(/\n+/).map(item => item.trim()).filter(Boolean);
+    const request = {
+      factory_id: 'MEME-FACTORY-001',
+      customer: value('customer'),
+      use_case: value('use_case'),
+      visual_direction: value('direction'),
+      count: Number(value('count')) || 12,
+      captions,
+      output: { layout: '3×4 mother sheet → fixed grid crop', transparent_png: true, language: 'zh-CN' },
+      qa: ['transparent corners', 'caption legibility', 'safe crop', 'temporary file cleanup'],
+      rights_status: 'needs_confirmation',
+      delivery_status: 'request_only_until_backend_queue_is_connected'
+    };
+    memeOutput.hidden = false;
+    memeOutput.textContent = JSON.stringify(request, null, 2);
   });
   document.querySelectorAll('.topbar nav button').forEach(element => element.classList.toggle('active', (element.dataset.nav || element.dataset.route) === active));
   root.focus();
