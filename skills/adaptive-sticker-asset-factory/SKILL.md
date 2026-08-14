@@ -1,6 +1,6 @@
 ---
 name: adaptive-sticker-asset-factory
-description: Generate reusable sticker systems from a natural-language idea, with bilingual semantic labels, batch sheet splitting, automatic checkerboard/background removal, transparent RGBA PNG export, deterministic filenames, CSV/JSON indexes, and a QA report. Use when a user asks for stickers, emoji-like overlays, AI editing labels, reaction assets, transparent PNG packs, or a scalable sticker language for a brand, course, product, or content workflow.
+description: Generate reusable sticker systems from a natural-language idea, with bilingual semantic labels, emotion-expression captions, batch sheet splitting, automatic checkerboard/background removal, transparent RGBA PNG export, deterministic filenames, CSV/JSON indexes, and a QA report. Use when a user asks for stickers, emoji-like overlays, AI editing labels, reaction assets, transparent PNG packs, emotional communication assets, or a scalable sticker language for a brand, course, product, or content workflow.
 ---
 
 # 智能贴纸资产工厂 / Adaptive Sticker Asset Factory
@@ -18,9 +18,9 @@ Turn one sentence describing an intended expression into a coherent sticker asse
    - `meaning_zh`: the Chinese meaning shown to people;
    - `meaning_en`: a short English gloss when the pack is shared publicly;
    - `module_id` and `module_name`: the category that keeps the system expandable.
-   Prefer action/state labels such as `HOOK`, `CUT`, `REVIEW`, `EXPORT`, `WOW`, `NEEDS_FIX`; do not make the filename depend on a sentence translated by a model.
+   Prefer action/state labels such as `HOOK`, `CUT`, `REVIEW`, `EXPORT`, `WOW`, `NEEDS_FIX`; do not make the filename depend on a sentence translated by a model. For expression-oriented packs, map each visual to a short first-person caption before generation. Use [emotion-language-system.md](references/emotion-language-system.md) to separate state, feeling, need, boundary, connection, and shared action.
 
-3. Generate artwork with the image-generation tool available in the current environment. Ask for a consistent sticker system: thick white die-cut border, dark keyline, restrained brand colors, clear silhouette, one idea per sticker, 3×4 or 4×4 separated cells, no scene background, no UI chrome, no watermark, and no accidental duplicate concepts. If exact typography matters, generate art without text and place text with a deterministic overlay tool; image models are not a reliable source of exact spelling.
+3. Generate artwork with the image-generation tool available in the current environment. Ask for a consistent sticker system: thick white die-cut border, dark keyline, restrained brand colors, clear silhouette, one idea per sticker, 3×4 or 4×4 separated cells, no scene background, no UI chrome, no watermark, and no accidental duplicate concepts. If exact typography matters, generate art without text and place text with a deterministic overlay tool; image models are not a reliable source of exact spelling. Add exact captions after artwork generation with `scripts/overlay_captions.py`; the input CSV must contain `file` and `caption_zh`, and a supplied TTF/OTF font is used to write the final text into new RGBA PNGs.
 
 4. Convert the generated sheet or individual images to final assets with the bundled script:
 
@@ -55,4 +55,5 @@ Keep `tag` stable when the illustration changes. The CSV is the handoff contract
 
 - Read [workflow.md](references/workflow.md) for prompt templates, module planning, and user-facing examples.
 - Read [png-processing.md](references/png-processing.md) when the source is a checkerboard, white background, photo, or mixed-quality batch.
+- Read [emotion-language-system.md](references/emotion-language-system.md) when the stickers are meant to help people name feelings, express needs, set boundaries, or respond with empathy.
 - Use [label-taxonomy.json](assets/label-taxonomy.json) as the starter vocabulary; extend it only when the new label is useful across more than one project.
