@@ -7,12 +7,13 @@ const categories = {
 };
 
 const projects = {
-  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 10 个案例 · 1 个完整样片', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，样片负责沉淀可调用的方法。', items: ['asr', 'audio'], cases: ['capabilityProof', 'host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], showreels: ['renovationQuote90'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
+  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 11 个案例 · 1 个完整样片', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，样片负责沉淀可调用的方法。', items: ['asr', 'audio'], cases: ['directorMix', 'capabilityProof', 'host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], showreels: ['renovationQuote90'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
   'photography-workflow': { id: 'photography-workflow', name: '摄影获客工作流', kicker: 'PHOTOGRAPHY / LEAD FLOW', status: '本地应用待公开', description: '把摄影服务、公开线索研究和人工跟进整理在一个可审计的本地工作流中。公开服务入口仍在整理。', items: ['photography-app', 'photography-service'] }
 };
 
 const caseMediaRoot = 'https://preview.oing.xin/preview/ai-video-edit-case/';
 const caseStudies = {
+  directorMix: { id: 'directorMix', code: 'DIR-MIX-20260819-001 / V6 HYPER TYPOGRAPHY', internalCode: 'DIR-MIX-20260819-001', skillCode: 'SKILL::SMART_DIRECTOR::V6', workflowCode: 'WF::DIRECTOR_MIX::20260819::V6', cloudName: 'DIR-MIX-20260819-001｜别只经过生活｜V6', title: '别只经过生活｜智能导演情绪混剪', source: '16:9 · 35.5 秒 · 24fps', aspect: 'landscape', status: '已验证 · V6', statusClass: 'verified', video: 'https://auto-edit-cases.suwulong.chatgpt.site/assets/cases/DIR-MIX-20260819-001_v6-hyper-typography_web.mp4', note: '以“时间只负责向前”为冲突，把城市、人物与日常片段重组成一次从流逝到主动记录的选择。Fish 配音、原创音乐与 HyperFrames 动态排版共同完成断裂、重启和高潮。', testGoal: '验证导演判断、情绪节奏、旁白、音乐与动态字幕能否在 35.5 秒内共同完成一个明确主题。', testMethod: '冷开场提出命题 → 保留呼吸与停顿 → 18 秒处制造视觉断裂 → 20 秒后以动作词和音乐高潮把情绪推到“把它留下来”。', tags: ['智能导演', '情绪混剪', '动态排版', 'Fish配音', '原创音乐'], category: '情绪叙事', outcome: '导演混剪 / 品牌表达', role: '智能导演', proof: ['35.5 秒', 'Fish 配音', 'HyperFrames 排版', '原创音乐', 'V6 已验证'], reuse: '换素材时保留“流逝 → 停顿 → 选择 → 留下”的情绪骨架；先锁定主张和音乐结构，再用真实配音时间码回填字幕，动态排版只服务句意与节奏峰值。', reuseReady: true },
   capabilityProof: { id: 'capabilityProof', code: 'VID-AE-CAP-001 / CAPABILITY PROOF', internalCode: 'VID-AE-CAP-001', skillCode: 'SKILL-EDIT-RHYTHM-CASE-WALL-001', workflowCode: 'WF-AUTOEDIT-CASE-WALL-001', cloudName: 'VID-AE-CAP-001｜导演系统能力证明片｜案例墙·节奏分轨｜v1', title: '导演系统能力证明片｜案例墙·节奏分轨', source: '9:16 · 177 秒 · 三音轨', aspect: 'portrait', status: '已验证', statusClass: 'verified', video: 'https://suwujin-code.github.io/intelligent-editing-site/assets/cases/VID-AE-CAP-001_capability-proof_v1_final.mp4', previewUrl: 'https://drive.google.com/file/d/1PUbP86auDjw-TQff4-suxOU1lG6W4rzp/view?usp=drivesdk', masterUrl: 'https://drive.google.com/file/d/1PUbP86auDjw-TQff4-suxOU1lG6W4rzp/view?usp=drivesdk', driveFolderUrl: 'https://drive.google.com/drive/folders/1z8YB3G3pphph6L_rkQrqZXbHxabeBqoU', note: '完整的导演能力证明：真实案例墙、口播主线、信息层级与音乐节奏分轨都可以回查。', testGoal: '验证主时间线、B-roll、字幕时间码和独立音轨能否组成一条可复用的完整生产链。', testMethod: '先定一条主张，再生成配音并用真实时间码生成字幕；B-roll 按句意进入，VO、Music、Mix 保持独立。', tags: ['能力证明', '案例墙', '节奏控制'], category: '能力证明', outcome: '主时间线 + B-roll', role: '导演 + 编辑', proof: ['177 秒', '3 类案例', 'VO / Music 分轨', '16 条对齐字幕', 'HyperFrames QA'], reuse: '换内容时只替换口播、B-roll 和配乐；先配音，再由时间码生成字幕。固定保留标题 / 旁白 / 信息动画三层，音乐不能混入说话声。', reuseReady: true },
   renovationQuote90: {
     id: 'renovationQuote90',
@@ -155,8 +156,8 @@ function caseSection(project) {
   const studies = project.cases.map(id => caseStudies[id]).filter(Boolean);
   const capabilityProof = studies.find(study => study.id === 'capabilityProof');
   const talkStudies = studies.filter(study => study.category === '知识口播');
-  const tests = studies.filter(study => study.category !== '知识口播' && study.id !== 'capabilityProof');
-  const first = capabilityProof || talkStudies[0] || studies[0];
+  const tests = studies.filter(study => study.category !== '知识口播' && study.id !== 'capabilityProof' && study.id !== 'directorMix');
+  const first = studies[0] || capabilityProof || talkStudies[0];
   const related = talkStudies.filter(study => study.id !== first.id);
   const initialTest = tests[0];
 
