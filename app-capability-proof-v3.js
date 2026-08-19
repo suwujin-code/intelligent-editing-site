@@ -7,12 +7,60 @@ const categories = {
 };
 
 const projects = {
-  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 12 个案例 · 2 个导演样片', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，样片负责沉淀可调用的方法。', items: ['asr', 'audio'], cases: ['directorMixV8', 'directorMix', 'capabilityProof', 'host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], showreels: ['directorMixV8', 'directorMix', 'renovationQuote90'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
+  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 12 个案例 · 5 个导演样片', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，样片负责沉淀可调用的方法。', items: ['asr', 'audio'], cases: ['directorMixV8', 'directorMix', 'capabilityProof', 'host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], showreels: ['directorMixV9A', 'directorMixV9B', 'directorMixV9C', 'directorMixV8', 'directorMix', 'renovationQuote90'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
   'photography-workflow': { id: 'photography-workflow', name: '摄影获客工作流', kicker: 'PHOTOGRAPHY / LEAD FLOW', status: '本地应用待公开', description: '把摄影服务、公开线索研究和人工跟进整理在一个可审计的本地工作流中。公开服务入口仍在整理。', items: ['photography-app', 'photography-service'] }
 };
 
 const caseMediaRoot = 'https://preview.oing.xin/preview/ai-video-edit-case/';
 const caseStudies = {
+  directorMixV9A: {
+    id: 'directorMixV9A', code: 'DIR-MIX-20260819-001 / V9A CITY GRAVITY', internalCode: 'DIR-MIX-20260819-001::V9A',
+    skillCode: 'VOICE::EMOTION::FISH::NEAR-HEART-WHISPER::001', workflowCode: 'WF::DIRECTOR-MIX::20260819::V9A',
+    cloudName: 'DIR-MIX-20260819-001-V9A｜城市失重｜抖音情绪混剪', title: '城市失重｜V9A 抖音情绪混剪',
+    source: '9:16 · 29 秒 · 30fps · 初选 8 组 · 正式 5 组 · 31 个镜头', aspect: 'portrait', status: '完整QA通过 · V9.1', statusClass: 'verified',
+    video: 'assets/cases/DIR-MIX-20260819-001_v9a-city-gravity_9x16_web.mp4', poster: 'assets/cases/DIR-MIX-20260819-001_v9a-city-gravity_poster.jpg',
+    skillIndexUrl: '#capabilities', platform: '抖音', collection: '抖音 / 情绪叙事',
+    note: '主推版本。用城市压迫、关系碎片与远行空间交叉推进，把“被生活推着走”剪成一次失重后的重新落地；画面不再依赖单一主角，31 个独立镜头持续换气。',
+    testGoal: '验证多素材、高密度镜头与克制情感旁白能否在 29 秒内形成清楚的压力—释放情绪弧线。',
+    testMethod: '城市压迫 → 关系闪回 → 情绪失重 → 远方打开 → 回到自己。',
+    tags: ['抖音情绪混剪', '多素材', '近心低语', '31镜头', '9:16竖版'], category: '抖音情绪叙事', outcome: '短视频 / 情绪共鸣', role: '智能导演 + 情绪剪辑',
+    proof: ['29 秒', '9:16 竖版', '5 组干净来源', '31 个独立镜头', '近心低语'],
+    productionRules: ['前 2 秒先给情绪冲突', '每个镜头只承担一个情绪动作', '文艺文字必须回应主题', '结尾留余韵，不做硬性 CTA'],
+    reuse: '下次直接调用“近心低语”，保留“压迫 → 失重 → 打开 → 落地”的情绪骨架，再按新素材重排 24—32 个独立镜头。', reuseReady: true,
+    archiveNote: '母版、网页压缩版、三段式工程包、分轨音频、导演思路与 QA 已按 DIR-MIX-20260819-001::V9A 分类归档；原账号水印已清除，公开发布仍需确认素材权利。'
+  },
+  directorMixV9B: {
+    id: 'directorMixV9B', code: 'DIR-MIX-20260819-001 / V9B DISTANCE WITHIN', internalCode: 'DIR-MIX-20260819-001::V9B',
+    skillCode: 'VOICE::EMOTION::FISH::NEAR-HEART-WHISPER::001', workflowCode: 'WF::DIRECTOR-MIX::20260819::V9B',
+    cloudName: 'DIR-MIX-20260819-001-V9B｜远方以内｜抖音文学混剪', title: '远方以内｜V9B 抖音文学混剪',
+    source: '9:16 · 29 秒 · 30fps · 初选 8 组 · 正式 5 组 · 31 个镜头', aspect: 'portrait', status: '完整QA通过 · V9.1', statusClass: 'verified',
+    video: 'assets/cases/DIR-MIX-20260819-001_v9b-distance-within_9x16_web.mp4', poster: 'assets/cases/DIR-MIX-20260819-001_v9b-distance-within_poster.jpg',
+    skillIndexUrl: '#capabilities', platform: '抖音', collection: '抖音 / 情绪叙事',
+    note: '更柔软、更文艺的一条。把旅行、关系和独处织成“远方不只在地图上”的内在迁徙，诗性文字只在呼吸处出现，情绪不是喊出来，而是慢慢浮上来。',
+    testGoal: '验证多场景旅行与关系素材能否在不堆砌金句的前提下，形成统一且高级的文学主题。',
+    testMethod: '眼前日常 → 关系记忆 → 远方投射 → 内心抵达。',
+    tags: ['抖音文学情绪', '旅行关系', '近心低语', '诗性旁注', '31镜头'], category: '抖音情绪叙事', outcome: '短视频 / 文学表达', role: '智能导演 + 文学剪辑',
+    proof: ['29 秒', '9:16 竖版', '5 组干净来源', '31 个独立镜头', '近心低语'],
+    productionRules: ['诗性文字必须来自主题', '旁注只做回声，不解释画面', '关系与远行镜头交叉出现', '音乐高潮不压过旁白'],
+    reuse: '调用“近心低语”后，以“日常 → 记忆 → 远方 → 抵达”为骨架，优先选择带空间感、凝视与离开动作的镜头。', reuseReady: true,
+    archiveNote: '母版、网页压缩版、三段式工程包、分轨音频、导演思路与 QA 已按 DIR-MIX-20260819-001::V9B 分类归档；竖屏转载源已移除，原片烧录字幕已统一净化。'
+  },
+  directorMixV9C: {
+    id: 'directorMixV9C', code: 'DIR-MIX-20260819-001 / V9C RETURN TODAY', internalCode: 'DIR-MIX-20260819-001::V9C',
+    skillCode: 'VOICE::EMOTION::FISH::NEAR-HEART-WHISPER::001', workflowCode: 'WF::DIRECTOR-MIX::20260819::V9C',
+    cloudName: 'DIR-MIX-20260819-001-V9C｜把今天还给自己｜抖音强节奏混剪', title: '把今天还给自己｜V9C 抖音强节奏混剪',
+    source: '9:16 · 29 秒 · 30fps · 初选 8 组 · 正式 5 组 · 31 个镜头', aspect: 'portrait', status: '完整QA通过 · V9.1', statusClass: 'verified',
+    video: 'assets/cases/DIR-MIX-20260819-001_v9c-return-today_9x16_web.mp4', poster: 'assets/cases/DIR-MIX-20260819-001_v9c-return-today_poster.jpg',
+    skillIndexUrl: '#capabilities', platform: '抖音', collection: '抖音 / 情绪叙事',
+    note: '三条里最强节奏、最接近抖音商业混剪的一条。产品、城市、人物和旅行画面快速碰撞，让“把今天还给自己”成为可被记住的落点。',
+    testGoal: '验证高频切换、品牌化画面与情感旁白能否同时保持可看性与明确记忆点。',
+    testMethod: '快速钩子 → 现实轰炸 → 人物回看 → 行动释放 → 标题落点。',
+    tags: ['抖音强节奏', '商业混剪', '近心低语', '高频切换', '31镜头'], category: '抖音情绪叙事', outcome: '短视频 / 强节奏传播', role: '智能导演 + 商业混剪',
+    proof: ['29 秒', '9:16 竖版', '5 组干净来源', '31 个独立镜头', '近心低语'],
+    productionRules: ['开场动作先于说明', '产品镜头不连续堆叠', '字幕使用短句与动词', '结尾保留一句可复述主张'],
+    reuse: '调用“近心低语”后，用“轰炸 → 回看 → 行动 → 落点”的结构组织高能素材；适合商业感更强、需要快速抓人的选题。', reuseReady: true,
+    archiveNote: '母版、网页压缩版、三段式工程包、分轨音频、导演思路与 QA 已按 DIR-MIX-20260819-001::V9C 分类归档；技术与视觉净化已通过，品牌露出风险作为 A/B 测试观察项保留。'
+  },
   directorMixV8: { id: 'directorMixV8', code: 'DIR-MIX-20260819-001 / V8.3 DOUYIN POETIC', internalCode: 'DIR-MIX-20260819-001-V8.3', skillCode: 'SKILL::SMART-DIRECTOR::DOUYIN-POETIC::V8.3', workflowCode: 'WF::DIRECTOR-MIX::20260819::DOUYIN-POETIC::V8.3', cloudName: 'DIR-MIX-20260819-001-V8.3｜听见自己｜抖音文学情绪版', title: '听见自己｜抖音文学情绪混剪 V8.3', source: '9:16 · 29 秒 · 30fps · 单一主角 · 16 个独立剪辑段', aspect: 'portrait', status: '技术QA通过 · 待主观门禁', statusClass: 'conditional', video: 'assets/cases/DIR-MIX-20260819-001_v8.3-poetic_9x16_web.mp4', poster: 'assets/cases/DIR-MIX-20260819-001_v8.3-poetic_poster.jpg', skillIndexUrl: '#capabilities', platform: '抖音', collection: '抖音 / 情绪叙事', note: '以“你不是想逃离生活，只是太久没听见自己”为核心，把通勤人群、车窗、雨夜与回望重新编成一条抖音竖屏情绪线。旁白负责说出心事，五处宋体旁注把画面留白变成内心回声，片尾回到人群也回到自己。', testGoal: '验证文学化旁注、竖屏节奏、旁白与原创音乐能否在 29 秒内完成一次从麻木到自我听见的转折。', testMethod: '人群噪声 → 心事显影 → 车窗留白 → “远方有时不在地图上” → 回到人群，也回到自己。', tags: ['抖音文学情绪', '文艺旁注', 'Fish配音', '原创音乐', '9:16竖版'], category: '抖音情绪叙事', outcome: '短视频 / 文学情绪表达', role: '智能导演 + 情绪剪辑', proof: ['29 秒', '9:16 竖版', '5 处文艺旁注', '1 条源片', '16 个剪辑段'], productionRules: ['文案先定主题，不用模板话术', '诗性文字只做回声，不抢旁白', '旁白先行，音乐控制情绪峰值', '片尾保留余韵，不用硬性 CTA'], reuse: '换素材时保留“人群噪声 → 心事显影 → 空间留白 → 自我听见 → 回到自己”的情绪骨架；先锁定主题和真实配音，再按文艺旁注的呼吸点重排画面。', reuseReady: true, archiveNote: '工程、母版、分轨音频、导演思路、技能快照与 QA 已按 DIR-MIX-20260819-001-V8.3 归档；技术 QA 通过，手机外放与耳机主观门禁待确认。' },
   directorMix: { id: 'directorMix', code: 'DIR-MIX-20260819-001 / V6 HYPER TYPOGRAPHY', internalCode: 'DIR-MIX-20260819-001', skillCode: 'SKILL::SMART_DIRECTOR::V6', workflowCode: 'WF::DIRECTOR_MIX::20260819::V6', cloudName: 'DIR-MIX-20260819-001｜别只经过生活｜V6', title: '别只经过生活｜智能导演情绪混剪', source: '16:9 · 35.5 秒 · 24fps', aspect: 'landscape', status: '已验证 · V6', statusClass: 'verified', video: 'assets/cases/DIR-MIX-20260819-001_v6-hyper-typography_web.mp4', note: '以“时间只负责向前”为冲突，把城市、人物与日常片段重组成一次从流逝到主动记录的选择。Fish 配音、原创音乐与 HyperFrames 动态排版共同完成断裂、重启和高潮。', testGoal: '验证导演判断、情绪节奏、旁白、音乐与动态字幕能否在 35.5 秒内共同完成一个明确主题。', testMethod: '冷开场提出命题 → 保留呼吸与停顿 → 18 秒处制造视觉断裂 → 20 秒后以动作词和音乐高潮把情绪推到“把它留下来”。', tags: ['智能导演', '情绪混剪', '动态排版', 'Fish配音', '原创音乐'], category: '情绪叙事', outcome: '导演混剪 / 品牌表达', role: '智能导演', proof: ['35.5 秒', 'Fish 配音', 'HyperFrames 排版', '原创音乐', 'V6 已验证'], reuse: '换素材时保留“流逝 → 停顿 → 选择 → 留下”的情绪骨架；先锁定主张和音乐结构，再用真实配音时间码回填字幕，动态排版只服务句意与节奏峰值。', reuseReady: true },
   capabilityProof: { id: 'capabilityProof', code: 'VID-AE-CAP-001 / CAPABILITY PROOF', internalCode: 'VID-AE-CAP-001', skillCode: 'SKILL-EDIT-RHYTHM-CASE-WALL-001', workflowCode: 'WF-AUTOEDIT-CASE-WALL-001', cloudName: 'VID-AE-CAP-001｜导演系统能力证明片｜案例墙·节奏分轨｜v1', title: '导演系统能力证明片｜案例墙·节奏分轨', source: '9:16 · 177 秒 · 三音轨', aspect: 'portrait', status: '已验证', statusClass: 'verified', video: 'https://suwujin-code.github.io/intelligent-editing-site/assets/cases/VID-AE-CAP-001_capability-proof_v1_final.mp4', note: '完整的导演能力证明：真实案例墙、口播主线、信息层级与音乐节奏分轨都可以回查。', testGoal: '验证主时间线、B-roll、字幕时间码和独立音轨能否组成一条可复用的完整生产链。', testMethod: '先定一条主张，再生成配音并用真实时间码生成字幕；B-roll 按句意进入，VO、Music、Mix 保持独立。', tags: ['能力证明', '案例墙', '节奏控制'], category: '能力证明', outcome: '主时间线 + B-roll', role: '导演 + 编辑', proof: ['177 秒', '3 类案例', 'VO / Music 分轨', '16 条对齐字幕', 'HyperFrames QA'], reuse: '换内容时只替换口播、B-roll 和配乐；先配音，再由时间码生成字幕。固定保留标题 / 旁白 / 信息动画三层，音乐不能混入说话声。', reuseReady: true },
