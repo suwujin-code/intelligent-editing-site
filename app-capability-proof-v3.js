@@ -173,13 +173,13 @@ function directorSampleCard(study, index) {
       <span class="featured-code">${study.code}</span>
       <h3>${study.title}</h3>
       <p>${study.note}</p>
-      <div class="director-sample-tags">${study.tags.map(tag => `<span>${tag}</span>`).join('')}</div>
+      <div class="director-sample-tags">${(study.tags || []).map(tag => `<span>${tag}</span>`).join('')}</div>
       <dl class="director-sample-facts">
         <div><dt>样片编码</dt><dd>${study.internalCode}</dd></div>
         <div><dt>可调用技能</dt><dd>${study.skillCode}</dd></div>
         <div><dt>制作链路</dt><dd>${study.workflowCode}</dd></div>
       </dl>
-      <div class="director-sample-rules">${study.productionRules.map(rule => `<span>✓ ${rule}</span>`).join('')}</div>
+      <div class="director-sample-rules">${(study.productionRules || []).map(rule => `<span>✓ ${rule}</span>`).join('')}</div>
       <p class="director-sample-reuse">${study.reuse}</p>
       <div class="director-sample-actions">
         <a class="cta" href="${mediaUrl(study)}" target="_blank" rel="noopener">打开独立播放 ↗</a>
