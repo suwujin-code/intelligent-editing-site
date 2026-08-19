@@ -7,14 +7,15 @@ const categories = {
 };
 
 const projects = {
-  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 11 个案例 · 1 个完整样片', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，样片负责沉淀可调用的方法。', items: ['asr', 'audio'], cases: ['directorMix', 'capabilityProof', 'host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], showreels: ['renovationQuote90'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
+  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 12 个案例 · 2 个导演样片', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，样片负责沉淀可调用的方法。', items: ['asr', 'audio'], cases: ['directorMixV8', 'directorMix', 'capabilityProof', 'host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], showreels: ['directorMixV8', 'directorMix', 'renovationQuote90'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
   'photography-workflow': { id: 'photography-workflow', name: '摄影获客工作流', kicker: 'PHOTOGRAPHY / LEAD FLOW', status: '本地应用待公开', description: '把摄影服务、公开线索研究和人工跟进整理在一个可审计的本地工作流中。公开服务入口仍在整理。', items: ['photography-app', 'photography-service'] }
 };
 
 const caseMediaRoot = 'https://preview.oing.xin/preview/ai-video-edit-case/';
 const caseStudies = {
+  directorMixV8: { id: 'directorMixV8', code: 'DIR-MIX-20260819-001 / V8.3 DOUYIN POETIC', internalCode: 'DIR-MIX-20260819-001-V8.3', skillCode: 'SKILL::SMART-DIRECTOR::DOUYIN-POETIC::V8.3', workflowCode: 'WF::DIRECTOR-MIX::20260819::DOUYIN-POETIC::V8.3', cloudName: 'DIR-MIX-20260819-001-V8.3｜听见自己｜抖音文学情绪版', title: '听见自己｜抖音文学情绪混剪 V8.3', source: '9:16 · 29 秒 · 30fps · 单一主角 · 16 个独立剪辑段', aspect: 'portrait', status: '技术QA通过 · 待主观门禁', statusClass: 'conditional', video: 'assets/cases/DIR-MIX-20260819-001_v8.3-poetic_9x16_web.mp4', poster: 'assets/cases/DIR-MIX-20260819-001_v8.3-poetic_poster.jpg', skillIndexUrl: '#capabilities', platform: '抖音', collection: '抖音 / 情绪叙事', note: '以“你不是想逃离生活，只是太久没听见自己”为核心，把通勤人群、车窗、雨夜与回望重新编成一条抖音竖屏情绪线。旁白负责说出心事，五处宋体旁注把画面留白变成内心回声，片尾回到人群也回到自己。', testGoal: '验证文学化旁注、竖屏节奏、旁白与原创音乐能否在 29 秒内完成一次从麻木到自我听见的转折。', testMethod: '人群噪声 → 心事显影 → 车窗留白 → “远方有时不在地图上” → 回到人群，也回到自己。', tags: ['抖音文学情绪', '文艺旁注', 'Fish配音', '原创音乐', '9:16竖版'], category: '抖音情绪叙事', outcome: '短视频 / 文学情绪表达', role: '智能导演 + 情绪剪辑', proof: ['29 秒', '9:16 竖版', '5 处文艺旁注', '1 条源片', '16 个剪辑段'], productionRules: ['文案先定主题，不用模板话术', '诗性文字只做回声，不抢旁白', '旁白先行，音乐控制情绪峰值', '片尾保留余韵，不用硬性 CTA'], reuse: '换素材时保留“人群噪声 → 心事显影 → 空间留白 → 自我听见 → 回到自己”的情绪骨架；先锁定主题和真实配音，再按文艺旁注的呼吸点重排画面。', reuseReady: true, archiveNote: '工程、母版、分轨音频、导演思路、技能快照与 QA 已按 DIR-MIX-20260819-001-V8.3 归档；技术 QA 通过，手机外放与耳机主观门禁待确认。' },
   directorMix: { id: 'directorMix', code: 'DIR-MIX-20260819-001 / V6 HYPER TYPOGRAPHY', internalCode: 'DIR-MIX-20260819-001', skillCode: 'SKILL::SMART_DIRECTOR::V6', workflowCode: 'WF::DIRECTOR_MIX::20260819::V6', cloudName: 'DIR-MIX-20260819-001｜别只经过生活｜V6', title: '别只经过生活｜智能导演情绪混剪', source: '16:9 · 35.5 秒 · 24fps', aspect: 'landscape', status: '已验证 · V6', statusClass: 'verified', video: 'assets/cases/DIR-MIX-20260819-001_v6-hyper-typography_web.mp4', note: '以“时间只负责向前”为冲突，把城市、人物与日常片段重组成一次从流逝到主动记录的选择。Fish 配音、原创音乐与 HyperFrames 动态排版共同完成断裂、重启和高潮。', testGoal: '验证导演判断、情绪节奏、旁白、音乐与动态字幕能否在 35.5 秒内共同完成一个明确主题。', testMethod: '冷开场提出命题 → 保留呼吸与停顿 → 18 秒处制造视觉断裂 → 20 秒后以动作词和音乐高潮把情绪推到“把它留下来”。', tags: ['智能导演', '情绪混剪', '动态排版', 'Fish配音', '原创音乐'], category: '情绪叙事', outcome: '导演混剪 / 品牌表达', role: '智能导演', proof: ['35.5 秒', 'Fish 配音', 'HyperFrames 排版', '原创音乐', 'V6 已验证'], reuse: '换素材时保留“流逝 → 停顿 → 选择 → 留下”的情绪骨架；先锁定主张和音乐结构，再用真实配音时间码回填字幕，动态排版只服务句意与节奏峰值。', reuseReady: true },
-  capabilityProof: { id: 'capabilityProof', code: 'VID-AE-CAP-001 / CAPABILITY PROOF', internalCode: 'VID-AE-CAP-001', skillCode: 'SKILL-EDIT-RHYTHM-CASE-WALL-001', workflowCode: 'WF-AUTOEDIT-CASE-WALL-001', cloudName: 'VID-AE-CAP-001｜导演系统能力证明片｜案例墙·节奏分轨｜v1', title: '导演系统能力证明片｜案例墙·节奏分轨', source: '9:16 · 177 秒 · 三音轨', aspect: 'portrait', status: '已验证', statusClass: 'verified', video: 'https://suwujin-code.github.io/intelligent-editing-site/assets/cases/VID-AE-CAP-001_capability-proof_v1_final.mp4', previewUrl: 'https://drive.google.com/file/d/1PUbP86auDjw-TQff4-suxOU1lG6W4rzp/view?usp=drivesdk', masterUrl: 'https://drive.google.com/file/d/1PUbP86auDjw-TQff4-suxOU1lG6W4rzp/view?usp=drivesdk', driveFolderUrl: 'https://drive.google.com/drive/folders/1z8YB3G3pphph6L_rkQrqZXbHxabeBqoU', note: '完整的导演能力证明：真实案例墙、口播主线、信息层级与音乐节奏分轨都可以回查。', testGoal: '验证主时间线、B-roll、字幕时间码和独立音轨能否组成一条可复用的完整生产链。', testMethod: '先定一条主张，再生成配音并用真实时间码生成字幕；B-roll 按句意进入，VO、Music、Mix 保持独立。', tags: ['能力证明', '案例墙', '节奏控制'], category: '能力证明', outcome: '主时间线 + B-roll', role: '导演 + 编辑', proof: ['177 秒', '3 类案例', 'VO / Music 分轨', '16 条对齐字幕', 'HyperFrames QA'], reuse: '换内容时只替换口播、B-roll 和配乐；先配音，再由时间码生成字幕。固定保留标题 / 旁白 / 信息动画三层，音乐不能混入说话声。', reuseReady: true },
+  capabilityProof: { id: 'capabilityProof', code: 'VID-AE-CAP-001 / CAPABILITY PROOF', internalCode: 'VID-AE-CAP-001', skillCode: 'SKILL-EDIT-RHYTHM-CASE-WALL-001', workflowCode: 'WF-AUTOEDIT-CASE-WALL-001', cloudName: 'VID-AE-CAP-001｜导演系统能力证明片｜案例墙·节奏分轨｜v1', title: '导演系统能力证明片｜案例墙·节奏分轨', source: '9:16 · 177 秒 · 三音轨', aspect: 'portrait', status: '已验证', statusClass: 'verified', video: 'https://suwujin-code.github.io/intelligent-editing-site/assets/cases/VID-AE-CAP-001_capability-proof_v1_final.mp4', note: '完整的导演能力证明：真实案例墙、口播主线、信息层级与音乐节奏分轨都可以回查。', testGoal: '验证主时间线、B-roll、字幕时间码和独立音轨能否组成一条可复用的完整生产链。', testMethod: '先定一条主张，再生成配音并用真实时间码生成字幕；B-roll 按句意进入，VO、Music、Mix 保持独立。', tags: ['能力证明', '案例墙', '节奏控制'], category: '能力证明', outcome: '主时间线 + B-roll', role: '导演 + 编辑', proof: ['177 秒', '3 类案例', 'VO / Music 分轨', '16 条对齐字幕', 'HyperFrames QA'], reuse: '换内容时只替换口播、B-roll 和配乐；先配音，再由时间码生成字幕。固定保留标题 / 旁白 / 信息动画三层，音乐不能混入说话声。', reuseReady: true },
   renovationQuote90: {
     id: 'renovationQuote90',
     code: 'VID-REN-GZ10-V03-SPBD-001',
@@ -29,10 +30,6 @@ const caseStudies = {
     statusClass: 'conditional',
     video: 'https://suwujin-code.github.io/intelligent-editing-site/assets/cases/GZ10_V03_Rough_Electric_SPBD_Animation_v2.0.mp4',
     poster: 'https://suwujin-code.github.io/intelligent-editing-site/assets/cases/GZ10_V03_Rough_Electric_ContactSheet_v2.0.jpg',
-    previewUrl: 'https://drive.google.com/file/d/163MoEJJSx9q4oUNS-sv0CZ-9GujP1-5c/view?usp=drivesdk',
-    skillIndexUrl: 'https://docs.google.com/document/d/1euu4Gn4HirNpmwaUHIvPs1dAT-T2V4x75WnnlhwaIU4/edit?usp=drivesdk',
-    driveFolderUrl: 'https://drive.google.com/drive/folders/1jyBt3ZRcga-zI5_rDHEc7zbrHuWnYEDu',
-    packageUrl: 'https://drive.google.com/file/d/1fGac6HONzgY09IxmLN6nbkETSM6-NZVa/view?usp=drivesdk',
     note: '18 秒完整版：先提出“便宜但没写清”的报价风险，再在明确标注的毛坯水电示意中建立电路、水路和点位；三张带 SPBD 物理回弹与锚点约束的证据卡锁定材料／规格、数量／回路、施工／增项，最后给出签合同前的三步清单。',
     testGoal: '验证一条 18 秒完整装修科普叙事：问题、毛坯证据、增项风险和签前行动能否与配音时间轴连续对齐。',
     testMethod: '便宜但没写清的报价钩子 → 毛坯平面与管线 → 三项证据卡的固定步长约束 → 增项风险 → 三项签前勾选；人声、音乐与结构音效分轨混音。',
@@ -122,7 +119,7 @@ function directorSampleCard(study, index) {
       <video controls preload="metadata" playsinline poster="${study.poster || ''}"><source src="${mediaUrl(study)}" type="video/mp4" /></video>
     </div>
     <div class="director-sample-copy">
-      <div class="eyebrow">VERIFIED DIRECTOR SAMPLE</div>
+      <div class="eyebrow">${study.statusClass === 'verified' ? 'VERIFIED DIRECTOR SAMPLE' : 'DIRECTOR SAMPLE · TECHNICAL QA'}</div>
       <span class="featured-code">${study.code}</span>
       <h3>${study.title}</h3>
       <p>${study.note}</p>
@@ -136,16 +133,16 @@ function directorSampleCard(study, index) {
       <p class="director-sample-reuse">${study.reuse}</p>
       <div class="director-sample-actions">
         <a class="cta" href="${mediaUrl(study)}" target="_blank" rel="noopener">打开独立播放 ↗</a>
-        <a class="cta secondary" href="${study.skillIndexUrl}" target="_blank" rel="noopener">查看技能索引 ↗</a>
+        ${study.skillIndexUrl ? `<a class="cta secondary" href="${study.skillIndexUrl}" target="_blank" rel="noopener">查看技能索引 ↗</a>` : ''}
         ${study.packageUrl ? `<a class="text-link" href="${study.packageUrl}" target="_blank" rel="noopener">打开交付包 ↗</a>` : ""}
-        <a class="text-link" href="${study.driveFolderUrl}" target="_blank" rel="noopener">内部工程 ↗</a>
+        ${study.driveFolderUrl ? `<a class="text-link" href="${study.driveFolderUrl}" target="_blank" rel="noopener">内部工程 ↗</a>` : '<span class="text-link text-link-disabled">内部工程已归档 · 私有</span>'}
       </div>
-      <small class="director-sample-boundary">内部工程链接仅供已授权团队回查；公开页面展示的是成片与可复用方法。</small>
+      <small class="director-sample-boundary">${study.archiveNote || '内部工程链接仅供已授权团队回查；公开页面展示的是成片与可复用方法。'}</small>
     </div>
   </article>`;
 }
 function directorSampleSection(project) {
-  const samples = (project.showreels || []).map(id => caseStudies[id]).filter(Boolean);
+  const samples = (project.showreels || []).map(id => caseStudies[id]).filter(study => study && !study.platform);
   if (!samples.length) return '';
   return `<section class="director-sample-archive" id="sample-archive">
     <div class="section-label">
@@ -156,18 +153,30 @@ function directorSampleSection(project) {
     <div class="director-sample-list">${samples.map(directorSampleCard).join('')}</div>
   </section>`;
 }
+function platformSampleSection(project, platform, anchor, title, intro) {
+  const samples = (project.showreels || []).map(id => caseStudies[id]).filter(study => study && study.platform === platform);
+  if (!samples.length) return '';
+  return `<section class="director-sample-archive platform-sample-archive" id="${anchor}">
+    <div class="section-label">
+      <div><div class="eyebrow">${platform.toUpperCase()} · SHORT VIDEO</div><h2>${title}</h2></div>
+      <span>按平台独立归档，和其他案例分开回看</span>
+    </div>
+    <p class="director-sample-intro">${intro}</p>
+    <div class="director-sample-list">${samples.map(directorSampleCard).join('')}</div>
+  </section>`;
+}
 
 function capabilityRow(index, title, tool, description, output) {
   return `<details class="capability-row" ${index === '01' ? 'open' : ''}><summary><span class="capability-index">${index}</span><span class="capability-title"><strong>${title}</strong><small>${tool}</small></span><span class="capability-description">${description}</span><span class="capability-output">${output}</span><span class="capability-toggle" aria-hidden="true">⌄</span></summary><div class="capability-detail"><span>这一层解决什么</span><p>${description}</p><span>可回查产出</span><p>${output}</p></div></details>`;
 }
 function reuseSection(study) {
-  return `<section class="reuse-section" id="reuse-contract"><div class="section-label"><div><div class="eyebrow">REUSE CONTRACT</div><h2>如何复用这条样片</h2></div><span>案例、技能、工程三者绑定</span></div><div class="reuse-grid"><div class="reuse-card"><small>案例编码</small><strong>${study.internalCode}</strong><span>${study.cloudName}</span></div><div class="reuse-card"><small>技能编码</small><strong>${study.skillCode}</strong><span>字幕时间码 + 三音轨</span></div><div class="reuse-card"><small>工程编码</small><strong>${study.workflowCode}</strong><span>主线 / B-roll / 验收</span></div></div><p class="reuse-note">${study.reuse}</p><div class="reuse-actions"><a class="cta" href="${study.masterUrl}" target="_blank" rel="noopener">打开样片 ↗</a><a class="cta secondary" href="${study.driveFolderUrl}" target="_blank" rel="noopener">打开云盘工程 ↗</a></div><div class="reuse-privacy">页面展示方法与索引；原始工程、分轨音频和内部技能文件保存在云盘，不作为公开源码资产。</div></section>`;
+  return `<section class="reuse-section" id="reuse-contract"><div class="section-label"><div><div class="eyebrow">REUSE CONTRACT</div><h2>如何复用这条样片</h2></div><span>案例、技能、工程三者绑定</span></div><div class="reuse-grid"><div class="reuse-card"><small>案例编码</small><strong>${study.internalCode}</strong><span>${study.cloudName}</span></div><div class="reuse-card"><small>技能编码</small><strong>${study.skillCode}</strong><span>字幕时间码 + 三音轨</span></div><div class="reuse-card"><small>工程编码</small><strong>${study.workflowCode}</strong><span>主线 / B-roll / 验收</span></div></div><p class="reuse-note">${study.reuse}</p><div class="reuse-actions"><a class="cta" href="${mediaUrl(study)}" target="_blank" rel="noopener">打开公开成片 ↗</a><span class="text-link text-link-disabled">内部工程已归档 · 私有</span></div><div class="reuse-privacy">页面展示方法与公开成片；原始工程、分轨音频和内部技能文件保存在云盘，不作为公开源码资产。</div></section>`;
 }
 function caseSection(project) {
   const studies = project.cases.map(id => caseStudies[id]).filter(Boolean);
   const capabilityProof = studies.find(study => study.id === 'capabilityProof');
   const talkStudies = studies.filter(study => study.category === '知识口播');
-  const tests = studies.filter(study => study.category !== '知识口播' && study.id !== 'capabilityProof' && study.id !== 'directorMix');
+  const tests = studies.filter(study => study.category !== '知识口播' && study.id !== 'capabilityProof' && study.id !== 'directorMix' && study.id !== 'directorMixV8');
   const first = studies[0] || capabilityProof || talkStudies[0];
   const related = talkStudies.filter(study => study.id !== first.id);
   const initialTest = tests[0];
@@ -200,6 +209,7 @@ function caseSection(project) {
 
     ${related.length ? `<section class="related-case-section" aria-label="更多已验证作品"><div class="section-label"><div><div class="eyebrow">VERIFIED CASES</div><h2>正式案例</h2></div><span>不同内容场景，独立保存与回看</span></div>${related.map(relatedCase).join('')}</section>` : ''}
 
+    ${platformSampleSection(project, '抖音', 'douyin-samples', '抖音 / 情绪叙事', '这里单独收录适合抖音竖屏观看的情绪型样片：文案、旁白、音乐与字幕共同完成共鸣，成片与工程索引一一对应。')}
     ${directorSampleSection(project)}
 
     <section class="capability-section" id="capabilities">
@@ -243,7 +253,7 @@ function caseSection(project) {
 }
 function home() { const publicSoftware = Object.values(items).filter(item => item.type === 'software'); return `<section class="hero-grid"><div><div class="eyebrow">APPLICATION CENTER / 01</div><h1>按分类找，<em>按项目用。</em></h1><p class="intro">这里是我们的产品入口：可以下载的软件、可以直接使用的应用，以及面向客户的服务。分类从主页开始，进入具体项目后，还能看到属于这个项目的全部产品。</p><div class="hero-actions"><button class="cta" data-route="category/software">浏览软件 ↗</button><button class="cta secondary" data-route="project/intelligent-editing">查看智能剪辑项目</button></div></div><div class="hero-art"><span class="art-label">SOFTWARE / APPS / SERVICES</span><div class="signal">${Array.from({length: 34}, (_, i) => `<span style="height:${25 + ((i * 31) % 75)}%"></span>`).join('')}</div></div></section><section class="axis-section"><div class="section-head"><div><div class="eyebrow">按分类</div><h2>先找到你要的形态</h2></div><span>三种入口</span></div><div class="axis-grid">${Object.keys(categories).map(categoryCard).join('')}</div></section><section><div class="section-head"><div><div class="eyebrow">按项目</div><h2>从项目进入产品</h2></div><span>${Object.keys(projects).length} 个项目</span></div><div class="project-grid">${Object.values(projects).map(projectCard).join('')}</div></section><section><div class="section-head"><div><div class="eyebrow">软件 / 已公开</div><h2>智能剪辑的两款软件</h2></div><button class="text-link" data-route="project/intelligent-editing">进入项目页 ↗</button></div><section class="cards">${publicSoftware.map(itemCard).join('')}</section></section>`; }
 function categoryPage(type) { const category = categories[type]; const entries = Object.values(items).filter(item => item.type === type); return `<section><div class="eyebrow">${category.eyebrow}</div><h1>${category.label}</h1><p class="intro">${category.description}</p><div class="section-head"><div><div class="eyebrow">目录状态</div><h2>${entries.length ? `当前 ${category.label}` : '公开入口待整理'}</h2></div><span>${entries.length ? `${entries.length} 项` : '暂无公开项目'}</span></div>${entries.length ? `<section class="cards">${entries.map(itemCard).join('')}</section>` : '<div class="empty">目前没有已经验证的公开入口。后续会在确认部署、版权、隐私和服务边界后补充。</div>'}</section>`; }
-function projectPage(project) { const entries = project.items.map(id => items[id]).filter(Boolean); if (project.id === 'intelligent-editing') { return `<section class="editing-project-page"><button class="detail-back" data-route="home">← 返回 OING 主页</button>${caseSection(project)}<section class="tool-appendix" id="tools"><div class="section-label"><div><div class="eyebrow">TOOLS / DOWNLOADS</div><h2>支持模块</h2></div><span>独立详情与下载</span></div><section class="cards">${entries.map(itemCard).join('')}</section><div class="project-note">工具负责具体能力，案例负责展示结果；同一个软件只维护一个独立详情与下载入口。</div></section><nav class="mobile-bottom-nav" aria-label="智能剪辑页面导航"><a href="#overview">概览</a><a href="#featured-work">作品</a><a href="#sample-archive">样片</a><a href="#tests">测试</a><a href="#tools">工具</a></nav></section>`; } const showcase = project.cases ? caseSection(project) : ''; return `<section><button class="detail-back" data-route="home">← 返回应用主页</button><div class="project-hero"><div><div class="eyebrow">${project.kicker}</div><h1>${project.name}</h1><p class="intro">${project.description}</p></div><div class="project-stamp"><span>${project.status}</span><strong>${entries.length}</strong><small>工具目录项</small></div></div><div class="section-head"><div><div class="eyebrow">项目内工具</div><h2>这个项目包含</h2></div><span>分类仍然保留</span></div><section class="cards">${entries.map(itemCard).join('')}</section><div class="project-note">项目页负责聚合工具与案例，分类页负责横向浏览；同一个软件只维护一个详情和一个独立下载入口。</div>${showcase}</section>`; }
+function projectPage(project) { const entries = project.items.map(id => items[id]).filter(Boolean); if (project.id === 'intelligent-editing') { return `<section class="editing-project-page"><button class="detail-back" data-route="home">← 返回 OING 主页</button>${caseSection(project)}<section class="tool-appendix" id="tools"><div class="section-label"><div><div class="eyebrow">TOOLS / DOWNLOADS</div><h2>支持模块</h2></div><span>独立详情与下载</span></div><section class="cards">${entries.map(itemCard).join('')}</section><div class="project-note">工具负责具体能力，案例负责展示结果；同一个软件只维护一个独立详情与下载入口。</div></section><nav class="mobile-bottom-nav" aria-label="智能剪辑页面导航"><a href="#overview">概览</a><a href="#featured-work">作品</a><a href="#douyin-samples">抖音样片</a><a href="#tests">测试</a><a href="#tools">工具</a></nav></section>`; } const showcase = project.cases ? caseSection(project) : ''; return `<section><button class="detail-back" data-route="home">← 返回应用主页</button><div class="project-hero"><div><div class="eyebrow">${project.kicker}</div><h1>${project.name}</h1><p class="intro">${project.description}</p></div><div class="project-stamp"><span>${project.status}</span><strong>${entries.length}</strong><small>工具目录项</small></div></div><div class="section-head"><div><div class="eyebrow">项目内工具</div><h2>这个项目包含</h2></div><span>分类仍然保留</span></div><section class="cards">${entries.map(itemCard).join('')}</section><div class="project-note">项目页负责聚合工具与案例，分类页负责横向浏览；同一个软件只维护一个详情和一个独立下载入口。</div>${showcase}</section>`; }
 function oss() { return `<section><div class="eyebrow">OPEN SOURCE / NOTICE</div><h1>开源与许可</h1><p class="intro">需要声明。我们使用了开源框架与模型；自有代码、第三方代码、模型权重和可下载发布包不是同一件事。</p><div class="detail-grid"><div class="panel"><h2>本站与软件代码</h2><p>本站页面代码以 MIT License 发布。两个软件当前公开的是下载入口；源码会在完成脱敏、第三方许可证清单和 NOTICE 后拆分发布。</p><p>不会把模型缓存、用户音频、Eagle 素材、日志、发布证据、签名记录或运行数据库提交到公开仓库。</p></div><div class="panel"><h2>核心上游组件</h2>${list(['声听：FastAPI、FunASR、ModelScope、PyTorch、FFmpeg、MCP', '音频工作台：React、Tauri、Rust、FastAPI、librosa、soundfile、PyTorch、FFmpeg、SQLite', '模型权重遵循其模型卡或权利声明；不因软件源码开源而自动改变模型许可'])}<p class="note">完整依赖清单与 NOTICE 会随对应源码仓库发布；当前页面不把“使用开源组件”误写成“所有模型可自由再分发”。</p></div></div></section>`; }
 function detail(item) { const download = item.downloadUrl ? `<a class="cta" href="${item.downloadUrl}" target="_blank" rel="noopener">下载 ${item.name} ↗</a><div class="note">本软件独立提取码：${item.downloadCode} · 下载即表示你理解当前公开测试状态。</div>` : `<div class="empty inline-empty">当前没有公网下载或访问链接。状态：${item.status}。</div>`; return `<section class="detail"><button class="detail-back" data-route="category/${item.type}">← 返回${categories[item.type].label}</button><div class="detail-head">${icon(item, 'detail-icon')}<div><div class="eyebrow">${item.kicker}</div><h1>${item.name}</h1><p class="detail-sub">${item.intro}</p></div></div><div class="detail-grid"><div class="panel"><h2>它能做什么</h2>${list(item.features)}<h2>技术与开源组件</h2>${list(item.technology)}<h2>声明</h2>${list(item.notices)}</div><div class="panel"><h2>${item.type === 'software' ? '安装与使用' : '当前状态'}</h2><div class="facts">${item.facts.map(([key, value]) => `<div class="fact"><small>${key}</small><strong>${value}</strong></div>`).join('')}</div><p>${item.install}</p>${download}<button class="cta secondary" data-route="oss">查看开源与许可</button></div></div></section>`; }
 function render() {
