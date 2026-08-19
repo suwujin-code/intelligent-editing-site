@@ -7,7 +7,7 @@ const categories = {
 };
 
 const projects = {
-  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 12 个案例 · 5 个导演样片', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，样片负责沉淀可调用的方法。', items: ['asr', 'audio'], cases: ['directorMixV8', 'directorMix', 'capabilityProof', 'host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], showreels: ['directorMixV9A', 'directorMixV9B', 'directorMixV9C', 'directorMixV8', 'directorMix', 'renovationQuote90'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
+  'intelligent-editing': { id: 'intelligent-editing', name: '智能剪辑', kicker: 'LOCAL CREATION TOOLKIT', status: '2 款软件 · 13 个案例 · 6 个导演样片', description: '把素材、脚本和声音变成可观看、可复用、可交付的成片。工具负责能力，作品负责证明，样片负责沉淀可调用的方法。', items: ['asr', 'audio'], cases: ['directorMix', 'directorMixVertical', 'directorMixV8', 'capabilityProof', 'host001', 'waterproofing', 'sony', 'ebay', 'congee', 'dumpling'], showreels: ['directorMixV9A', 'directorMixV9B', 'directorMixV9C', 'directorMixV8', 'directorMix', 'renovationQuote90'], references: ['ikea', 'zhongxuegao', 'pujiang'] },
   'photography-workflow': { id: 'photography-workflow', name: '摄影获客工作流', kicker: 'PHOTOGRAPHY / LEAD FLOW', status: '本地应用待公开', description: '把摄影服务、公开线索研究和人工跟进整理在一个可审计的本地工作流中。公开服务入口仍在整理。', items: ['photography-app', 'photography-service'] }
 };
 
@@ -63,6 +63,7 @@ const caseStudies = {
   },
   directorMixV8: { id: 'directorMixV8', code: 'DIR-MIX-20260819-001 / V8.3 DOUYIN POETIC', internalCode: 'DIR-MIX-20260819-001-V8.3', skillCode: 'SKILL::SMART-DIRECTOR::DOUYIN-POETIC::V8.3', workflowCode: 'WF::DIRECTOR-MIX::20260819::DOUYIN-POETIC::V8.3', cloudName: 'DIR-MIX-20260819-001-V8.3｜听见自己｜抖音文学情绪版', title: '听见自己｜抖音文学情绪混剪 V8.3', source: '9:16 · 29 秒 · 30fps · 单一主角 · 16 个独立剪辑段', aspect: 'portrait', status: '技术QA通过 · 待主观门禁', statusClass: 'conditional', video: 'assets/cases/DIR-MIX-20260819-001_v8.3-poetic_9x16_web.mp4', poster: 'assets/cases/DIR-MIX-20260819-001_v8.3-poetic_poster.jpg', skillIndexUrl: '#capabilities', platform: '抖音', collection: '抖音 / 情绪叙事', note: '以“你不是想逃离生活，只是太久没听见自己”为核心，把通勤人群、车窗、雨夜与回望重新编成一条抖音竖屏情绪线。旁白负责说出心事，五处宋体旁注把画面留白变成内心回声，片尾回到人群也回到自己。', testGoal: '验证文学化旁注、竖屏节奏、旁白与原创音乐能否在 29 秒内完成一次从麻木到自我听见的转折。', testMethod: '人群噪声 → 心事显影 → 车窗留白 → “远方有时不在地图上” → 回到人群，也回到自己。', tags: ['抖音文学情绪', '文艺旁注', 'Fish配音', '原创音乐', '9:16竖版'], category: '抖音情绪叙事', outcome: '短视频 / 文学情绪表达', role: '智能导演 + 情绪剪辑', proof: ['29 秒', '9:16 竖版', '5 处文艺旁注', '1 条源片', '16 个剪辑段'], productionRules: ['文案先定主题，不用模板话术', '诗性文字只做回声，不抢旁白', '旁白先行，音乐控制情绪峰值', '片尾保留余韵，不用硬性 CTA'], reuse: '换素材时保留“人群噪声 → 心事显影 → 空间留白 → 自我听见 → 回到自己”的情绪骨架；先锁定主题和真实配音，再按文艺旁注的呼吸点重排画面。', reuseReady: true, archiveNote: '工程、母版、分轨音频、导演思路、技能快照与 QA 已按 DIR-MIX-20260819-001-V8.3 归档；技术 QA 通过，手机外放与耳机主观门禁待确认。' },
   directorMix: { id: 'directorMix', code: 'DIR-MIX-20260819-001 / V6 HYPER TYPOGRAPHY', internalCode: 'DIR-MIX-20260819-001', skillCode: 'SKILL::SMART_DIRECTOR::V6', workflowCode: 'WF::DIRECTOR_MIX::20260819::V6', cloudName: 'DIR-MIX-20260819-001｜别只经过生活｜V6', title: '别只经过生活｜智能导演情绪混剪', source: '16:9 · 35.5 秒 · 24fps', aspect: 'landscape', status: '已验证 · V6', statusClass: 'verified', video: 'assets/cases/DIR-MIX-20260819-001_v6-hyper-typography_web.mp4', note: '以“时间只负责向前”为冲突，把城市、人物与日常片段重组成一次从流逝到主动记录的选择。Fish 配音、原创音乐与 HyperFrames 动态排版共同完成断裂、重启和高潮。', testGoal: '验证导演判断、情绪节奏、旁白、音乐与动态字幕能否在 35.5 秒内共同完成一个明确主题。', testMethod: '冷开场提出命题 → 保留呼吸与停顿 → 18 秒处制造视觉断裂 → 20 秒后以动作词和音乐高潮把情绪推到“把它留下来”。', tags: ['智能导演', '情绪混剪', '动态排版', 'Fish配音', '原创音乐'], category: '情绪叙事', outcome: '导演混剪 / 品牌表达', role: '智能导演', proof: ['35.5 秒', 'Fish 配音', 'HyperFrames 排版', '原创音乐', 'V6 已验证'], reuse: '换素材时保留“流逝 → 停顿 → 选择 → 留下”的情绪骨架；先锁定主张和音乐结构，再用真实配音时间码回填字幕，动态排版只服务句意与节奏峰值。', reuseReady: true },
+  directorMixVertical: { id: 'directorMixVertical', code: 'DIR-MIX-20260819-001 / V6 VERTICAL SAFE FRAME', internalCode: 'DIR-MIX-20260819-001::V6::9X16', skillCode: 'SKILL::SMART_DIRECTOR::V6::DUAL-ASPECT', workflowCode: 'WF::DIRECTOR_MIX::20260819::V6::DUAL-ASPECT', cloudName: 'DIR-MIX-20260819-001｜别只经过生活｜V6 竖屏安全区', title: '别只经过生活｜竖屏安全区适配', source: '9:16 · 35.5 秒 · 24fps · 720×1280', aspect: 'portrait', status: '已验证 · 双画幅', statusClass: 'verified', video: 'assets/cases/DIR-MIX-20260819-001_v6-hyper-typography_vertical_web.mp4', note: '不是把横屏粗暴裁成竖屏：先清掉母版黑边，再用同源柔焦背景托住完整画面，把字幕和“停—靠近—记录—留下”的动作词留在手机安全区。', testGoal: '验证同一导演命题在 9:16 手机观看中仍保持字幕可读、主体不丢、高潮不塌。', testMethod: '横屏母版 → 去黑边 → 同源柔焦背景 → 16:9 安全画面居中 → 9:16 输出并复核字幕安全区。', tags: ['9:16竖版', '安全区适配', '双画幅交付', '动态排版', 'Fish配音'], category: '情绪叙事', outcome: '竖屏交付 / 手机观看', role: '智能导演 + 版本设计', proof: ['35.5 秒', '720×1280', '字幕安全区', '同源柔焦背景', '双画幅已验证'], reuse: '需要竖屏时保留主题与声音脊柱，不直接中心裁切；先清理母版黑边，再在安全区重排主体与字卡，最后与横屏一起做完整解码和主观回看。', reuseReady: true },
   capabilityProof: { id: 'capabilityProof', code: 'VID-AE-CAP-001 / CAPABILITY PROOF', internalCode: 'VID-AE-CAP-001', skillCode: 'SKILL-EDIT-RHYTHM-CASE-WALL-001', workflowCode: 'WF-AUTOEDIT-CASE-WALL-001', cloudName: 'VID-AE-CAP-001｜导演系统能力证明片｜案例墙·节奏分轨｜v1', title: '导演系统能力证明片｜案例墙·节奏分轨', source: '9:16 · 177 秒 · 三音轨', aspect: 'portrait', status: '已验证', statusClass: 'verified', video: 'https://suwujin-code.github.io/intelligent-editing-site/assets/cases/VID-AE-CAP-001_capability-proof_v1_final.mp4', note: '完整的导演能力证明：真实案例墙、口播主线、信息层级与音乐节奏分轨都可以回查。', testGoal: '验证主时间线、B-roll、字幕时间码和独立音轨能否组成一条可复用的完整生产链。', testMethod: '先定一条主张，再生成配音并用真实时间码生成字幕；B-roll 按句意进入，VO、Music、Mix 保持独立。', tags: ['能力证明', '案例墙', '节奏控制'], category: '能力证明', outcome: '主时间线 + B-roll', role: '导演 + 编辑', proof: ['177 秒', '3 类案例', 'VO / Music 分轨', '16 条对齐字幕', 'HyperFrames QA'], reuse: '换内容时只替换口播、B-roll 和配乐；先配音，再由时间码生成字幕。固定保留标题 / 旁白 / 信息动画三层，音乐不能混入说话声。', reuseReady: true },
   renovationQuote90: {
     id: 'renovationQuote90',
@@ -102,7 +103,8 @@ const caseStudies = {
 };
 
 const chunkedMedia = {
-  directorMix: { count: 14, prefix: 'assets/cases/DIR-MIX-20260819-001_v6-hyper-typography_web.mp4.part-' }
+  directorMix: { count: 14, prefix: 'assets/cases/DIR-MIX-20260819-001_v6-hyper-typography_web.mp4.part-' },
+  directorMixVertical: { count: 13, prefix: 'assets/cases/DIR-MIX-20260819-001_v6-hyper-typography_vertical_web.mp4.part-' }
 };
 
 const items = {
@@ -201,6 +203,18 @@ function directorSampleSection(project) {
     <div class="director-sample-list">${samples.map(directorSampleCard).join('')}</div>
   </section>`;
 }
+function directorVariantsSection(project) {
+  const variants = ['directorMix', 'directorMixVertical'].map(id => caseStudies[id]).filter(Boolean);
+  if (variants.length < 2) return '';
+  return `<section class="director-variants" id="director-variants">
+    <div class="section-label"><div><div class="eyebrow">DUAL-ASPECT DELIVERY</div><h2>同一命题，两个观看现场</h2></div><span>横屏主片 + 竖屏安全区适配</span></div>
+    <p class="director-variants-intro">横屏保留电影式横向呼吸；竖屏不是粗暴裁切，而是用同源柔焦背景托住完整画面，让字幕、主体和高潮在手机里仍然成立。两个版本共享同一条旁白、音乐和节奏骨架。</p>
+    <div class="director-variants-grid">${variants.map(study => `<article class="director-variant-card ${study.aspect === 'portrait' ? 'is-portrait' : ''}">
+      <div class="director-variant-video"><span class="director-variant-index">${study.aspect === 'portrait' ? '9:16 / MOBILE' : '16:9 / MASTER'}</span><video controls preload="metadata" playsinline data-director-media="${chunkedMedia[study.id] ? study.id : ''}"><source src="${mediaUrl(study)}" type="video/mp4" /></video></div>
+      <div class="director-variant-copy"><span class="featured-code">${study.code}</span><h3>${study.title}</h3><p>${study.note}</p><div class="director-variant-meta"><span>${study.source}</span><em class="case-status ${study.statusClass}">${study.status}</em></div></div>
+    </article>`).join('')}</div>
+  </section>`;
+}
 function platformSampleSection(project, platform, anchor, title, intro) {
   const samples = (project.showreels || []).map(id => caseStudies[id]).filter(study => study && study.platform === platform);
   if (!samples.length) return '';
@@ -224,7 +238,7 @@ function caseSection(project) {
   const studies = project.cases.map(id => caseStudies[id]).filter(Boolean);
   const capabilityProof = studies.find(study => study.id === 'capabilityProof');
   const talkStudies = studies.filter(study => study.category === '知识口播');
-  const tests = studies.filter(study => study.category !== '知识口播' && study.id !== 'capabilityProof' && study.id !== 'directorMix' && study.id !== 'directorMixV8');
+  const tests = studies.filter(study => study.category !== '知识口播' && study.id !== 'capabilityProof' && study.id !== 'directorMix' && study.id !== 'directorMixVertical' && study.id !== 'directorMixV8');
   const first = studies[0] || capabilityProof || talkStudies[0];
   const related = talkStudies.filter(study => study.id !== first.id);
   const initialTest = tests[0];
@@ -254,6 +268,8 @@ function caseSection(project) {
     </div>
 
     <div class="proof-strip" id="case-proof">${proofItems(first)}</div>
+
+    ${directorVariantsSection(project)}
 
     ${related.length ? `<section class="related-case-section" aria-label="更多已验证作品"><div class="section-label"><div><div class="eyebrow">VERIFIED CASES</div><h2>正式案例</h2></div><span>不同内容场景，独立保存与回看</span></div>${related.map(relatedCase).join('')}</section>` : ''}
 
@@ -314,8 +330,7 @@ function render() {
   else if (hash.startsWith('project/')) { const project = projects[hash.split('/')[1]]; if (project) html = projectPage(project); }
   else if (hash.startsWith('item/') || hash.startsWith('app/')) { const item = items[hash.split('/')[1]]; if (item) { html = detail(item); active = item.type; } }
   root.innerHTML = html;
-  const directorMediaTarget = document.querySelector('[data-director-media="directorMix"]');
-  if (directorMediaTarget) hydrateChunkedMedia(caseStudies.directorMix).catch(error => console.error('Director media hydration failed', error));
+  Object.keys(chunkedMedia).forEach(id => { if (document.querySelector(`[data-director-media="${id}"]`)) hydrateChunkedMedia(caseStudies[id]).catch(error => console.error(`Director media hydration failed: ${id}`, error)); });
   document.querySelectorAll('[data-route]').forEach(element => element.addEventListener('click', () => { location.hash = element.dataset.route; }));
 
   const testCards = [...document.querySelectorAll('[data-test]')];
