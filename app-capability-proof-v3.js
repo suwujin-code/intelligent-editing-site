@@ -91,7 +91,7 @@ function mediaUrl(study) { return chunkedMedia[study.id] ? 'about:blank' : (stud
 async function hydrateChunkedMedia(study) {
   const spec = chunkedMedia[study.id];
   if (!spec) return;
-  const parts = await Promise.all(Array.from({ length: spec.count }, (_, index) => fetch(`${spec.prefix}${String(index).padStart(2, '0')}`).then(response => { if (!response.ok) throw new Error(`Chunk ${index} failed: ${response.status}`); return response.text(); }).then(encoded => Uint8Array.from(atob(encoded), char => char.charCodeAt(0)))));
+  const parts = await Promise.all(Array.from({ length: spec.count }, (_, index) => fetch(`${spec.prefix}${String(index).padStart(2, '0')}`).then(response => { if (!response.ok) throw new Error(`Chunk ${index} failed: ${response.status}`); return response.arrayBuffer(); }).then(buffer => new Uint8Array(buffer))));
   const objectUrl = URL.createObjectURL(new Blob(parts, { type: 'video/mp4' }));
   document.querySelectorAll(`[data-director-media="${study.id}"]`).forEach(player => { player.src = objectUrl; player.load(); });
 }
