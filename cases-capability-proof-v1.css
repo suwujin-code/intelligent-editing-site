@@ -483,6 +483,7 @@ main{max-width:1320px;padding:32px clamp(22px,5vw,72px) 88px}
 
 /* CASE_005 / Director Sample Archive — complete, reusable finished films only. */
 .director-sample-archive{position:relative;overflow:hidden;margin:0 0 82px;padding:clamp(28px,4vw,52px);border:1px solid #3c4540;border-radius:14px;background:radial-gradient(circle at 11% 0,#2b332d 0,transparent 33%),linear-gradient(135deg,#151b18 0%,#202822 54%,#101512 100%);color:#f4f4ed}
+.platform-sample-archive{border-color:#d7a65d5c;background:radial-gradient(circle at 88% 0,#a9783b2b 0,transparent 34%),linear-gradient(135deg,#191715 0%,#28231c 54%,#12100d 100%)}
 .director-sample-archive:before{content:"";position:absolute;inset:-20% 44% auto -8%;height:46%;background:radial-gradient(ellipse,#b9e44d14 0,transparent 70%);pointer-events:none}
 .director-sample-archive>*{position:relative}
 .director-sample-archive .section-label{align-items:end;padding-bottom:18px;border-bottom:1px solid #f1f4eb2e}
