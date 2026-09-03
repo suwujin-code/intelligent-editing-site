@@ -1,1 +1,63 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta name="description" content="OING 智能剪辑技能中心：查看可调用的 Core、原子技能、组合技能、状态与验证样片。"/><title>技能中心 · 智能剪辑 · OING</title><link rel="stylesheet" href="skills.css?v=skill-hub-v1-20260903"/></head><body><header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">剪</span><span><strong>智能剪辑</strong><small>INTELLIGENT EDITING</small></span></a><nav><a href="index.html">首页</a><a class="active" href="skills.html">技能中心</a><a href="index.html#project/intelligent-editing">案例与系统</a><a href="index.html#breakdowns">拉片库</a></nav><span class="system-pill">SKILL REGISTRY · V1</span></header><main class="workspace"><aside class="sidebar"><div class="sidebar-title"><span>技能中心</span><small>SKILL LIBRARY</small></div><label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="搜索 Skill ID / 名称"/></label><div class="side-section"><span class="side-label">分类</span><button class="filter is-active" data-category="all"><span>全部模块</span><b id="count-all">10</b></button><button class="filter" data-category="core"><span>Core</span><b>1</b></button><button class="filter" data-category="visual_packaging"><span>视觉包装</span><b>2</b></button><button class="filter" data-category="editing"><span>剪辑</span><b>2</b></button><button class="filter" data-category="audio_packaging,audio"><span>音频</span><b>2</b></button><button class="filter" data-category="subtitle"><span>字幕</span><b>1</b></button><button class="filter" data-category="broll"><span>B-roll</span><b>1</b></button><button class="filter" data-category="composite"><span>Composite</span><b>1</b></button></div><div class="side-section"><span class="side-label">验证状态</span><div class="status-key"><i class="dot stable"></i> Stable</div><div class="status-key"><i class="dot tested"></i> Tested</div><div class="status-key"><i class="dot internal"></i> Internal</div><div class="status-key"><i class="dot experimental"></i> Experimental</div><div class="status-key"><i class="dot blocked"></i> Blocked</div></div><div class="side-note">公开页只展示脱敏能力信息与验证样片；模型、源码、内部工程继续保留在私有资产库。</div></aside><section class="content"><section class="overview-panel"><div><p class="eyebrow">EDITOR CAPABILITY GRAPH</p><h1>技能不是插件列表，<br/>而是一张可调度的剪辑能力图。</h1><p class="intro">Core 提供底层能力，Atomic Skill 提供最小操作，Composite 负责组合。智能剪辑师和智能导演只通过稳定 Skill ID 调用。</p></div><div class="metric-grid"><div><strong id="metric-total">10</strong><span>总模块</span></div><div><strong id="metric-atomic">8</strong><span>Atomic Skills</span></div><div><strong id="metric-demo">3</strong><span>已归档样片</span></div><div><strong>1</strong><span>Composite</span></div></div></section><section class="pipeline"><span>CORE</span><i>→</i><span>ATOMIC SKILL</span><i>→</i><span>RECIPE</span><i>→</i><span>COMPOSITE</span><i>→</i><span>WORKFLOW</span><i>→</i><span>AGENT</span></section><div class="toolbar"><div><strong id="result-count">10</strong> 个模块</div><div class="toolbar-tabs"><button class="status-filter is-active" data-status="all">全部</button><button class="status-filter" data-status="demo">有样片</button><button class="status-filter" data-status="stable">Stable</button><button class="status-filter" data-status="internal">Internal</button><button class="status-filter" data-status="experimental">Experimental</button></div></div><section id="skill-grid" class="skill-grid"></section></section></main><aside id="detail" class="detail-drawer"><button id="detail-close" class="drawer-close">×</button><div id="detail-content"></div></aside><div id="drawer-scrim" class="drawer-scrim"></div><div id="player-modal" class="player-modal"><div class="player-shell"><button id="player-close" class="player-close">关闭 ×</button><video id="demo-video" controls playsinline></video><div id="player-meta" class="player-meta"></div></div></div><script src="skill-media.js?v=skill-hub-v1-20260903"></script><script src="skills.js?v=skill-hub-v1-20260903"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="OING 智能剪辑技能中心：19 项已联合测试能力、15 个原子技能与验证状态。"/>
+<title>技能中心 · 智能剪辑 · OING</title>
+<link rel="stylesheet" href="skills-v2.css?v=20260904"/>
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html"><span class="brand-mark">剪</span><span><strong>智能剪辑</strong><small>INTELLIGENT EDITING</small></span></a>
+<nav><a href="index.html">首页</a><a class="active" href="skills.html">技能中心</a><a href="index.html#project/intelligent-editing">案例与系统</a><a href="index.html#breakdowns">拉片库</a></nav>
+<span class="system-pill">MASTER v1.2.1 · JOINT TEST</span>
+</header>
+<main class="workspace">
+<aside class="sidebar">
+<div class="sidebar-title"><span>技能中心</span><small>SKILL / CAPABILITY REGISTRY</small></div>
+<label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="搜索 Skill ID / 名称"/></label>
+<div class="side-section"><span class="side-label">能力域</span>
+<button class="filter is-active" data-category="all"><span>全部能力</span><b id="count-all">19</b></button>
+<button class="filter" data-category="gate,core"><span>Gate / Core</span><b>2</b></button>
+<button class="filter" data-category="editing"><span>基础剪辑</span><b>2</b></button>
+<button class="filter" data-category="visual"><span>视觉与构图</span><b>4</b></button>
+<button class="filter" data-category="evidence"><span>证据 / B-roll</span><b>5</b></button>
+<button class="filter" data-category="text"><span>字幕与文字</span><b>2</b></button>
+<button class="filter" data-category="audio"><span>音频</span><b>2</b></button>
+<button class="filter" data-category="composite,orchestrator"><span>系统编排</span><b>2</b></button>
+</div>
+<div class="side-section"><span class="side-label">联合验证</span>
+<div class="status-key"><i class="dot pass"></i> PASS · 15</div>
+<div class="status-key"><i class="dot conditional"></i> CONDITIONAL · 2</div>
+<div class="status-key"><i class="dot prototype"></i> PROTOTYPE · 2</div>
+</div>
+<div class="side-note">Drive / Master Registry 是权威资产源。网页只显示脱敏后的能力、验证状态和公开样片。</div>
+</aside>
+<section class="content">
+<section class="overview-panel">
+<div><p class="eyebrow">OING EDITOR CAPABILITY GRAPH</p><h1>19 项能力已进入同一测试链。</h1><p class="intro">当前不是“有没有技能”的问题，而是把条件通过与 Prototype 补到 Production Stable，并给已验证技能补齐标准样片。</p></div>
+<div class="metric-grid">
+<div><strong id="metric-total">19</strong><span>联合测试能力</span></div>
+<div><strong id="metric-atomic">15</strong><span>Atomic Skills</span></div>
+<div><strong id="metric-pass">15</strong><span>PASS</span></div>
+<div><strong id="metric-demo">3</strong><span>标准样片可用</span></div>
+</div>
+</section>
+<section class="pipeline"><span>CONTENT GATE</span><i>→</i><span>DIRECTOR</span><i>→</i><span>RECIPE / SKILL</span><i>→</i><span>RUNTIME</span><i>→</i><span>QA</span></section>
+<div class="toolbar"><div><strong id="result-count">19</strong> 个能力项</div><div class="toolbar-tabs">
+<button class="status-filter is-active" data-status="all">全部</button>
+<button class="status-filter" data-status="demo">有样片</button>
+<button class="status-filter" data-status="pass">PASS</button>
+<button class="status-filter" data-status="conditional">Conditional</button>
+<button class="status-filter" data-status="prototype">Prototype</button>
+</div></div>
+<section id="skill-grid" class="skill-grid"></section>
+</section>
+</main>
+<aside id="detail" class="detail-drawer"><button id="detail-close" class="drawer-close">×</button><div id="detail-content"></div></aside>
+<div id="drawer-scrim" class="drawer-scrim"></div>
+<div id="player-modal" class="player-modal"><div class="player-shell"><button id="player-close" class="player-close">关闭 ×</button><video id="demo-video" controls playsinline></video><div id="player-meta" class="player-meta"></div></div></div>
+<script src="skill-media.js?v=skill-hub-v2-20260904"></script>
+<script src="skills-v2.js?v=skill-hub-v2-20260904"></script>
+</body></html>
