@@ -1,0 +1,18 @@
+{
+  "catalog_version": "1.0.0",
+  "updated_at": "2026-09-03",
+  "architecture": ["core_capability","atomic_skill","recipe","composite_skill","workflow_system","agent"],
+  "counts": {"core":1,"atomic_skills":8,"composite_skills":1,"total_modules":10,"demo_ready":3},
+  "modules": [
+    {"id":"EDT-CORE-MASK-001","name_zh":"主体分割核心","name_en":"Subject Mask Core","level":"core_capability","category":"core","version":"1.1","status":"core","runtime_registered":true,"demo_ready":false,"summary":"统一输出人物 Instance / Alpha / RGBA，供所有人物包装技能复用。","public_demo":false},
+    {"id":"EDT-SKILL-PTC-001","name_zh":"手撕纸白边包装","name_en":"Paper Tear Subject Packaging","level":"atomic_skill","category":"visual_packaging","version":"1.0.0","status":"tested","runtime_registered":true,"demo_ready":true,"default_recipe":"paper-tear-default","depends_on":["EDT-CORE-MASK-001"],"summary":"围绕主体外缘生成不规则粗白纸边，输出独立透明人物包装层。","media_key":"EDT-SKILL-PTC-001","public_demo":true},
+    {"id":"EDT-SKILL-RVE-001","name_zh":"重点语句收音机音效","name_en":"Radio Voice Emphasis","level":"atomic_skill","category":"audio_packaging","version":"1.0.0","status":"tested","runtime_registered":true,"demo_ready":true,"default_recipe":"radio-default","depends_on":[],"summary":"只对语义重点句切换 Radio / Telephone / Walkie 音色，作为声音标点。","media_key":"EDT-SKILL-RVE-001","public_demo":true},
+    {"id":"EDT-SKILL-MOH-001","name_zh":"纸片人物舞台","name_en":"Marker Cutout Stage","level":"atomic_skill","category":"visual_packaging","version":"1.3.0","status":"stable","runtime_registered":true,"demo_ready":true,"default_recipe":"editorial_grid","depends_on":["EDT-CORE-MASK-001"],"recipes":["clean_white","editorial_grid","rough_paper"],"summary":"丢弃原背景，将独立人物放入纸张舞台，以外扩白边和错峰动画重新构图。","media_key":"EDT-SKILL-MOH-001","public_demo":true},
+    {"id":"TH-SKILL-008","name_zh":"智能删剪与节奏","name_en":"Smart Cut & Pace","level":"atomic_skill","category":"editing","version":"1.0.0","status":"blocked","runtime_registered":false,"demo_ready":false,"stage":"PRE_CUT","summary":"口播预剪：删停顿、删废句并给出节奏粗剪计划。","public_demo":false},
+    {"id":"TH-SKILL-009","name_zh":"自动重构图与人物跟随","name_en":"Auto Reframe & Speaker Follow","level":"atomic_skill","category":"editing","version":"1.0.0","status":"internal","runtime_registered":false,"demo_ready":false,"stage":"LAYOUT","summary":"根据说话人位置和横竖屏目标自动重构画面并跟随主体。","public_demo":false},
+    {"id":"TH-SKILL-010","name_zh":"证据定位与B-roll匹配","name_en":"Evidence Locator & B-roll Match","level":"atomic_skill","category":"broll","version":"1.0.0","status":"experimental","runtime_registered":false,"demo_ready":false,"stage":"EVIDENCE_ANALYSIS","summary":"把口播中的证据需求定位到可用 B-roll 或生成素材任务。","public_demo":false},
+    {"id":"TH-SKILL-011","name_zh":"字幕导演桥接","name_en":"Subtitle Director Bridge","level":"atomic_skill","category":"subtitle","version":"1.0.0","status":"experimental","runtime_registered":false,"demo_ready":false,"stage":"SUBTITLE","summary":"把字幕规则与视觉导演决策桥接到统一时间线。","public_demo":false},
+    {"id":"TH-SKILL-012","name_zh":"音频精修与自动压低","name_en":"Audio Polish & Duck","level":"atomic_skill","category":"audio","version":"1.0.0","status":"internal","runtime_registered":false,"demo_ready":false,"stage":"AUDIO_FINISH","summary":"完成音频精修、响度与背景音乐自动 Duck 规划。","public_demo":false},
+    {"id":"TH-VISUAL-DIRECTOR-001","name_zh":"口播视觉导演","name_en":"Talking-Head Visual Director","level":"composite_skill","category":"composite","version":"1.4.0-system-contract","status":"internal","runtime_registered":false,"demo_ready":false,"recipes":["TH-RECIPE-001","TH-RECIPE-002","TH-RECIPE-003","TH-RECIPE-004","TH-RECIPE-005"],"summary":"组合口播剪辑原子技能并输出统一视觉导演时间线。","public_demo":false}
+  ]
+}
