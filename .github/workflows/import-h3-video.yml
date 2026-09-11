@@ -1,0 +1,53 @@
+name: Import H3 video
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'operations/h3-import/*.json'
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Resolve request and download video
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, re, subprocess, urllib.request
+          from pathlib import Path
+          event=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())
+          before=event['before']; after=os.environ['GITHUB_SHA']
+          rows=subprocess.check_output(['git','diff','--name-only','--diff-filter=AM',before,after,'--','operations/h3-import/'],text=True).splitlines()
+          rows=[p for p in rows if re.fullmatch(r'operations/h3-import/[A-Za-z0-9_-]+\.json',p)]
+          if len(rows)!=1:
+              raise SystemExit(f'Need exactly one import request, got {rows}')
+          req=json.loads(Path(rows[0]).read_text())
+          url=req['video_url']; filename=req['filename']; expected=req.get('sha256')
+          out=Path('public/h3-tests')/filename
+          out.parent.mkdir(parents=True, exist_ok=True)
+          with urllib.request.urlopen(url, timeout=180) as r:
+              data=r.read()
+          actual=hashlib.sha256(data).hexdigest()
+          if expected and actual != expected:
+              raise SystemExit(f'SHA mismatch expected={expected} actual={actual}')
+          out.write_bytes(data)
+          receipt={k:v for k,v in req.items() if k!='video_url'}
+          receipt['bytes']=len(data); receipt['sha256']=actual; receipt['public_path']=str(out)
+          (out.with_suffix('.receipt.json')).write_text(json.dumps(receipt,indent=2,ensure_ascii=False))
+          print(json.dumps(receipt,ensure_ascii=False))
+          PY
+      - name: Commit imported MP4
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/h3-tests
+          git commit -m 'Import H3 transition test MP4'
+          git push origin HEAD:main
