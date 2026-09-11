@@ -20,7 +20,7 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
-          import hashlib, json, os, re, subprocess, urllib.request
+          import base64, hashlib, json, os, re, subprocess, urllib.request
           from pathlib import Path
           event=json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text())
           before=event['before']; after=os.environ['GITHUB_SHA']
@@ -29,7 +29,11 @@ jobs:
           if len(rows)!=1:
               raise SystemExit(f'Need exactly one import request, got {rows}')
           req=json.loads(Path(rows[0]).read_text())
-          url=req['video_url']; filename=req['filename']; expected=req.get('sha256')
+          if req.get('video_url_b64'):
+              url=base64.b64decode(req['video_url_b64']).decode('utf-8')
+          else:
+              url=req['video_url']
+          filename=req['filename']; expected=req.get('sha256')
           out=Path('public/h3-tests')/filename
           out.parent.mkdir(parents=True, exist_ok=True)
           with urllib.request.urlopen(url, timeout=180) as r:
@@ -38,7 +42,7 @@ jobs:
           if expected and actual != expected:
               raise SystemExit(f'SHA mismatch expected={expected} actual={actual}')
           out.write_bytes(data)
-          receipt={k:v for k,v in req.items() if k!='video_url'}
+          receipt={k:v for k,v in req.items() if k not in ('video_url','video_url_b64')}
           receipt['bytes']=len(data); receipt['sha256']=actual; receipt['public_path']=str(out)
           (out.with_suffix('.receipt.json')).write_text(json.dumps(receipt,indent=2,ensure_ascii=False))
           print(json.dumps(receipt,ensure_ascii=False))
